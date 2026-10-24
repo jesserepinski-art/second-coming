@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://buot2gbr5ydj0"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_8lcgg"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_fmamn"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="1_hbqgh"]
+[ext_resource type="Resource" uid="uid://dx1ep15o7qrwk" path="res://Items/healing_herb.tres" id="2_8lcgg"]
+[ext_resource type="Resource" uid="uid://br3jaduwxf70g" path="res://Players/BasicAttack.tres" id="2_tp2o8"]
+[ext_resource type="AudioStream" uid="uid://ninp78e6kl54" path="res://Art/SecondComingSFX/impact1.ogg" id="3_5pjhk"]
+[ext_resource type="Texture2D" uid="uid://dya55jq2qr4b7" path="res://Players/damaportrait.png" id="8_yxffj"]
+[ext_resource type="Resource" uid="uid://1g1e8adm1fno" path="res://Magic/SlowDown.tres" id="9_gbk2l"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="9_tay6l"]
+
+[resource]
+script = ExtResource("1_hbqgh")
+attack_quotes = Array[String](["Dama shoots from his hand
+"])
+hurt_sound = ExtResource("3_5pjhk")
+portrait = ExtResource("8_yxffj")
+name = "Dama"
+hp_max = 20
+attack = 7
+magic_attack = 7
+defense = 7
+speed = 7
+items = Array[ExtResource("1_fmamn")]([ExtResource("2_8lcgg")])
+attacks = Array[ExtResource("1_8lcgg")]([ExtResource("2_tp2o8")])
+spells = Array[ExtResource("1_fmamn")]([ExtResource("9_gbk2l")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

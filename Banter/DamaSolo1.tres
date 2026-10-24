@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PartyBanter" format=3 uid="uid://drwtnlud15v7u"]
+
+[ext_resource type="Script" uid="uid://batbfd1uue6nc" path="res://Banter/BanterLine.gd" id="1_n8tn8"]
+[ext_resource type="Script" uid="uid://bcmwpt010mwl4" path="res://banter.gd" id="2_r167b"]
+
+[sub_resource type="Resource" id="Resource_42e4c"]
+script = ExtResource("1_n8tn8")
+speaker = "Dama"
+text = "Beautiful day as always"
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[sub_resource type="Resource" id="Resource_jyil6"]
+script = ExtResource("1_n8tn8")
+speaker = "Dama"
+text = "What does the world hold for me..."
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[resource]
+script = ExtResource("2_r167b")
+banter_id = "DamaSolo1"
+required_party = Array[String](["Dama"])
+lines = Array[ExtResource("1_n8tn8")]([SubResource("Resource_42e4c"), SubResource("Resource_jyil6")])
+metadata/_custom_type_script = "uid://bcmwpt010mwl4"

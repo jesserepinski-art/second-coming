@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://x7pim6qrec5m"]
+
+[ext_resource type="Texture2D" uid="uid://b50p1hu53xfhj" path="res://Art/Custom Scenery/chestsheet.png" id="1_5mbci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8sum"]
+size = Vector2(53, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecqlc"]
+atlas = ExtResource("1_5mbci")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igrwa"]
+atlas = ExtResource("1_5mbci")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inun1"]
+atlas = ExtResource("1_5mbci")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnv3j"]
+atlas = ExtResource("1_5mbci")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r43q4"]
+atlas = ExtResource("1_5mbci")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e5oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecqlc")
+}],
+"loop": 0,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igrwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inun1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnv3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r43q4")
+}],
+"loop": 0,
+"name": &"opened",
+"speed": 5.0
+}]
+
+[node name="Chest" type="Area2D" unique_id=983611543]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1377232909]
+position = Vector2(-1.5, 7)
+shape = SubResource("RectangleShape2D_c8sum")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=505435260]
+scale = Vector2(0.275, 0.275)
+sprite_frames = SubResource("SpriteFrames_3e5oy")
+animation = &"opened"
+frame = 3
+frame_progress = 1.0

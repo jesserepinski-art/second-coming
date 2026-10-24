@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://cjmxislrbajvl"]
+
+[ext_resource type="Script" uid="uid://8ret1kwbpvtu" path="res://npc.gd" id="1_5kt1f"]
+[ext_resource type="Texture2D" uid="uid://c5eyumi73yeq1" path="res://NPCs/wagonspritesheet.png" id="2_5kt1f"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_h5wuo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjc7e"]
+atlas = ExtResource("2_5kt1f")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5wuo"]
+atlas = ExtResource("2_5kt1f")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_guqvo"]
+atlas = ExtResource("2_5kt1f")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gl0s0"]
+atlas = ExtResource("2_5kt1f")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_guqvo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjc7e")
+}],
+"loop": 1,
+"name": &"WalkBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5wuo")
+}],
+"loop": 1,
+"name": &"WalkForward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_guqvo")
+}],
+"loop": 1,
+"name": &"WalkLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gl0s0")
+}],
+"loop": 1,
+"name": &"WalkRight",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8sum"]
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaawx"]
+radius = 49.0
+height = 148.0
+
+[node name="Npc" type="CharacterBody2D" unique_id=925011615]
+z_index = 4
+script = ExtResource("1_5kt1f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=565527208]
+scale = Vector2(0.815, 0.815)
+sprite_frames = SubResource("SpriteFrames_guqvo")
+animation = &"WalkRight"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1992366310]
+position = Vector2(0, 12)
+shape = SubResource("CapsuleShape2D_c8sum")
+disabled = true
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=637699416]
+script = ExtResource("3_h5wuo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1482069927]
+position = Vector2(-2, 8)
+shape = SubResource("CapsuleShape2D_uaawx")

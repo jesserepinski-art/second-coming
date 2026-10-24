@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://00iekkkxpbyi"
+path="res://.godot/imported/pencil_scribble.wav-4a1de3002f9d7cc5bdc089fd99c03186.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Items/pencil_scribble.wav"
+dest_files=["res://.godot/imported/pencil_scribble.wav-4a1de3002f9d7cc5bdc089fd99c03186.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

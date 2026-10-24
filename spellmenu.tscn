@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://dind7atr0wop0"]
+
+[ext_resource type="Theme" uid="uid://cgbevv43yok0u" path="res://new_theme.tres" id="1_4hy5f"]
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="1_51020"]
+[ext_resource type="Script" uid="uid://vb7f2ct10t3d" path="res://spell_menu.gd" id="1_v87yp"]
+[ext_resource type="PackedScene" uid="uid://cbduvbjg7a72e" path="res://item_button.tscn" id="2_4hy5f"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="5_37o1p"]
+
+[node name="SpellMenu" type="PanelContainer" unique_id=629282162 node_paths=PackedStringArray("buttons_container")]
+material = ExtResource("1_51020")
+custom_minimum_size = Vector2(450, 150)
+custom_maximum_size = Vector2(600, 150)
+offset_right = 900.0
+offset_bottom = 300.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+offset_transform_scale = Vector2(0.925, 0.925)
+theme = ExtResource("1_4hy5f")
+script = ExtResource("1_v87yp")
+buttons_container = NodePath("GridContainer")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1322965163]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+offset_transform_enabled = true
+offset_transform_position = Vector2(19.435, 0)
+columns = 2
+
+[node name="ItemButton" parent="GridContainer" unique_id=850543902 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton2" parent="GridContainer" unique_id=874061171 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton3" parent="GridContainer" unique_id=147882237 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton4" parent="GridContainer" unique_id=1697699493 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton5" parent="GridContainer" unique_id=90157786 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton6" parent="GridContainer" unique_id=315532259 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton7" parent="GridContainer" unique_id=2053433529 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton8" parent="GridContainer" unique_id=1788424675 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton9" parent="GridContainer" unique_id=1732911202 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="ItemButton10" parent="GridContainer" unique_id=2140768540 instance=ExtResource("2_4hy5f")]
+material = ExtResource("5_37o1p")
+layout_mode = 2
+
+[node name="InfoPanel" type="PanelContainer" parent="." unique_id=1699726797]
+material = ExtResource("1_51020")
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 137.545)
+
+[node name="InfoText" type="Label" parent="InfoPanel" unique_id=1130363525]
+material = ExtResource("5_37o1p")
+custom_minimum_size = Vector2(308.9, 200)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(10.72, 0)
+text = "Spell"
+autowrap_mode = 2
+
+[connection signal="focus_entered" from="GridContainer/ItemButton" to="." method="_on_item_button_focus_entered"]

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bqt4nmt4xtewr"]
+
+[ext_resource type="Shader" uid="uid://dug0ewsn57fj4" path="res://Overworld/rift.gdshader" id="1_vladu"]
+[ext_resource type="Texture2D" uid="uid://bj0v06ejjurj7" path="res://Art/swirlflare.png" id="2_vladu"]
+[ext_resource type="Texture2D" uid="uid://c57q52jvik71x" path="res://Art/Custom Scenery/rift.png" id="3_7fr20"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3e5oy"]
+shader = ExtResource("1_vladu")
+shader_parameter/swirl_texture = ExtResource("2_vladu")
+shader_parameter/speed = 0.18400000874
+shader_parameter/stop_motion_fps = 24.0
+shader_parameter/key_color = Color(0, 0, 0, 1)
+shader_parameter/key_threshold = 0.5
+
+[node name="Rift" type="Sprite2D" unique_id=129203780]
+material = SubResource("ShaderMaterial_3e5oy")
+rotation = -0.24958208
+scale = Vector2(7.477, 4.0439997)
+texture = ExtResource("3_7fr20")

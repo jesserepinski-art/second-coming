@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://k1dddgvgtaa8"
+path="res://.godot/imported/page_turn.wav-3a9e3112c81883b75fbab664472e03a5.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Items/page_turn.wav"
+dest_files=["res://.godot/imported/page_turn.wav-3a9e3112c81883b75fbab664472e03a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

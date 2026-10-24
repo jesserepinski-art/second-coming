@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dsf2w5ajn2i14"]
+
+[ext_resource type="Script" uid="uid://c4cqyutukrdtu" path="res://Players/PartyFollower.gd" id="1_mgx5i"]
+[ext_resource type="SpriteFrames" uid="uid://8wf4gyaeyypm" path="res://Players/AmanirenasSpritesheet.tres" id="2_8xujc"]
+[ext_resource type="Material" uid="uid://dl60wxe6y8uqo" path="res://reflectionsway.tres" id="3_4l7by"]
+[ext_resource type="Script" uid="uid://chhtpsdw2hr0" path="res://Cutscenes/CutsceneActor.gd" id="4_kirod"]
+
+[node name="PartyFollower" type="CharacterBody2D" unique_id=380970500]
+z_index = 4
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_mgx5i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1890019593]
+y_sort_enabled = true
+position = Vector2(-0.125, -1.1249924)
+scale = Vector2(0.745, 0.745)
+sprite_frames = ExtResource("2_8xujc")
+animation = &"idle"
+offset = Vector2(0, -65.77182)
+
+[node name="FollowerReflection" type="AnimatedSprite2D" parent="." unique_id=413223924]
+y_sort_enabled = true
+material = ExtResource("3_4l7by")
+position = Vector2(0.875, 97.875)
+scale = Vector2(0.745, 0.745)
+sprite_frames = ExtResource("2_8xujc")
+animation = &"idle"
+offset = Vector2(0, -65.77182)
+flip_v = true
+
+[node name="CutsceneActor" type="Node" parent="." unique_id=855440292]
+script = ExtResource("4_kirod")

@@ -1,0 +1,42 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dt3psqrtmscnq"]
+
+[ext_resource type="Texture2D" uid="uid://bd6kkombhuakr" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162320.png.PNG" id="1_tu3lp"]
+[ext_resource type="Texture2D" uid="uid://cths8ynjhbm5l" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162330.png.PNG" id="2_eoldb"]
+[ext_resource type="Texture2D" uid="uid://rhicvf0tn2gg" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162336.png.PNG" id="3_a0i8p"]
+[ext_resource type="Texture2D" uid="uid://da1dmv4b0ebc1" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162342.png.PNG" id="4_ij04t"]
+[ext_resource type="Texture2D" uid="uid://cp2tvhh03ofsd" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162347.png.PNG" id="5_85045"]
+[ext_resource type="Texture2D" uid="uid://rl1rg7t6x45f" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162352.png.PNG" id="6_s6br8"]
+[ext_resource type="Texture2D" uid="uid://bdt2l8w7t100" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162357.png.PNG" id="7_ydxmn"]
+[ext_resource type="Texture2D" uid="uid://b3ldg8pdr22uo" path="res://Bosses/Phanuel/PhanuelRig/Screenshot 2026-08-19 162403.png.PNG" id="8_8yukj"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tu3lp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eoldb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a0i8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ij04t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_85045")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s6br8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ydxmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8yukj")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

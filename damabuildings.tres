@@ -1,0 +1,16 @@
+[gd_resource type="TileSet" format=3 uid="uid://c7uqscbuu32xx"]
+
+[ext_resource type="Texture2D" uid="uid://8aunlodemw0j" path="res://Art/Tilesets/building.png" id="1_vk2ke"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yl4s0"]
+polygon = PackedVector2Array(-16, -37.333336, 2.666667, -26.666668, 24, 85.333336, -72, 85.333336, -53.333336, -29.333334, -37.333336, -37.333336)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_76fkc"]
+texture = ExtResource("1_vk2ke")
+texture_region_size = Vector2i(228, 360)
+1:0/0 = 0
+1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_yl4s0")
+
+[resource]
+occlusion_layer_0/light_mask = 1
+sources/0 = SubResource("TileSetAtlasSource_76fkc")

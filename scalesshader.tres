@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://jnj3xujqanth"]
+
+[ext_resource type="Shader" uid="uid://dp8fylsftw8ar" path="res://Bosses/Penemue/Penemueskirt.gdshader" id="1_dykv3"]
+[ext_resource type="Texture2D" uid="uid://odt63vhlxk64" path="res://Bosses/TexturesForAngels/Texturelabs_Paper_286S.jpg" id="2_yf4b0"]
+
+[resource]
+shader = ExtResource("1_dykv3")
+shader_parameter/fixed_pattern = ExtResource("2_yf4b0")
+shader_parameter/pattern_scale = Vector2(0.005, 0.005)
+shader_parameter/node_global_position = Vector2(0, 0)

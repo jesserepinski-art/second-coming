@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://dn0nb7kxdt2ij"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_ter1e"]
+[ext_resource type="Texture2D" uid="uid://bawykk0ft0m8s" path="res://Enemies/NursesSpritesheet.png" id="2_eom2d"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_nmpyy"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_eom2d"]
+[ext_resource type="AudioStream" uid="uid://dhcxqmyoryknw" path="res://Art/SecondComingSFX/hurt2.ogg" id="3_msdra"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_msdra"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbxga"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eoers"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bn8jt"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5y5tp"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fp7pu"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55w27"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn0lf"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c38iq"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eocx7"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwa38"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk7e3"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swbtu"]
+atlas = ExtResource("2_eom2d")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fbxga"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbxga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eoers")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bn8jt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5y5tp")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fp7pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55w27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yn0lf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c38iq")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eocx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwa38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qk7e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_swbtu")
+}],
+"loop": 2,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_eom2d")
+hurt_sound = ExtResource("3_msdra")
+death_sound = ExtResource("3_msdra")
+battle_sprite_frames = SubResource("SpriteFrames_fbxga")
+name = "Nurse 2"
+hp_max = 10
+attack = 5
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

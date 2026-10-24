@@ -1,0 +1,27 @@
+[gd_resource type="TileSet" format=3 uid="uid://blpuws2oj82wl"]
+
+[ext_resource type="Texture2D" uid="uid://d007rj5dyvoox" path="res://Art/Tilesets/TreeFrame1.png" id="1_7jfo5"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7jfo5"]
+polygon = PackedVector2Array(-26.666668, -146.66667, -16, -141.33334, -16, -146.66667, -8, -138.66667, 8, -149.33334, 13.333334, -141.33334, 21.333334, -144, 29.333336, -128, 29.333336, -114.66667, 18.666668, -104, 10.666668, -104, 8, -85.333336, -21.333334, -82.66667, -21.333334, -104, -42.666668, -104, -37.333336, -114.66667, -40, -125.333336, -26.666668, -128, -16, -130.66667)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7r06f"]
+texture = ExtResource("1_7jfo5")
+texture_region_size = Vector2i(128, 192)
+0:0/animation_mode = 1
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 85)
+0:0/0/y_sort_origin = 5
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_7jfo5")
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[resource]
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/1 = SubResource("TileSetAtlasSource_7r06f")

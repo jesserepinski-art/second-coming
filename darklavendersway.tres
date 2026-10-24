@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dh6l3yy8plmuw"]
+
+[ext_resource type="Shader" uid="uid://b1nm6wewqmalf" path="res://Levels/sway.gdshader" id="1_oqrmf"]
+
+[resource]
+shader = ExtResource("1_oqrmf")
+shader_parameter/sway_speed = 3.52
+shader_parameter/sway_strength = 1.5
+shader_parameter/noise_influence = 0.3
+shader_parameter/lavender_color = Color(0.10932136, 0, 0.35612807, 1)
+shader_parameter/tint_strength = 0.6

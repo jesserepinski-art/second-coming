@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://duyp00ms32jkq"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_07lps"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_ogc08"]
+[ext_resource type="Texture2D" uid="uid://bnxr8ae31lr82" path="res://NPCs/dreamchildsheet.png" id="2_tg4rw"]
+[ext_resource type="AudioStream" uid="uid://qrpkjwrcy220" path="res://Art/SecondComingSFX/oof.ogg" id="3_8mf6k"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_ymmjj"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_8xdy7"]
+[ext_resource type="AudioStream" uid="uid://dhcxqmyoryknw" path="res://Art/SecondComingSFX/hurt2.ogg" id="4_prgc4"]
+[ext_resource type="Resource" uid="uid://1g1e8adm1fno" path="res://Magic/SlowDown.tres" id="8_r6558"]
+[ext_resource type="Resource" uid="uid://dhqatd4116j6d" path="res://Magic/Sleepytime.tres" id="8_tg4rw"]
+
+[sub_resource type="Resource" id="Resource_1wx1o"]
+script = ExtResource("1_07lps")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flx7h"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymqcm"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txw5r"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68ce1"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lumfv"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hghkl"]
+atlas = ExtResource("2_tg4rw")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0bqc6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flx7h")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymqcm")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txw5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68ce1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lumfv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hghkl")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_ymmjj")
+attack_quotes = Array[String](["The Dream Child dreams..."])
+hurt_quotes = Array[String](["The Dream Child cries..."])
+death_quotes = Array[String](["The Dream Child becomes forgotten in a moment..."])
+idle_quotes = Array[String](["The Dream Child daydreams..."])
+hurt_sound = ExtResource("4_prgc4")
+death_sound = ExtResource("3_8mf6k")
+battle_sprite_frames = SubResource("SpriteFrames_0bqc6")
+description = "The culmination of childrens dreams. Too many shattered, someone must preserve them..."
+name = "Dream Child"
+hp_max = 50
+attack = 15
+magic_attack = 27
+attacks = Array[ExtResource("1_07lps")]([SubResource("Resource_1wx1o")])
+spells = Array[ExtResource("2_ogc08")]([ExtResource("8_r6558"), ExtResource("8_tg4rw")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

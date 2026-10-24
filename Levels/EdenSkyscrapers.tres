@@ -1,0 +1,28 @@
+[gd_resource type="TileSet" format=3 uid="uid://bilwsqf6rnmkm"]
+
+[ext_resource type="Texture2D" uid="uid://b8cl5y7p3qvf2" path="res://Art/Custom Scenery/skyscrapers.png" id="1_yi3yx"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yi3yx"]
+polygon = PackedVector2Array(-80, -250, 165.33334, -250, 168, 83.33334, -117.333336, 83.33334, -48, 83.33334)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_23yin"]
+polygon = PackedVector2Array(-133.33334, -83.33333, 133.33334, -83.33333, 117.333336, 250, -136, 250)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_h1bjl"]
+polygon = PackedVector2Array(-138.66667, -250, 138.66667, -250, 125.33334, 83.33334, -117.333336, 83.33334)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_23yin"]
+texture = ExtResource("1_yi3yx")
+texture_region_size = Vector2i(500, 500)
+0:1/0 = 0
+0:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_yi3yx")
+0:0/0 = 0
+1:1/0 = 0
+1:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_h1bjl")
+1:0/0 = 0
+1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_23yin")
+
+[resource]
+tile_size = Vector2i(16, 500)
+occlusion_layer_0/light_mask = 1
+sources/0 = SubResource("TileSetAtlasSource_23yin")

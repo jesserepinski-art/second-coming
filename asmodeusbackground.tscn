@@ -1,0 +1,217 @@
+[gd_scene format=3 uid="uid://pa2osdym817i"]
+
+[ext_resource type="Shader" uid="uid://bkqa6a5188sls" path="res://movingclouds2.gdshader" id="1_0s6ee"]
+[ext_resource type="Material" uid="uid://ct3cb6jixgv0c" path="res://meanremoval.tres" id="2_y0kpc"]
+[ext_resource type="Texture2D" uid="uid://mgl8n5skw2dv" path="res://Art/Tilesets/Sky.png" id="3_8ry4s"]
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="4_ykfdf"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="5_5jm2p"]
+[ext_resource type="Texture2D" uid="uid://nqfcgbf0d18f" path="res://Art/Custom Scenery/cloudscreen.png" id="6_cl4tu"]
+[ext_resource type="Texture2D" uid="uid://dtvcwkmk21v8a" path="res://Art/Custom Scenery/cloud1.png" id="7_kelvw"]
+[ext_resource type="Texture2D" uid="uid://dybtjmaljd8b2" path="res://Art/Custom Scenery/cloud4.png" id="8_f142c"]
+[ext_resource type="Texture2D" uid="uid://dokvigxugdo2y" path="res://Art/Custom Scenery/cloud3.png" id="9_lvrb5"]
+[ext_resource type="Script" uid="uid://b1tfb8rf4rafp" path="res://pilgrim_manager.gd" id="10_dy1rs"]
+[ext_resource type="PackedScene" uid="uid://b3ybj8shqtphv" path="res://pilgrim.tscn" id="11_m5xae"]
+[ext_resource type="Script" uid="uid://18vsv58hlqhv" path="res://mote_manager.gd" id="12_ygnrp"]
+[ext_resource type="PackedScene" uid="uid://ctsots56tk8tf" path="res://mote.tscn" id="13_l2qjh"]
+[ext_resource type="Texture2D" uid="uid://ca812hhg5q4j4" path="res://Art/Custom Scenery/cloud2.png" id="14_qxour"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r344f"]
+shader = ExtResource("1_0s6ee")
+shader_parameter/scroll_speed = Vector2(0.02, 0)
+
+[node name="Background" type="ColorRect" unique_id=1812092849]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+metadata/_edit_lock_ = true
+
+[node name="CloudBackground3" type="Parallax2D" parent="." unique_id=1923845121]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(8000, 8000)
+autoscroll = Vector2(100, 0)
+
+[node name="TextureRect" type="TextureRect" parent="CloudBackground3" unique_id=2010269504]
+material = ExtResource("2_y0kpc")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2140.0
+offset_top = -174.0
+offset_right = 6052.0
+offset_bottom = 8018.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8ry4s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1234284897]
+modulate = Color(1, 0.94035316, 0, 1)
+material = ExtResource("4_ykfdf")
+position = Vector2(405.99997, 79.99999)
+scale = Vector2(2.675, 2.675)
+texture = ExtResource("5_5jm2p")
+
+[node name="PointLight2D" type="PointLight2D" parent="Sprite2D" unique_id=688975802]
+material = ExtResource("4_ykfdf")
+color = Color(1, 0.8496767, 0, 1)
+energy = 0.58
+texture = ExtResource("5_5jm2p")
+texture_scale = 0.85
+
+[node name="CloudBackground" type="Parallax2D" parent="." unique_id=1367462531]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(8000, 8000)
+autoscroll = Vector2(50, 20)
+
+[node name="TextureRect" type="TextureRect" parent="CloudBackground" unique_id=1091563816]
+modulate = Color(0.61048543, 0, 0.18631206, 0.6431373)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1788.0
+offset_top = -3908.0
+offset_right = 6404.0
+offset_bottom = 4284.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_cl4tu")
+
+[node name="CloudBackground2" type="Parallax2D" parent="." unique_id=364229238]
+modulate = Color(1, 1, 1, 0.61960787)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(8000, 8000)
+autoscroll = Vector2(-50, -20)
+
+[node name="TextureRect" type="TextureRect" parent="CloudBackground2" unique_id=93263979]
+modulate = Color(0.5420897, 0, 0, 0.69803923)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1788.0
+offset_top = -3908.0
+offset_right = 6404.0
+offset_bottom = 4284.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_cl4tu")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1032141148]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(-35, 0)
+repeat_times = 5
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D3" unique_id=636213166]
+modulate = Color(1, 0.5315673, 0.5315673, 1)
+offset_left = 87.99994
+offset_top = 58.000008
+offset_right = 1112.0
+offset_bottom = 760.0
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("7_kelvw")
+flip_v = true
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1444885630]
+repeat_size = Vector2(800, 0)
+autoscroll = Vector2(20, 0)
+repeat_times = 4
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D" unique_id=1835016124]
+modulate = Color(1.131, 0.57482916, 0.57482916, 1)
+offset_left = 150.99998
+offset_top = 52.999992
+offset_right = 2139.0
+offset_bottom = 1343.0
+scale = Vector2(0.34, 0.34)
+texture = ExtResource("8_f142c")
+
+[node name="Cloud1" type="Parallax2D" parent="." unique_id=572248111]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(1800, 0)
+autoscroll = Vector2(-35, 0)
+repeat_times = 30
+
+[node name="TextureRect" type="TextureRect" parent="Cloud1" unique_id=543173524]
+modulate = Color(1, 0.5420897, 0.5420897, 1)
+offset_left = -30.0
+offset_top = 222.0
+offset_right = 616.0
+offset_bottom = 740.0
+texture = ExtResource("9_lvrb5")
+flip_v = true
+
+[node name="PilgrimManager" type="Node2D" parent="." unique_id=308016245]
+script = ExtResource("10_dy1rs")
+pilgrim_scene = ExtResource("11_m5xae")
+
+[node name="Near" type="Node2D" parent="PilgrimManager" unique_id=1523064204]
+
+[node name="Mid" type="Node2D" parent="PilgrimManager" unique_id=995287410]
+
+[node name="Far" type="Node2D" parent="PilgrimManager" unique_id=1837426294]
+
+[node name="Cloud2" type="Parallax2D" parent="." unique_id=1198713675]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(30, 0)
+repeat_times = 4
+
+[node name="TextureRect" type="TextureRect" parent="Cloud2" unique_id=835070021]
+modulate = Color(1.086, 0.42574984, 0.42574984, 1)
+offset_left = 950.0
+offset_top = -88.0
+offset_right = 1974.0
+offset_bottom = 614.0
+texture = ExtResource("7_kelvw")
+
+[node name="MoteManager" type="Node2D" parent="." unique_id=572972828]
+position = Vector2(106, 0)
+script = ExtResource("12_ygnrp")
+mote_scene = ExtResource("13_l2qjh")
+
+[node name="Near" type="Node2D" parent="MoteManager" unique_id=1984295593]
+
+[node name="Mid" type="Node2D" parent="MoteManager" unique_id=1870900254]
+
+[node name="Far" type="Node2D" parent="MoteManager" unique_id=448101227]
+
+[node name="RollingClouds" type="Parallax2D" parent="." unique_id=1053522459]
+modulate = Color(1, 1, 1, 0.5372549)
+texture_repeat = 2
+scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(100, 0)
+repeat_times = 5
+
+[node name="TextureRect" type="TextureRect" parent="RollingClouds" unique_id=676611377]
+modulate = Color(1, 0.45264912, 0.45264912, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("14_qxour")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1546536810]
+repeat_size = Vector2(2000, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 4
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D2" unique_id=801396035]
+modulate = Color(1, 0.4842164, 0.4842164, 1)
+offset_left = -1083.0
+offset_top = -1245.0
+offset_right = 1950.0
+offset_bottom = 287.0
+texture = ExtResource("14_qxour")
+flip_v = true

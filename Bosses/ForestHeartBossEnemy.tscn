@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cckrn0xq760fv"]
+
+[ext_resource type="Script" uid="uid://cb8q4m7j4315" path="res://Bosses/forest_heart_boss_enemy.gd" id="1_fh0vl"]
+[ext_resource type="PackedScene" uid="uid://c2762dsefhnqx" path="res://Levels/ForestBrain.tscn" id="2_oaor1"]
+
+[node name="BossEnemy" type="TextureButton" unique_id=2421903]
+custom_minimum_size = Vector2(200, 300)
+offset_right = 200.0
+offset_bottom = 300.0
+script = ExtResource("1_fh0vl")
+
+[node name="ForestBrain" parent="." unique_id=653881252 instance=ExtResource("2_oaor1")]
+position = Vector2(109, 39)
+
+[node name="HitFlash" type="Timer" parent="." unique_id=443976458]
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=494593419]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ice4hfwc2kk6"
+path="res://.godot/imported/grand_piano_negative_quick.wav-0613792289b496600a92ee356f8a1d63.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Musical Effects/grand_piano_negative_quick.wav"
+dest_files=["res://.godot/imported/grand_piano_negative_quick.wav-0613792289b496600a92ee356f8a1d63.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

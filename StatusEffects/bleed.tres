@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://ced6hax1na6tq"]
+
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="1_e17ph"]
+[ext_resource type="Texture2D" uid="uid://clim7wy4o4ufx" path="res://Art/StatusIcons/bleedsymbol.png" id="1_vta0f"]
+
+[resource]
+script = ExtResource("1_e17ph")
+display_name = "Bleed"
+turns = 3
+potency = 5.0
+icon = ExtResource("1_vta0f")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

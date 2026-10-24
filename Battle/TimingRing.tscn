@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://wwhwyxh0iofm"]
+
+[ext_resource type="Script" uid="uid://hpg6lkdjs57h" path="res://Battle/timing_ring.gd" id="1_1qcf3"]
+[ext_resource type="Texture2D" uid="uid://c240x70l2krh5" path="res://Circle.tres" id="2_7si3o"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="2_t1p5a"]
+
+[node name="TimingRing" type="Control" unique_id=148034773]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1qcf3")
+
+[node name="ShrinkingRing" type="TextureRect" parent="." unique_id=1924522911]
+material = ExtResource("2_t1p5a")
+layout_mode = 0
+offset_left = -783.0
+offset_top = -535.0
+offset_right = -719.0
+offset_bottom = -471.0
+scale = Vector2(1.325, 1.325)
+pivot_offset = Vector2(32, 32)
+texture = ExtResource("2_7si3o")
+
+[node name="TargetRing" type="TextureRect" parent="." unique_id=141857497]
+self_modulate = Color(0.67, 0, 0, 0.49411765)
+material = ExtResource("2_t1p5a")
+layout_mode = 0
+offset_left = -786.0
+offset_top = -535.0
+offset_right = -722.0
+offset_bottom = -471.0
+pivot_offset = Vector2(32, 31)
+texture = ExtResource("2_7si3o")

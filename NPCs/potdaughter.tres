@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://c3ti2mdkgshpk"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_xq2en"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_fw2hs"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_he4a3"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_w76hi"]
+
+[resource]
+script = ExtResource("3_he4a3")
+name = "Maple"
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

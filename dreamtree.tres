@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c8ptqmc1uwg08"]
+
+[ext_resource type="Shader" uid="uid://cj1mgpfr6bxr6" path="res://dreamtree.gdshader" id="1_d7s47"]
+
+[resource]
+shader = ExtResource("1_d7s47")
+shader_parameter/sway_speed = 0.67
+shader_parameter/sway_strength = 39.305
+shader_parameter/opacity = 0.6400000304
+shader_parameter/ripple_speed = 1.2
+shader_parameter/ripple_strength = 0.01
+shader_parameter/lavender_color = Color(0.35099998, 0.9, 0.7352999, 0.99607843)
+shader_parameter/tint_strength = 1.0

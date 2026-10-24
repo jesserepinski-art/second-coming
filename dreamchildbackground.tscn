@@ -1,0 +1,370 @@
+[gd_scene format=3 uid="uid://d5vbhl5f0luf"]
+
+[ext_resource type="Shader" uid="uid://bkqa6a5188sls" path="res://movingclouds2.gdshader" id="1_oojkc"]
+[ext_resource type="Texture2D" uid="uid://mgl8n5skw2dv" path="res://Art/Tilesets/Sky.png" id="2_6qcmt"]
+[ext_resource type="Texture2D" uid="uid://cipf5b5ue2luo" path="res://Art/Custom Scenery/foresthill.png" id="3_yxnsl"]
+[ext_resource type="Script" uid="uid://b1tfb8rf4rafp" path="res://pilgrim_manager.gd" id="4_yxnsl"]
+[ext_resource type="PackedScene" uid="uid://b3ybj8shqtphv" path="res://pilgrim.tscn" id="5_80vyn"]
+[ext_resource type="Script" uid="uid://18vsv58hlqhv" path="res://mote_manager.gd" id="7_gkkd2"]
+[ext_resource type="PackedScene" uid="uid://b1x28glol26hl" path="res://Levels/dreamfog.tscn" id="8_80vyn"]
+[ext_resource type="PackedScene" uid="uid://ctsots56tk8tf" path="res://mote.tscn" id="8_fo0h5"]
+[ext_resource type="Material" uid="uid://c8ptqmc1uwg08" path="res://dreamtree.tres" id="9_ie5y7"]
+[ext_resource type="Texture2D" uid="uid://c5vfou3aetxoy" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree071.png" id="10_gkkd2"]
+[ext_resource type="Texture2D" uid="uid://crdf65b6db8us" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree072.png" id="11_fo0h5"]
+[ext_resource type="Texture2D" uid="uid://j8n4qdtb8c6h" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree069.png" id="12_wjpeo"]
+[ext_resource type="Texture2D" uid="uid://xmuoo8gl7yek" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/fbx/tree068_0.png" id="13_pbdr6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r344f"]
+shader = ExtResource("1_oojkc")
+shader_parameter/scroll_speed = Vector2(0.02, 0)
+
+[node name="Background" type="ColorRect" unique_id=1812092849]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="CloudBackground" type="TextureRect" parent="." unique_id=705897776]
+modulate = Color(0.33339515, 2.1599023, 0.2704122, 1)
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -167.0
+offset_top = -221.0
+offset_right = 1570.0
+offset_bottom = 859.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_6qcmt")
+
+[node name="Cloud4" type="TextureRect" parent="." unique_id=670983845]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(2400, 700)
+layout_mode = 1
+offset_left = 8.0000305
+offset_top = -7.000001
+offset_right = 2408.0
+offset_bottom = 693.0
+scale = Vector2(0.785, 0.785)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud8" type="TextureRect" parent="." unique_id=1447796795]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(2400, 700)
+layout_mode = 1
+offset_left = -1102.9999
+offset_top = -11.0
+offset_right = 1297.0001
+offset_bottom = 689.0
+scale = Vector2(0.785, 0.785)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud6" type="TextureRect" parent="." unique_id=873175857]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(2400, 700)
+layout_mode = 1
+offset_left = 316.99997
+offset_top = 62.999992
+offset_right = 2717.0
+offset_bottom = 763.0
+scale = Vector2(0.785, 0.785)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud1" type="TextureRect" parent="." unique_id=944322326]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(2400, 700)
+layout_mode = 1
+offset_left = -463.99997
+offset_top = -15.999999
+offset_right = 1936.0
+offset_bottom = 684.0
+scale = Vector2(0.785, 0.785)
+texture = ExtResource("3_yxnsl")
+
+[node name="PilgrimManager" type="Node2D" parent="." unique_id=308016245]
+script = ExtResource("4_yxnsl")
+pilgrim_scene = ExtResource("5_80vyn")
+
+[node name="Near" type="Node2D" parent="PilgrimManager" unique_id=1523064204]
+
+[node name="Mid" type="Node2D" parent="PilgrimManager" unique_id=995287410]
+
+[node name="Far" type="Node2D" parent="PilgrimManager" unique_id=1837426294]
+
+[node name="Cloud2" type="TextureRect" parent="." unique_id=526199408]
+modulate = Color(1, 1, 1, 0.49411765)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(1800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -588.5
+offset_top = -275.0
+offset_right = 1211.5
+offset_bottom = 525.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.605, 0.605)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud7" type="TextureRect" parent="." unique_id=561173000]
+modulate = Color(1, 1, 1, 0.49411765)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(1800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1062.5
+offset_top = -311.0
+offset_right = 737.5
+offset_bottom = 489.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.675, 0.675)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud3" type="TextureRect" parent="." unique_id=47936299]
+modulate = Color(1, 1, 1, 0.49411765)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(1800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -871.5
+offset_top = -358.0
+offset_right = 928.5
+offset_bottom = 442.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.715, 0.715)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud9" type="TextureRect" parent="." unique_id=471990719]
+modulate = Color(1, 1, 1, 0.49411765)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(1800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1244.5
+offset_top = -294.0
+offset_right = 555.5
+offset_bottom = 506.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.585, 0.585)
+texture = ExtResource("3_yxnsl")
+
+[node name="Cloud5" type="TextureRect" parent="." unique_id=1816014314]
+modulate = Color(1, 1, 1, 0.49411765)
+texture_repeat = 2
+material = SubResource("ShaderMaterial_r344f")
+custom_maximum_size = Vector2(1800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.5
+offset_top = -318.0
+offset_right = 1550.5
+offset_bottom = 482.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.585, 0.585)
+texture = ExtResource("3_yxnsl")
+
+[node name="MoteManager" type="Node2D" parent="." unique_id=572972828]
+position = Vector2(106, 0)
+script = ExtResource("7_gkkd2")
+mote_scene = ExtResource("8_fo0h5")
+
+[node name="Near" type="Node2D" parent="MoteManager" unique_id=1984295593]
+
+[node name="Mid" type="Node2D" parent="MoteManager" unique_id=1870900254]
+
+[node name="Far" type="Node2D" parent="MoteManager" unique_id=448101227]
+
+[node name="RollingClouds" type="TextureRect" parent="." unique_id=218447470]
+modulate = Color(1, 1, 1, 0.19215687)
+texture_repeat = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -163.0
+offset_top = -214.0
+offset_right = 1574.0
+offset_bottom = 866.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_yxnsl")
+
+[node name="TextureRect2" parent="." unique_id=1726221667 instance=ExtResource("8_80vyn")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 8192.0
+offset_bottom = 8192.0
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=136006450]
+scroll_offset = Vector2(49, -670)
+repeat_size = Vector2(500, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 9
+
+[node name="PinkTree" type="Sprite2D" parent="Parallax2D2" unique_id=1048716741]
+material = ExtResource("9_ie5y7")
+position = Vector2(-39.00003, 734)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="PinkTree3" type="Sprite2D" parent="Parallax2D2" unique_id=1594898763]
+material = ExtResource("9_ie5y7")
+position = Vector2(-368.00006, 725)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="RedTree" type="Sprite2D" parent="Parallax2D2" unique_id=169099850]
+material = ExtResource("9_ie5y7")
+position = Vector2(-223, 721)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="RedTree2" type="Sprite2D" parent="Parallax2D2" unique_id=1339963144]
+material = ExtResource("9_ie5y7")
+position = Vector2(-448, 740)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="RedTree3" type="Sprite2D" parent="Parallax2D2" unique_id=2015115872]
+material = ExtResource("9_ie5y7")
+position = Vector2(-21, 763.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="PurpleTree" type="Sprite2D" parent="Parallax2D2" unique_id=1994282100]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-281, 874.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("12_wjpeo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PurpleTree2" type="Sprite2D" parent="Parallax2D2" unique_id=258288626]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-861, 869.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("12_wjpeo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PinkTree2" type="Sprite2D" parent="Parallax2D2" unique_id=405122840]
+material = ExtResource("9_ie5y7")
+position = Vector2(-212, 655)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="LightPurpleTree" type="Sprite2D" parent="Parallax2D2" unique_id=809133818]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-634.00006, 857)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("13_pbdr6")
+offset = Vector2(1.2269897, -61.840492)
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1880780210]
+scroll_offset = Vector2(441, -618)
+repeat_size = Vector2(500, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 9
+
+[node name="PinkTree" type="Sprite2D" parent="Parallax2D" unique_id=194323549]
+material = ExtResource("9_ie5y7")
+position = Vector2(-39.00003, 734)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="PinkTree3" type="Sprite2D" parent="Parallax2D" unique_id=572790692]
+material = ExtResource("9_ie5y7")
+position = Vector2(-368.00006, 725)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="RedTree" type="Sprite2D" parent="Parallax2D" unique_id=1955563501]
+material = ExtResource("9_ie5y7")
+position = Vector2(-223, 721)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="RedTree2" type="Sprite2D" parent="Parallax2D" unique_id=1777312330]
+material = ExtResource("9_ie5y7")
+position = Vector2(-448, 740)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="RedTree3" type="Sprite2D" parent="Parallax2D" unique_id=10823466]
+material = ExtResource("9_ie5y7")
+position = Vector2(-21, 763.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("11_fo0h5")
+
+[node name="PurpleTree" type="Sprite2D" parent="Parallax2D" unique_id=1888999752]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-281, 874.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("12_wjpeo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PurpleTree2" type="Sprite2D" parent="Parallax2D" unique_id=414675695]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-861, 869.00006)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("12_wjpeo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PinkTree2" type="Sprite2D" parent="Parallax2D" unique_id=129521525]
+material = ExtResource("9_ie5y7")
+position = Vector2(-212, 655)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("10_gkkd2")
+
+[node name="LightPurpleTree" type="Sprite2D" parent="Parallax2D" unique_id=1829378992]
+y_sort_enabled = true
+material = ExtResource("9_ie5y7")
+position = Vector2(-634.00006, 857)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("13_pbdr6")
+offset = Vector2(1.2269897, -61.840492)

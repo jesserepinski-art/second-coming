@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b3ybj8shqtphv"]
+
+[ext_resource type="Script" uid="uid://ccedjtm5vcvgm" path="res://pilgrim.gd" id="1_7n6rf"]
+[ext_resource type="Texture2D" uid="uid://byphf66bbdi0g" path="res://Art/pilgrim.png" id="2_oaii0"]
+
+[node name="Pilgrim" type="Node2D" unique_id=1563557923]
+script = ExtResource("1_7n6rf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=304516875]
+modulate = Color(1, 1, 1, 0.40392157)
+position = Vector2(1293, 325)
+scale = Vector2(0.374, 0.332)
+texture = ExtResource("2_oaii0")

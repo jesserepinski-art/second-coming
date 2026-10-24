@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://bg5kqpxbt5q8q"]
+
+[ext_resource type="Texture2D" uid="uid://kk384u4impgn" path="res://Art/Custom Scenery/ChurchRuinsTileset.png" id="1_hk0lr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dw3f4"]
+texture = ExtResource("1_hk0lr")
+texture_region_size = Vector2i(64, 64)
+2:6/size_in_atlas = Vector2i(4, 4)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
+2:2/size_in_atlas = Vector2i(4, 4)
+2:2/0 = 0
+2:2/0/custom_data_0 = "stone"
+6:2/size_in_atlas = Vector2i(4, 2)
+6:2/0 = 0
+9:4/size_in_atlas = Vector2i(4, 7)
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
+
+[resource]
+tile_size = Vector2i(256, 256)
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_dw3f4")

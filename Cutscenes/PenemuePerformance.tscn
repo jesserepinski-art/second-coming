@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dfcw4mox0q4ql"]
+
+[ext_resource type="Script" uid="uid://caoel07vpb2pm" path="res://Cutscenes/penemue_performance.gd" id="1_hii8h"]
+[ext_resource type="VideoStream" uid="uid://nc8cngys3pjp" path="res://Cutscenes/damadreamanother.ogv" id="3_x77u3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3e5oy"]
+size = Vector2(243, 20)
+
+[node name="CutsceneTrigger" type="Area2D" unique_id=1383399667]
+process_mode = 3
+script = ExtResource("1_hii8h")
+
+[node name="Area2D" type="CanvasLayer" parent="." unique_id=774168413]
+layer = 6
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Area2D" unique_id=312423281]
+z_index = 10
+custom_minimum_size = Vector2(640, 360)
+custom_maximum_size = Vector2(640, 360)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("3_x77u3")
+expand = true
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827285549]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_3e5oy")

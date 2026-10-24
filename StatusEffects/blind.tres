@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://b6d4744k0w3fm"]
+
+[ext_resource type="Texture2D" uid="uid://b481tuyexdk7v" path="res://Art/StatusIcons/blindsymbol.png" id="1_7td78"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="2_8oy54"]
+
+[resource]
+script = ExtResource("2_8oy54")
+display_name = "Blind"
+type = 6
+turns = 2
+potency = 50.0
+icon = ExtResource("1_7td78")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

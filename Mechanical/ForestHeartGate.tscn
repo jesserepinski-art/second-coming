@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://hs4lhrtjd36v"]
+
+[ext_resource type="Script" uid="uid://cdetxjqx638cp" path="res://Mechanical/forest_heart_gate.gd" id="1_hl4is"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="2_2hnso"]
+[ext_resource type="Texture2D" uid="uid://5jy6reoor5uv" path="res://Mechanical/istockphoto-659557246-612x612-removebg-preview.png" id="2_mytwq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aujcp"]
+size = Vector2(138, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ty0c"]
+atlas = ExtResource("2_mytwq")
+region = Rect2(257, 0, 242, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_or81v"]
+atlas = ExtResource("2_mytwq")
+region = Rect2(257, 250, 242, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e5oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ty0c")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_or81v")
+}],
+"loop": 1,
+"name": &"open",
+"speed": 5.0
+}]
+
+[node name="Gate" type="StaticBody2D" unique_id=179751029]
+script = ExtResource("1_hl4is")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=593747238]
+position = Vector2(-8, 15)
+shape = SubResource("RectangleShape2D_aujcp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1175077946]
+material = ExtResource("2_2hnso")
+scale = Vector2(0.87, 0.87)
+sprite_frames = SubResource("SpriteFrames_3e5oy")
+animation = &"closed"

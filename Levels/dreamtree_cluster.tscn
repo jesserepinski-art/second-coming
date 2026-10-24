@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dra2jaeyahteg"]
+
+[ext_resource type="Material" uid="uid://c8ptqmc1uwg08" path="res://dreamtree.tres" id="1_111hp"]
+[ext_resource type="Texture2D" uid="uid://c5vfou3aetxoy" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree071.png" id="2_gvsna"]
+[ext_resource type="Texture2D" uid="uid://crdf65b6db8us" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree072.png" id="3_3g1ge"]
+[ext_resource type="Texture2D" uid="uid://j8n4qdtb8c6h" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree069.png" id="4_l4qdo"]
+[ext_resource type="Texture2D" uid="uid://xmuoo8gl7yek" path="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/fbx/tree068_0.png" id="5_554ra"]
+
+[node name="TreeCluster5" type="Node2D" unique_id=1545319353]
+z_index = 4
+
+[node name="PinkTree" type="Sprite2D" parent="." unique_id=194323549]
+material = ExtResource("1_111hp")
+position = Vector2(58, -369)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("2_gvsna")
+
+[node name="PinkTree3" type="Sprite2D" parent="." unique_id=572790692]
+material = ExtResource("1_111hp")
+position = Vector2(-327, -178.00006)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("2_gvsna")
+
+[node name="RedTree" type="Sprite2D" parent="." unique_id=1955563501]
+material = ExtResource("1_111hp")
+position = Vector2(43, -162)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("3_3g1ge")
+
+[node name="RedTree2" type="Sprite2D" parent="." unique_id=1777312330]
+material = ExtResource("1_111hp")
+position = Vector2(-355, 4)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("3_3g1ge")
+
+[node name="RedTree3" type="Sprite2D" parent="." unique_id=10823466]
+material = ExtResource("1_111hp")
+position = Vector2(307, -81)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("3_3g1ge")
+
+[node name="PurpleTree" type="Sprite2D" parent="." unique_id=1888999752]
+y_sort_enabled = true
+material = ExtResource("1_111hp")
+position = Vector2(32, 189)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("4_l4qdo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PurpleTree2" type="Sprite2D" parent="." unique_id=414675695]
+y_sort_enabled = true
+material = ExtResource("1_111hp")
+position = Vector2(-249, 483)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("4_l4qdo")
+offset = Vector2(1.7177963, -61.840477)
+
+[node name="PinkTree2" type="Sprite2D" parent="." unique_id=129521525]
+material = ExtResource("1_111hp")
+position = Vector2(142.99997, 196.99994)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("2_gvsna")
+
+[node name="LightPurpleTree" type="Sprite2D" parent="." unique_id=1829378992]
+y_sort_enabled = true
+material = ExtResource("1_111hp")
+position = Vector2(40, 740)
+scale = Vector2(4.075, 4.075)
+texture = ExtResource("5_554ra")
+offset = Vector2(1.2269897, -61.840492)

@@ -1,0 +1,19 @@
+[gd_resource type="TileSet" format=3 uid="uid://co7n3t4t1gkm1"]
+
+[ext_resource type="Texture2D" uid="uid://warbiiw1rfqu" path="res://Art/Custom Scenery/MCCube/ItartzyaNewTileset.png" id="1_p6xo7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u2lau"]
+texture = ExtResource("1_p6xo7")
+texture_region_size = Vector2i(64, 64)
+1:1/0 = 0
+1:1/0/custom_data_0 = "stone"
+1:2/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Ground0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/1 = SubResource("TileSetAtlasSource_u2lau")

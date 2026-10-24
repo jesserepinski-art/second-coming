@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://i4na8wyaavc6"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_l4bb1"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_45tot"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_7nvoo"]
+[ext_resource type="SpriteFrames" uid="uid://dhuydylhrt6hd" path="res://Players/AcesoSpriteFrames.tres" id="3_j3qmr"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_j3qmr"]
+[ext_resource type="Texture2D" uid="uid://clf1uhb107ima" path="res://Players/AcesoPortraite.png" id="4_j28nu"]
+[ext_resource type="Resource" uid="uid://chrbormxre3s7" path="res://Magic/Smite.tres" id="6_8fw3e"]
+
+[resource]
+script = ExtResource("3_7nvoo")
+portrait = ExtResource("4_j28nu")
+name = "Aceso"
+overworld_sprite_frames = ExtResource("3_j3qmr")
+hp_max = 35
+mp_max = 30
+attack = 5
+magic_attack = 10
+defense = 5
+spells = Array[ExtResource("2_45tot")]([ExtResource("6_8fw3e")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

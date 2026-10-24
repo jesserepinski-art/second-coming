@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dgb3c3rmwfyb7"
+path="res://.godot/imported/undesired_effect.wav-f19ad7430435fe8c4e6c37d812836076.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Retro/undesired_effect.wav"
+dest_files=["res://.godot/imported/undesired_effect.wav-f19ad7430435fe8c4e6c37d812836076.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

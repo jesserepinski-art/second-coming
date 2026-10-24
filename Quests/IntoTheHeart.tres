@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://bc16nr8t2n1sy"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_8ka0e"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_db62m"]
+
+[sub_resource type="Resource" id="Resource_ks66a"]
+script = ExtResource("2_db62m")
+description = "We need to talk to the person in the western forest"
+objective_type = 2
+target_name = "kamari_joined"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_fqorr"]
+script = ExtResource("2_db62m")
+description = "We need to cure the blight in the heart of the forest"
+target_name = "Corrupted Brain"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[resource]
+script = ExtResource("1_8ka0e")
+quest_id = "into_the_heart"
+title = "Into the Heart"
+description = "We need to go to the forest to the west"
+steps = Array[ExtResource("2_db62m")]([SubResource("Resource_ks66a"), SubResource("Resource_fqorr")])
+target_name = "Corrupted Brain"
+completion_flag = "into_the_heart_completed"
+reward_gold = 500
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

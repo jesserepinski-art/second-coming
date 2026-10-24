@@ -1,0 +1,256 @@
+[gd_scene format=3 uid="uid://bsg3fq5uogdr"]
+
+[ext_resource type="Script" uid="uid://bg5py1vvwgnhf" path="res://Levels/phanuel_summon_world.gd" id="1_k57iy"]
+[ext_resource type="Script" uid="uid://dyh6g1lditqd7" path="res://Dialogue/DialogueLine.gd" id="2_vovi1"]
+[ext_resource type="Resource" uid="uid://buot2gbr5ydj0" path="res://Players/Dama.tres" id="3_s37qo"]
+[ext_resource type="Resource" uid="uid://5fuapq1untcm" path="res://Players/Amanirenas.tres" id="4_ren1a"]
+[ext_resource type="Script" uid="uid://h5312gpyqv4w" path="res://Dialogue/DialogueSequence.gd" id="5_a1d12"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="5_l60xt"]
+[ext_resource type="Resource" uid="uid://b3alobrtk1utw" path="res://Enemies/IgA.tres" id="6_ren1a"]
+[ext_resource type="Resource" uid="uid://cv021pwbd2juc" path="res://Enemies/PhanuelSummon.tres" id="7_1mcf8"]
+[ext_resource type="Resource" uid="uid://dqjsr0jky1xlh" path="res://Enemies/IgM.tres" id="8_rstsn"]
+[ext_resource type="AudioStream" uid="uid://cbd0kvurj67ea" path="res://Art/Music/NONHUMAN.ogg" id="9_esvdg"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="10_l60xt"]
+[ext_resource type="SpriteFrames" uid="uid://dqymxgpagdmc" path="res://Enemies/Phanuelsummonworldframes.tres" id="10_yqfuw"]
+[ext_resource type="AudioStream" uid="uid://bc8vhoofeo02a" path="res://Art/Music/gentlewater.ogg" id="22_ty65b"]
+[ext_resource type="PackedScene" uid="uid://brvo5delsarsb" path="res://Interactable.tscn" id="23_hm4g1"]
+[ext_resource type="AudioStream" uid="uid://ctr7brb0tgri2" path="res://Art/SecondComingSFX/PahaliahGrowl.ogg" id="24_opel0"]
+
+[sub_resource type="Resource" id="Resource_c8sum"]
+script = ExtResource("2_vovi1")
+speaker = ExtResource("3_s37qo")
+text = "It took the orb..."
+camera_target = "Player"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_3e5oy"]
+script = ExtResource("2_vovi1")
+speaker = ExtResource("4_ren1a")
+text = "No worries, shaving that thing down gave equivalent power to what the orb would've given so we're good"
+camera_target = "Amanirenas"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_1mcf8"]
+script = ExtResource("2_vovi1")
+speaker = ExtResource("3_s37qo")
+text = "hell yeah"
+camera_target = "Dama"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_uaawx"]
+script = ExtResource("2_vovi1")
+speaker = ExtResource("4_ren1a")
+text = "Alright, you helped me, I help you, where to?"
+camera_target = "Amanirenas"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_oo5qn"]
+script = ExtResource("2_vovi1")
+speaker = ExtResource("3_s37qo")
+text = "We're about ready to go after the angels."
+camera_target = "Player"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_rstsn"]
+script = ExtResource("5_a1d12")
+lines = Array[ExtResource("2_vovi1")]([SubResource("Resource_c8sum"), SubResource("Resource_3e5oy"), SubResource("Resource_1mcf8"), SubResource("Resource_uaawx"), SubResource("Resource_oo5qn")])
+metadata/_custom_type_script = "uid://h5312gpyqv4w"
+
+[sub_resource type="Animation" id="Animation_5egfr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/rotation_speed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.41600025726000034]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:material:shader_parameter/light_direction")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.045, 0.34, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:material:shader_parameter/shader_mix")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_7he2j"]
+resource_name = "attack"
+length = 2.24
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/rotation_speed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.395, 0.45000005, 1.405, 1.485, 2.225),
+"transitions": PackedFloat32Array(1, 1, 0.29730168, 0.21763757, 1, 1),
+"update": 0,
+"values": [0.41600025726000034, 0.41600025726000034, -0.4689997847775, -0.4689997847775, 0.41600025726000034, 0.41600025726000034]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:material:shader_parameter/light_direction")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.665, 0.06, 1.22)]
+}
+
+[sub_resource type="Animation" id="Animation_74ejk"]
+resource_name = "cast_spell"
+length = 2.24
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/rotation_speed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.395, 0.45000005, 1.405, 1.485, 2.225),
+"transitions": PackedFloat32Array(1, 1, 0.29730168, 0.21763757, 1, 1),
+"update": 0,
+"values": [0.41600025726000034, 0.41600025726000034, -0.4689997847775, -0.4689997847775, 0.41600025726000034, 0.41600025726000034]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:material:shader_parameter/light_direction")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.665, 0.06, 1.22)]
+}
+
+[sub_resource type="Animation" id="Animation_6mxru"]
+resource_name = "free"
+length = 3.87
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/shader_mix")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_u6ljj"]
+resource_name = "freeing"
+length = 2.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/shader_mix")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9649999),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_pc6ov"]
+resource_name = "idle"
+length = 3.01
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:material:shader_parameter/rotation_speed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.41600025726000034]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:material:shader_parameter/shader_mix")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ompj"]
+_data = {
+&"RESET": SubResource("Animation_5egfr"),
+&"attack": SubResource("Animation_7he2j"),
+&"cast_spell": SubResource("Animation_74ejk"),
+&"free": SubResource("Animation_6mxru"),
+&"freeing": SubResource("Animation_u6ljj"),
+&"idle": SubResource("Animation_pc6ov")
+}
+
+[node name="PhanuelSummon" type="Node2D" unique_id=653881252]
+z_index = 4
+script = ExtResource("1_k57iy")
+dialogue = SubResource("Resource_rstsn")
+battle_actors = Array[ExtResource("5_l60xt")]([ExtResource("6_ren1a"), ExtResource("7_1mcf8"), ExtResource("8_rstsn")])
+flag_id = "phanuel_summon"
+battle_music = ExtResource("9_esvdg")
+battle_music_volume_db = -1.685
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2120095378]
+modulate = Color(0.012617188, 0.012617188, 0.012617188, 1)
+material = ExtResource("10_l60xt")
+scale = Vector2(1.835, 1.835)
+sprite_frames = ExtResource("10_yqfuw")
+animation = &"hidden"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=180791293]
+position = Vector2(-1.6327527, 122.44977)
+scale = Vector2(2.695, 2.695)
+stream = ExtResource("22_ty65b")
+max_distance = 4096.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1515888450]
+libraries/ = SubResource("AnimationLibrary_7ompj")
+autoplay = &"idle"
+
+[node name="Interactable" parent="." unique_id=44422177 instance=ExtResource("23_hm4g1")]
+position = Vector2(9, 111)
+scale = Vector2(16.445, 16.445)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=84573756]
+stream = ExtResource("24_opel0")

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://0bklmwonsxg5"]
+
+[ext_resource type="Script" uid="uid://dlhchepw468bw" path="res://Mechanical/PressableSwitch.gd" id="1_b1j0v"]
+[ext_resource type="Texture2D" uid="uid://dho2n3hahsa5u" path="res://Mechanical/Switch1.png" id="2_4v7da"]
+[ext_resource type="Texture2D" uid="uid://dietlyf8it65m" path="res://Mechanical/Switch2.png" id="3_awuau"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_how7u"]
+size = Vector2(27, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e5oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4v7da")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_awuau")
+}],
+"loop": 1,
+"name": &"pressed",
+"speed": 5.0
+}]
+
+[node name="PressableSwitch" type="Area2D" unique_id=1984015503]
+script = ExtResource("1_b1j0v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901393907]
+position = Vector2(-1.5, 4)
+shape = SubResource("RectangleShape2D_how7u")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1552548061]
+scale = Vector2(0.335, 0.335)
+sprite_frames = SubResource("SpriteFrames_3e5oy")
+animation = &"idle"

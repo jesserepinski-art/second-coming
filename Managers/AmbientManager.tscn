@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c3oa3kedei5xw"]
+
+[ext_resource type="Script" uid="uid://6b5n4h1vbnxf" path="res://Managers/AmbientManager.gd" id="1_golj0"]
+
+[node name="AmbientManager" type="Node" unique_id=1059984147]
+script = ExtResource("1_golj0")
+
+[node name="Ambient" type="AudioStreamPlayer" parent="." unique_id=1115723731]

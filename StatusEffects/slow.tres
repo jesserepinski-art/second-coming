@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://cauiu1wbjhyyo"]
+
+[ext_resource type="Texture2D" uid="uid://bu84w0osvcdl7" path="res://Art/StatusIcons/slowsymbol.png" id="1_hqm34"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="1_pynd8"]
+
+[resource]
+script = ExtResource("1_pynd8")
+display_name = "Slow"
+type = 4
+turns = 2
+potency = 1.0
+icon = ExtResource("1_hqm34")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

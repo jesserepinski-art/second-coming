@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://4w371r2jtbty"]
+
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_q42xu"]
+[ext_resource type="VideoStream" uid="uid://ct5xn0ep461x1" path="res://Art/HEARTBEATINGANIMATION.ogv" id="1_w1tyv"]
+[ext_resource type="VideoStream" uid="uid://bktyw7cldmg01" path="res://Art/Blood-Rain-Free-SnapYT.App.ogv" id="2_u0xvv"]
+[ext_resource type="Resource" uid="uid://bmvgm8wr2t0oa" path="res://StatusEffects/speedup.tres" id="4_w1tyv"]
+
+[resource]
+script = ExtResource("1_q42xu")
+name = "Heartbreaker"
+display_name = "Heartbreaker"
+description = "Deal a small amount of damage to yourself and inflict haste"
+type = 1
+power_scaling = 1.0
+mp_cost = 10
+target = 2
+power = 2
+attack_video = ExtResource("1_w1tyv")
+effect_video = ExtResource("2_u0xvv")
+status_effect = ExtResource("4_w1tyv")
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

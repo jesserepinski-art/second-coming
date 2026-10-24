@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://d1dq7bdovtwpw"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_jpqon"]
+
+[resource]
+script = ExtResource("1_jpqon")
+quest_id = "the_horse"
+title = "The Horse"
+description = "The angel Pahaliah roams around Patria. I need to kill it for power"
+target_name = "Pahaliah"
+completion_flag = "angel_pahaliah_defeated"
+reward_gold = 1000
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

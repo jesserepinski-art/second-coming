@@ -1,0 +1,252 @@
+[gd_scene format=4 uid="uid://cdlbrgcdxd45h"]
+
+[ext_resource type="Script" uid="uid://cs28t44wp6ml6" path="res://Art/Custom Scenery/Bible/aceso_mimic_spell_lecturn.gd" id="1_ongti"]
+[ext_resource type="Script" uid="uid://dyh6g1lditqd7" path="res://Dialogue/DialogueLine.gd" id="2_avltd"]
+[ext_resource type="Texture2D" uid="uid://j275xpbofvq5" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 212301_no_bg.png" id="2_xsmng"]
+[ext_resource type="Texture2D" uid="uid://st7heyt8otx5" path="res://Art/Custom Scenery/Bible/MimicBibleFrames.png" id="3_4i3pb"]
+[ext_resource type="Resource" uid="uid://i4na8wyaavc6" path="res://Players/Aceso.tres" id="3_uk2qf"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="4_0bihp"]
+[ext_resource type="Resource" uid="uid://buot2gbr5ydj0" path="res://Players/Dama.tres" id="4_abhm5"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="5_ongti"]
+[ext_resource type="Script" uid="uid://h5312gpyqv4w" path="res://Dialogue/DialogueSequence.gd" id="5_u0ngf"]
+[ext_resource type="TileSet" uid="uid://qdphpuhhjfy2" path="res://voidtileset.tres" id="6_avltd"]
+[ext_resource type="AudioStream" uid="uid://dhtklqm3dva6q" path="res://Art/SecondComingSFX/PahaliahGrowl2.ogg" id="7_uk2qf"]
+
+[sub_resource type="Resource" id="Resource_c8sum"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "It was... nothing."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_uaawx"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("4_abhm5")
+text = "hey, I'm sure there's mo-"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_oo5qn"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "NO THIS IS IT! DON'T YOU GET IT?  BESIDES GOING INTO THAT FORSAKEN DOMAIN, THERES NOTHING ELSE TO DO"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_r344f"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("4_abhm5")
+text = "nothing else to do for what?"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_dd0ff"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "There's... "
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_uyc4f"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "..."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_1nwyu"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "..."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_cgpbv"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("3_uk2qf")
+text = "Oh forgive me! Let us return to the village, it sure is getting late!"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_ji1mx"]
+script = ExtResource("2_avltd")
+speaker = ExtResource("4_abhm5")
+text = "right..."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_3e5oy"]
+script = ExtResource("5_u0ngf")
+lines = Array[ExtResource("2_avltd")]([SubResource("Resource_c8sum"), SubResource("Resource_uaawx"), SubResource("Resource_oo5qn"), SubResource("Resource_r344f"), SubResource("Resource_dd0ff"), SubResource("Resource_uyc4f"), SubResource("Resource_1nwyu"), SubResource("Resource_cgpbv"), SubResource("Resource_ji1mx")])
+metadata/_custom_type_script = "uid://h5312gpyqv4w"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3taaj"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq5wh"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2irln"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vt0b2"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya3ss"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75it1"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4iv0"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvbkm"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gs2v8"]
+atlas = ExtResource("3_4i3pb")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c8sum"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3taaj")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fq5wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2irln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vt0b2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya3ss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75it1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4iv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvbkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gs2v8")
+}],
+"loop": 0,
+"name": &"reveal",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_3e5oy"]
+offsets = PackedFloat32Array(0.27877697, 1)
+colors = PackedColorArray(0.98175466, 0.8209339, 1, 1, 1, 0.42000002, 0.8840001, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3e5oy"]
+size = Vector2(46, 94)
+
+[sub_resource type="Animation" id="Animation_sf6s8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bible:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.47, 0.47)]
+}
+
+[sub_resource type="Animation" id="Animation_mh0a2"]
+resource_name = "breathe"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bible:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.73, 3.985),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.47, 0.47), Vector2(0.505, 0.505), Vector2(0.47, 0.47)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q0yyr"]
+_data = {
+&"RESET": SubResource("Animation_sf6s8"),
+&"breathe": SubResource("Animation_mh0a2")
+}
+
+[node name="MimicSpellLecturn" type="Node2D" unique_id=276127554]
+script = ExtResource("1_ongti")
+dialogue = SubResource("Resource_3e5oy")
+
+[node name="Lecturn" type="Sprite2D" parent="." unique_id=243502948]
+position = Vector2(-0.54507446, -47.814987)
+scale = Vector2(0.215, 0.215)
+texture = ExtResource("2_xsmng")
+
+[node name="Bible" type="AnimatedSprite2D" parent="." unique_id=961382154]
+z_index = 3
+position = Vector2(-2, -103)
+scale = Vector2(0.47, 0.47)
+sprite_frames = SubResource("SpriteFrames_c8sum")
+animation = &"reveal"
+autoplay = "default"
+
+[node name="GPUParticles2D" type="CPUParticles2D" parent="Bible" unique_id=890049343]
+z_as_relative = false
+amount = 76
+texture = ExtResource("4_0bihp")
+lifetime = 1.4
+speed_scale = 0.41
+randomness = 1.0
+spread = 112.5
+gravity = Vector2(0, -50)
+initial_velocity_min = 140.25
+initial_velocity_max = 207.32
+angular_velocity_min = -298.54
+angular_velocity_max = 122.93
+linear_accel_min = -21.34
+tangential_accel_min = 100.0
+tangential_accel_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.1
+color = Color(0.87962157, 1, 0.4901961, 1)
+color_ramp = SubResource("Gradient_3e5oy")
+
+[node name="Interactable" type="Area2D" parent="." unique_id=847966295]
+script = ExtResource("5_ongti")
+metadata/_custom_type_script = "uid://c3i6a5xmjpci0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1622417341]
+position = Vector2(0, -79)
+shape = SubResource("RectangleShape2D_3e5oy")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=457466107]
+visible = false
+scale = Vector2(0.29, 0.29)
+tile_map_data = PackedByteArray("AAD///r/AAABAAEAAAAAAPr/AAABAAEAAAAAAPn/AAABAAEAAAD///n/AAABAAEAAAAAAPv/AAABAAEAAAD///v/AAABAAEAAAA=")
+tile_set = ExtResource("6_avltd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=651535806]
+libraries/ = SubResource("AnimationLibrary_q0yyr")
+autoplay = &"breathe"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=996230666]
+stream = ExtResource("7_uk2qf")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b4matpqny55vn"
+path="res://.godot/imported/paper_tear_1.wav-04dc293ea8106665698295d31c4b6218.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Materials/paper_tear_1.wav"
+dest_files=["res://.godot/imported/paper_tear_1.wav-04dc293ea8106665698295d31c4b6218.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

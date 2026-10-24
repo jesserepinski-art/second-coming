@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://jlpgv4tbm3ck"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_dwhgw"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_7r25h"]
+[ext_resource type="SpriteFrames" uid="uid://d4jl3km2jg12d" path="res://Enemies/powerlifterspritesheet.tres" id="2_7tv5i"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_ddrpb"]
+[ext_resource type="AudioStream" uid="uid://c51rqasb86svk" path="res://Art/SecondComingSFX/hurt1.ogg" id="3_exk0k"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_7tv5i"]
+[ext_resource type="AudioStream" uid="uid://qrpkjwrcy220" path="res://Art/SecondComingSFX/oof.ogg" id="4_ikyop"]
+
+[sub_resource type="Resource" id="Resource_ikyop"]
+script = ExtResource("1_dwhgw")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_ddrpb")
+attack_quotes = Array[String](["The Powerlifter does a rep of... something"])
+battle_observations = Array[String](["The Powerlifter wheezes"])
+death_quotes = Array[String](["The Powerlifter takes a rest"])
+hurt_sound = ExtResource("4_ikyop")
+death_sound = ExtResource("3_exk0k")
+battle_sprite_frames = ExtResource("2_7tv5i")
+description = "The remnants of someone who needed more strength. Don't ask when they'll be done..."
+name = "The Powerlifter"
+hp_max = 45
+attack = 15
+defense = 15
+speed = 1
+attacks = Array[ExtResource("1_dwhgw")]([SubResource("Resource_ikyop")])
+xp = 50
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

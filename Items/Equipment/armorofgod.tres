@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Equipment" format=3 uid="uid://bbecu2djhujku"]
+
+[ext_resource type="Script" uid="uid://dsnmov31ajy80" path="res://equipment.gd" id="1_0njsc"]
+
+[resource]
+script = ExtResource("1_0njsc")
+name = "Armor of God"
+display_name = "Armor of God"
+slot = 1
+value = 999
+defense_bonus = 558
+metadata/_custom_type_script = "uid://dsnmov31ajy80"

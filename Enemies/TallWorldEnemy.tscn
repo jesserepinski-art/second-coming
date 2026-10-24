@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://d0r2mftr3vevd"]
+
+[ext_resource type="Script" uid="uid://dthtu5r3i476g" path="res://Enemies/world_enemy.gd" id="1_wjs8n"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="2_empua"]
+[ext_resource type="Resource" uid="uid://b1trbnig8h3yw" path="res://Enemies/thedreamer.tres" id="3_empua"]
+[ext_resource type="Resource" uid="uid://bp4f2i70rihk" path="res://Enemies/thehand.tres" id="4_fppky"]
+[ext_resource type="Resource" uid="uid://db80nars58yb3" path="res://Enemies/starvingartist.tres" id="4_py6b1"]
+[ext_resource type="Material" uid="uid://bsh7nvwcevaj3" path="res://RadialEnemyOrb.tres" id="6_naqo0"]
+[ext_resource type="AudioStream" uid="uid://cddc23r80c2by" path="res://Art/Music/jazzsolodrums.ogg" id="6_py6b1"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="7_jscjw"]
+[ext_resource type="Material" uid="uid://ppdiux3gg7e3" path="res://Levels/Silhouette.tres" id="8_3xjyf"]
+[ext_resource type="SpriteFrames" uid="uid://don4jdchrr757" path="res://Enemies/LongEnemyFrames.tres" id="9_wjs8n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_78ylj"]
+radius = 15.0
+height = 65.96649
+
+[sub_resource type="Gradient" id="Gradient_4p106"]
+offsets = PackedFloat32Array(0.08657244, 0.6766784)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3e5oy"]
+gradient = SubResource("Gradient_4p106")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="WorldEnemy" type="Area2D" unique_id=2077327881]
+scale = Vector2(1.405, 1.405)
+script = ExtResource("1_wjs8n")
+battle_actors = Array[ExtResource("2_empua")]([ExtResource("3_empua"), ExtResource("4_fppky"), ExtResource("4_py6b1")])
+battle_music = ExtResource("6_py6b1")
+battle_music_volume_db = -16.0
+
+[node name="Orb" type="Sprite2D" parent="." unique_id=644634840]
+material = ExtResource("6_naqo0")
+position = Vector2(1.4234875, -115.30249)
+scale = Vector2(0.859375, 0.8125)
+texture = ExtResource("7_jscjw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944149932]
+material = ExtResource("8_3xjyf")
+position = Vector2(2.8469772, -98.22065)
+scale = Vector2(1.0990747, 1.4392347)
+sprite_frames = ExtResource("9_wjs8n")
+animation = &"WalkBack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399376098]
+position = Vector2(-0.7117438, -82.56228)
+scale = Vector2(1, 1.64)
+shape = SubResource("CapsuleShape2D_78ylj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=439543885]
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(-0.7117443, -12.099646)
+scale = Vector2(1.6333686, 0.6977314)
+texture = SubResource("GradientTexture2D_3e5oy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

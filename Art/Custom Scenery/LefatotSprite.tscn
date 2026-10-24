@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dygb52pl0cttk"]
+
+[ext_resource type="Texture2D" uid="uid://ctpyqbpcl04q1" path="res://Art/Custom Scenery/LefatotLower.png" id="1_l8am8"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="2_ahp56"]
+[ext_resource type="Texture2D" uid="uid://dmvi3c4tgbxk1" path="res://Art/Custom Scenery/LefatotUpper.png" id="3_ep6u4"]
+[ext_resource type="Texture2D" uid="uid://c6d3hcioca3t7" path="res://Art/Custom Scenery/LefatotCloud.png" id="4_poldn"]
+
+[node name="LefatotSprite" type="Sprite2D" unique_id=729165699]
+texture = ExtResource("1_l8am8")
+
+[node name="UpperCity" type="Sprite2D" parent="." unique_id=520759653]
+material = ExtResource("2_ahp56")
+position = Vector2(3, -46)
+texture = ExtResource("3_ep6u4")
+
+[node name="Cloud" type="Sprite2D" parent="." unique_id=1267962066]
+material = ExtResource("2_ahp56")
+texture = ExtResource("4_poldn")

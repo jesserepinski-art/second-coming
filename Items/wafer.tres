@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://crd6nv8tsxhwl"]
+
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_oi3bc"]
+
+[resource]
+script = ExtResource("1_oi3bc")
+name = "Wafer"
+display_name = "Wafer"
+description = "A wafer! Tastes like cardboard... heals for 10 HP"
+heal = 10
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

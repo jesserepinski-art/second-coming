@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dda0pdnwuxnn3"]
+
+[ext_resource type="VideoStream" uid="uid://bq2pgtyb4uac6" path="res://Art/LAUGHINGTEETHANIMATION.ogv" id="1_1w6yu"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_lmrnn"]
+[ext_resource type="AudioStream" uid="uid://b0ve677s5ejvq" path="res://Art/SecondComingSFX/sealionasslaugh.ogg" id="2_2fjt5"]
+[ext_resource type="VideoStream" uid="uid://chht656o3xe8d" path="res://Art/BITINGDOWNEFFECT.ogv" id="3_lo4ef"]
+[ext_resource type="Resource" uid="uid://ced6hax1na6tq" path="res://StatusEffects/bleed.tres" id="5_31eem"]
+
+[resource]
+script = ExtResource("1_lmrnn")
+name = "Jaws of Life"
+display_name = "Jaws of Life"
+description = "Deal a little damage and inflict bleed on all enemies"
+type = 1
+stackable = false
+power_scaling = 0.5
+mp_cost = 5
+power = 5
+attack_video = ExtResource("1_1w6yu")
+effect_video = ExtResource("3_lo4ef")
+cast_sound = ExtResource("2_2fjt5")
+status_effect = ExtResource("5_31eem")
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

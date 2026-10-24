@@ -1,0 +1,11 @@
+[gd_resource type="TileSet" format=3 uid="uid://c2xqvbpi8gp6s"]
+
+[ext_resource type="Texture2D" uid="uid://dr5c5cokde4qr" path="res://Art/Custom Scenery/kamariforestgrass3.png" id="1_usbyf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4u6kq"]
+texture = ExtResource("1_usbyf")
+texture_region_size = Vector2i(500, 500)
+0:0/0 = 0
+
+[resource]
+sources/1 = SubResource("TileSetAtlasSource_4u6kq")

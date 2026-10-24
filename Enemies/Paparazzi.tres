@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cue302j6353ei"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_qry6c"]
+[ext_resource type="Texture2D" uid="uid://cgmd23ua4fuwg" path="res://Enemies/PaparazziSpriteSheet.png" id="2_h0y41"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_iolqt"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_j6cq6"]
+[ext_resource type="AudioStream" uid="uid://cx0aujglviqrx" path="res://Art/SecondComingSFX/swampgrunt.ogg" id="3_lboub"]
+[ext_resource type="AudioStream" uid="uid://c51rqasb86svk" path="res://Art/SecondComingSFX/hurt1.ogg" id="4_4pr5e"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_sm38g"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="7_spa71"]
+
+[sub_resource type="Resource" id="Resource_lboub"]
+script = ExtResource("1_qry6c")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlfwk"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dckmw"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v3nx"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hf84"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(450, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2nr7"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqt3h"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vhii"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vr3cc"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(450, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5ttu"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo00w"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1dm7"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sp5b0"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sixw"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_su3vf"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrvqk"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_di86o"]
+atlas = ExtResource("2_h0y41")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h0y41"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlfwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dckmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v3nx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hf84")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2nr7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqt3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vhii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vr3cc")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5ttu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xo00w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1dm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sp5b0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sixw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_su3vf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrvqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_di86o")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_j6cq6")
+attack_quotes = Array[String](["The Paparazzi snaps a shot"])
+death_quotes = Array[String](["The Paparazzi retreats"])
+idle_quotes = Array[String](["You feel someone watching you"])
+hurt_sound = ExtResource("4_4pr5e")
+death_sound = ExtResource("3_lboub")
+battle_sprite_frames = SubResource("SpriteFrames_h0y41")
+description = "The remnants of someone who fixated on celebrities too much. Get a grip..."
+name = "The Paparazzi"
+hp_max = 5
+attacks = Array[ExtResource("1_qry6c")]([SubResource("Resource_lboub")])
+spells = Array[ExtResource("2_iolqt")]([ExtResource("7_spa71")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

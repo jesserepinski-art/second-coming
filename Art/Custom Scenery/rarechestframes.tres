@@ -1,0 +1,58 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://q3l445jloggm"]
+
+[ext_resource type="Texture2D" uid="uid://b50p1hu53xfhj" path="res://Art/Custom Scenery/chestsheet.png" id="1_f766d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbcuj"]
+atlas = ExtResource("1_f766d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm653"]
+atlas = ExtResource("1_f766d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gyuf"]
+atlas = ExtResource("1_f766d")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ydoc"]
+atlas = ExtResource("1_f766d")
+region = Rect2(600, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgsiv"]
+atlas = ExtResource("1_f766d")
+region = Rect2(750, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihw2t"]
+atlas = ExtResource("1_f766d")
+region = Rect2(900, 150, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbcuj")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cm653")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gyuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ydoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgsiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihw2t")
+}],
+"loop": 1,
+"name": &"opened",
+"speed": 5.0
+}]

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://hcfmp6jg0tu6"]
+
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="1_nax6s"]
+[ext_resource type="Texture2D" uid="uid://be7ogh8x7ojcq" path="res://Art/StatusIcons/evadechancesymbol.png" id="1_yw61r"]
+
+[resource]
+script = ExtResource("1_nax6s")
+display_name = "Evasion Up"
+type = 7
+turns = 2
+potency = 1.0
+icon = ExtResource("1_yw61r")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

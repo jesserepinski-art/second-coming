@@ -1,0 +1,203 @@
+[gd_resource type="TileSet" format=3 uid="uid://b8w5035xtmy07"]
+
+[ext_resource type="Texture2D" uid="uid://c3klxc1if6itm" path="res://Art/Custom Scenery/LefatotTileset.png" id="1_1beoy"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1beoy"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wlkg5"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_j7nxr"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_r6q3b"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_8mqjy"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2hvuw"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_vwyhs"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_uoe2x"]
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wlkg5"]
+texture = ExtResource("1_1beoy")
+texture_region_size = Vector2i(64, 64)
+38:3/0 = 0
+38:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+39:3/0 = 0
+39:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+39:2/0 = 0
+39:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+38:2/0 = 0
+38:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+38:1/0 = 0
+39:1/0 = 0
+42:2/0 = 0
+42:2/0/custom_data_0 = "stone"
+43:2/0 = 0
+43:2/0/custom_data_0 = "stone"
+43:3/0 = 0
+43:3/0/custom_data_0 = "stone"
+42:3/0 = 0
+42:3/0/custom_data_0 = "stone"
+35:3/0 = 0
+34:3/0 = 0
+34:2/0 = 0
+35:2/0 = 0
+33:2/0 = 0
+32:2/0 = 0
+31:2/0 = 0
+31:3/0 = 0
+32:3/0 = 0
+33:3/0 = 0
+29:3/0 = 0
+28:3/0 = 0
+28:2/0 = 0
+28:1/0 = 0
+29:1/0 = 0
+29:2/0 = 0
+30:4/0 = 0
+31:4/0 = 0
+32:4/0 = 0
+33:4/0 = 0
+34:4/0 = 0
+35:4/0 = 0
+35:5/0 = 0
+35:6/0 = 0
+35:7/0 = 0
+34:7/0 = 0
+33:7/0 = 0
+32:7/0 = 0
+31:7/0 = 0
+30:7/0 = 0
+30:6/0 = 0
+30:5/0 = 0
+31:5/0 = 0
+31:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+32:5/0 = 0
+32:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+33:5/0 = 0
+33:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+34:5/0 = 0
+34:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+34:6/0 = 0
+34:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+33:6/0 = 0
+33:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+32:6/0 = 0
+32:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+31:6/0 = 0
+31:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uoe2x")
+27:4/0 = 0
+26:4/0 = 0
+25:4/0 = 0
+24:4/0 = 0
+24:5/0 = 0
+24:6/0 = 0
+24:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_r6q3b")
+24:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+27:7/0 = 0
+27:6/0 = 0
+27:5/0 = 0
+27:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_vwyhs")
+26:5/0 = 0
+26:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_2hvuw")
+25:5/0 = 0
+25:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_2hvuw")
+25:6/0 = 0
+25:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_2hvuw")
+26:6/0 = 0
+26:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_2hvuw")
+27:3/0 = 0
+26:3/0 = 0
+26:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_8mqjy")
+25:3/0 = 0
+25:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_8mqjy")
+24:3/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+27:2/0 = 0
+23:0/0 = 0
+22:0/0 = 0
+22:1/0 = 0
+22:2/0 = 0
+22:2/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_j7nxr")
+22:3/0 = 0
+23:3/0 = 0
+23:2/0 = 0
+23:2/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_j7nxr")
+23:1/0 = 0
+22:4/0 = 0
+22:4/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wlkg5")
+22:5/0 = 0
+21:5/0 = 0
+20:5/0 = 0
+19:5/0 = 0
+18:5/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+19:4/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wlkg5")
+20:4/0 = 0
+20:4/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wlkg5")
+23:5/0 = 0
+23:4/0 = 0
+21:4/0 = 0
+21:4/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wlkg5")
+17:4/0 = 0
+16:4/0 = 0
+15:4/0 = 0
+14:4/0 = 0
+13:4/0 = 0
+12:4/0 = 0
+11:4/0 = 0
+10:4/0 = 0
+10:5/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+17:5/0 = 0
+17:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+16:5/0 = 0
+16:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+15:5/0 = 0
+15:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+14:5/0 = 0
+14:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+13:5/0 = 0
+13:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+12:5/0 = 0
+12:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+11:5/0 = 0
+11:5/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1beoy")
+28:4/0 = 0
+38:6/0 = 0
+39:6/0 = 0
+40:7/0 = 0
+39:8/0 = 0
+40:8/0 = 0
+39:7/0 = 0
+38:7/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_wlkg5")

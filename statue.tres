@@ -1,0 +1,20 @@
+[gd_resource type="TileSet" format=3 uid="uid://gx765gh8pom2"]
+
+[ext_resource type="Texture2D" uid="uid://7b3tw657dgin" path="res://Art/Tilesets/statue.png" id="1_tnexd"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tnexd"]
+polygon = PackedVector2Array(-72, 16, 88, 16, 74.66667, 37.333336, -93.333336, 37.333336)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5u12e"]
+texture = ExtResource("1_tnexd")
+separation = Vector2i(45, 0)
+texture_region_size = Vector2i(200, 200)
+1:1/0 = 0
+1:1/0/y_sort_origin = 36
+1:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_tnexd")
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-82.66667, 21.333334, 85.333336, 21.333334, 77.333336, 34.666668, -93.333336, 34.666668)
+
+[resource]
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_5u12e")

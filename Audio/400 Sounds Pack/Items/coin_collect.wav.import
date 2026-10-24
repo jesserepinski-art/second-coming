@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://blefjlp7oe7b"
+path="res://.godot/imported/coin_collect.wav-9d5efd37b12ac33232e0eafb7a12ad3d.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Items/coin_collect.wav"
+dest_files=["res://.godot/imported/coin_collect.wav-9d5efd37b12ac33232e0eafb7a12ad3d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

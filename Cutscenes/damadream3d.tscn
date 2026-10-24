@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://cchyfho187mef"]
+
+[ext_resource type="PackedScene" uid="uid://gpftivldd4t1" path="res://Players/dama.glb" id="1_ofuxy"]
+[ext_resource type="Texture2D" uid="uid://ddjbsc0nb0slg" path="res://Art/Custom Scenery/oatmeal-loop-pile-carpet-cubic-4091-in-architextures.jpg" id="2_g5pha"]
+[ext_resource type="Texture2D" uid="uid://dokvigxugdo2y" path="res://Art/Custom Scenery/cloud3.png" id="3_g5pha"]
+
+[sub_resource type="Animation" id="Animation_v7o8c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(2.8162947, 0.8829851, 1.6363301)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dama3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite3D4:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.821, -15.373239, 15.283466)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.6012039, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Camera3D:fov")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [68.2]
+}
+
+[sub_resource type="Animation" id="Animation_gfq30"]
+resource_name = "damadream"
+length = 10.102295
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.019925356, 2.6189234, 2.6197767, 4.8518915, 5.7585077),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(7.057, 0.883, 9.149), Vector3(7.057, 0.883, 9.149), Vector3(2.5491266, 1.228067, 15.88657), Vector3(2.5491266, 1.228067, 15.88657), Vector3(-0.081, 1.691, 19.009)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dama3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.01, 2.6102576),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 15.842)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite3D4:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0030884743, 2.6097634, 4.8817797, 5.947801, 6.973971),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.821, -15.373239, 15.283466), Vector3(1.821, -15.373239, 15.283466), Vector3(1.821, -6.7282066, 15.283466), Vector3(1.821, -6.7282066, 15.283466), Vector3(1.821, 3.1981335, 15.283466)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4.871817, 5.778433),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.6012039, 0), Vector3(0, 1.6012039, 0), Vector3(-0.05053865, -0.011248688, 0.00056827074)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Camera3D:fov")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 4.8518915, 5.7585077, 8.468393),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [68.2, 68.2, 31.4, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s0jdc"]
+_data = {
+&"RESET": SubResource("Animation_v7o8c"),
+&"damadream": SubResource("Animation_gfq30")
+}
+
+[node name="Damadream3d" type="Node3D" unique_id=999786078]
+
+[node name="Dama3D" parent="." unique_id=104782425 instance=ExtResource("1_ofuxy")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Dama3D" unique_id=497986706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0655503, 1.5440414)
+light_energy = 3.488
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1654881966]
+transform = Transform3D(48.473736, 0, 0, 0, -2.2604945e-06, -0.9999994, 0, 51.71408, -4.3711363e-08, 0, 0, 0)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_g5pha")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=105534238]
+transform = Transform3D(-6.3176813e-06, 0, 0.99999934, 0, 28.431786, 0, -144.5317, 0, -4.371136e-08, -54.55017, 0, 0)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_g5pha")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=71426230]
+transform = Transform3D(20.749388, 0, 0, 0, 19.689898, 0, 0, 0, 0.99999946, 14.426407, 0, -66.23857)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_g5pha")
+
+[node name="Sprite3D5" type="Sprite3D" parent="." unique_id=528964128]
+transform = Transform3D(20.749388, 0, 0, 0, 19.689898, 0, 0, 0, 0.99999946, 14.426407, 0, 142.48337)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_g5pha")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1294853218]
+transform = Transform3D(-0.030402904, 0, 0.99953765, 0, 0.99999994, 0, -0.99953765, 0, -0.030402904, 2.8162947, 0.8829851, 1.6363301)
+fov = 68.2
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1639469953]
+transform = Transform3D(1.115475, 1.11078116e-07, -2.3784761, 8.86467e-07, -11.55, 0, -10.078458, -1.0036048e-06, -0.2632477, 1.821, -15.373239, 15.283466)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_g5pha")
+
+[node name="Sprite3D6" type="Sprite3D" parent="Sprite3D4" unique_id=1796409799]
+transform = Transform3D(-4.0978193e-08, -4.2632564e-14, 1, 2.220446e-16, 1, 7.1054274e-15, -1, 0, 1.1920929e-07, -0.16742826, 0, 0.12894976)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_g5pha")
+
+[node name="Sprite3D7" type="Sprite3D" parent="Sprite3D4" unique_id=940659728]
+transform = Transform3D(0.4067366, 0, 0.9135455, 0, 1, 0, -0.9135455, 0, 0.4067366, -0.16742826, 0, 0.12894976)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_g5pha")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1223145067]
+libraries/ = SubResource("AnimationLibrary_s0jdc")

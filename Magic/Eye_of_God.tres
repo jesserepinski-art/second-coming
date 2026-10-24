@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://c51bqnliofmcd"]
+
+[ext_resource type="VideoStream" uid="uid://c4wp5cocq1mvi" path="res://Art/EYEANIMATION (1).ogv" id="1_7qim5"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_lvr01"]
+[ext_resource type="AudioStream" uid="uid://cfuea30if536x" path="res://Art/SecondComingSFX/deepwavegrumble.ogg" id="2_nuj8o"]
+[ext_resource type="VideoStream" uid="uid://dgpiuejxo4gsl" path="res://Art/Flock-of-7-White-Doves-Flying-Over-Green-Screen-Transition-4K.ogv" id="3_4w0y8"]
+[ext_resource type="Resource" uid="uid://b6d4744k0w3fm" path="res://StatusEffects/blind.tres" id="5_tgmux"]
+
+[resource]
+script = ExtResource("1_lvr01")
+name = "Eye of God"
+display_name = "Eye of God"
+description = "Deal a little damage and potentially inflict blind"
+type = 1
+stackable = false
+power_scaling = 0.5
+mp_cost = 5
+power = 5
+attack_video = ExtResource("1_7qim5")
+effect_video = ExtResource("3_4w0y8")
+cast_sound = ExtResource("2_nuj8o")
+status_effect = ExtResource("5_tgmux")
+status_chance = 50
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

@@ -1,0 +1,90 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://kr475wedv0sm"]
+
+[ext_resource type="Texture2D" uid="uid://cvr4ckljmkfj3" path="res://Art/Custom Scenery/ArmonielDoor.png" id="1_mv5wl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ghap"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gb8v"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_np6ir"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ppga"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(0, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxwd7"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(500, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nod70"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(1000, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fm2g"]
+atlas = ExtResource("1_mv5wl")
+region = Rect2(1500, 500, 500, 500)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ghap")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gb8v")
+}],
+"loop": 1,
+"name": &"lock1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_np6ir")
+}],
+"loop": 1,
+"name": &"lock2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ppga")
+}],
+"loop": 1,
+"name": &"open1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxwd7")
+}],
+"loop": 1,
+"name": &"open2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nod70")
+}],
+"loop": 1,
+"name": &"open3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fm2g")
+}],
+"loop": 1,
+"name": &"open4",
+"speed": 5.0
+}]

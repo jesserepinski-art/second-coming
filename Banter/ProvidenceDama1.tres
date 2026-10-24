@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="PartyBanter" format=3 uid="uid://bt3xm424l3loc"]
+
+[ext_resource type="Script" uid="uid://batbfd1uue6nc" path="res://Banter/BanterLine.gd" id="1_tqouj"]
+[ext_resource type="Script" uid="uid://bcmwpt010mwl4" path="res://banter.gd" id="2_lq3dy"]
+
+[sub_resource type="Resource" id="Resource_turld"]
+script = ExtResource("1_tqouj")
+speaker = "Providence"
+text = "Art thou feet tired?"
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[sub_resource type="Resource" id="Resource_o1d5c"]
+script = ExtResource("1_tqouj")
+speaker = "Dama"
+text = "I'll manage"
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[sub_resource type="Resource" id="Resource_tnhn5"]
+script = ExtResource("1_tqouj")
+speaker = "Providence"
+text = "Managers are paid are they not?"
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[sub_resource type="Resource" id="Resource_e36l5"]
+script = ExtResource("1_tqouj")
+speaker = "Dama"
+text = "..."
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[resource]
+script = ExtResource("2_lq3dy")
+banter_id = "ProvidenceDama1"
+required_party = Array[String](["Dama", "Providence"])
+lines = Array[ExtResource("1_tqouj")]([SubResource("Resource_turld"), SubResource("Resource_o1d5c"), SubResource("Resource_tnhn5"), SubResource("Resource_e36l5")])
+metadata/_custom_type_script = "uid://bcmwpt010mwl4"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dhqatd4116j6d"]
+
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_4debs"]
+[ext_resource type="VideoStream" uid="uid://e37mjx48gbuk" path="res://Art/SLEEPYTIMEANIMATION.ogv" id="1_30pd2"]
+[ext_resource type="AudioStream" uid="uid://crwtuvlwvsywj" path="res://Art/SecondComingSFX/magicalswooning.ogg" id="2_4v77c"]
+[ext_resource type="VideoStream" uid="uid://b3nsp85obbf8m" path="res://Art/ZZZSEFFECT.ogv" id="2_cjt38"]
+[ext_resource type="Resource" uid="uid://doa6ekyf6wiu7" path="res://StatusEffects/sleep.tres" id="4_4v77c"]
+
+[resource]
+script = ExtResource("1_4debs")
+name = "Sleepytime"
+display_name = "Sleepytime"
+description = "Inflict sleep on all enemies and heal them slightly"
+type = 1
+heal_scaling = 0.1
+mp_cost = 10
+target = 3
+heal = 7
+attack_video = ExtResource("1_30pd2")
+effect_video = ExtResource("2_cjt38")
+cast_sound = ExtResource("2_4v77c")
+status_effect = ExtResource("4_4v77c")
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

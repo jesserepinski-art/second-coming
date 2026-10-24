@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bto3w3xvxl8v8"
+path="res://.godot/imported/tree114.obj-778f4a10a231e4cce55f036030ec63fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree114.obj-778f4a10a231e4cce55f036030ec63fc.mesh"]
+
+source_file="res://Art/Tilesets/ultimate_retro_tree_pack/ultimate_retro_tree_pack/obj/tree114.obj"
+dest_files=["res://.godot/imported/tree114.obj-778f4a10a231e4cce55f036030ec63fc.mesh", "res://.godot/imported/tree114.obj-778f4a10a231e4cce55f036030ec63fc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

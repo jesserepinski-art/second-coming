@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://fviuy8lpq03u"]
+
+[ext_resource type="Script" uid="uid://dly2g2fq5jfnt" path="res://banter_box.gd" id="1_swx1f"]
+
+[node name="BanterBox" type="PanelContainer" unique_id=1944653090]
+script = ExtResource("1_swx1f")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=555101724]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=413521249]
+layout_mode = 2
+
+[node name="Speaker" type="Label" parent="MarginContainer/VBoxContainer" unique_id=905645697]
+layout_mode = 2
+
+[node name="Dialogue" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1452562964]
+layout_mode = 2
+
+[node name="PortraitRect" type="TextureRect" parent="MarginContainer" unique_id=832660828]
+layout_mode = 2
+
+[node name="Typewriter" type="Timer" parent="." unique_id=982292041]

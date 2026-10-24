@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b6jvsfm0xycat"]
+
+[ext_resource type="Script" uid="uid://e126jrg77mhy" path="res://Players/PartyFollowerManager.gd" id="1_py3iu"]
+
+[node name="PartyFollowerManager" type="Node" unique_id=55467953]
+script = ExtResource("1_py3iu")

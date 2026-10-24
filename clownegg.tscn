@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://chm2eetpmb0dm"]
+
+[ext_resource type="Script" uid="uid://b6rtnajgoti1e" path="res://clownegg.gd" id="1_5al6s"]
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="2_5al6s"]
+[ext_resource type="Texture2D" uid="uid://mvoce657d7s0" path="res://Art/Custom Scenery/clownegg.png" id="3_oio5m"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_te2q2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oio5m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_oio5m")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8sum"]
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaawx"]
+radius = 49.0
+height = 148.0
+
+[node name="Npc" type="CharacterBody2D" unique_id=925011615]
+script = ExtResource("1_5al6s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=565527208]
+material = ExtResource("2_5al6s")
+scale = Vector2(0.815, 0.815)
+sprite_frames = SubResource("SpriteFrames_oio5m")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1992366310]
+position = Vector2(0, 12)
+scale = Vector2(5.6747184, 2.0331917)
+shape = SubResource("CapsuleShape2D_c8sum")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=637699416]
+position = Vector2(18, 115)
+scale = Vector2(6.635, 6.635)
+script = ExtResource("3_te2q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1482069927]
+position = Vector2(-2, 8)
+shape = SubResource("CapsuleShape2D_uaawx")

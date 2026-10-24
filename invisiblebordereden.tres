@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" format=3 uid="uid://c1uamub265vc6"]
+
+[ext_resource type="Texture2D" uid="uid://dlfc8qte7ryn2" path="res://Art/Custom Scenery/FloorsRegular0301_1_350.jpg" id="1_p4g8b"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yhg05"]
+texture = ExtResource("1_p4g8b")
+texture_region_size = Vector2i(150, 150)
+9:13/0 = 0
+9:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-75, -75, 75, -75, 75, 75, -75, 75)
+
+[resource]
+tile_size = Vector2i(150, 150)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_yhg05")

@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dgvs1bd0ie8ht"]
+
+[ext_resource type="Shader" uid="uid://c8n2mi4a7vn57" path="res://dangerindicator.gdshader" id="1_barjg"]
+
+[resource]
+shader = ExtResource("1_barjg")
+shader_parameter/danger = 0.0
+shader_parameter/glitch_speed = 10.0
+shader_parameter/slice_count = 6.7030002708925
+shader_parameter/slice_jump_chance_max = 0.158000007505
+shader_parameter/slice_jump_amount_max = 0.014000000665
+shader_parameter/rgb_shift_max = 0.0010000000475
+shader_parameter/desaturation_max = 0.027000001282499998
+shader_parameter/vignette_max = 0.0650000030875

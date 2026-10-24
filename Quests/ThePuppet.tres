@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://cenamh3paij4d"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_yd8u4"]
+
+[resource]
+script = ExtResource("1_yd8u4")
+quest_id = "the_puppet"
+title = "The Puppet"
+description = "The angel Penemue resides in its theater in South East Patria, I need to kill it for power"
+target_name = "Penemue"
+completion_flag = "angel_penemue_defeated"
+reward_gold = 1000
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

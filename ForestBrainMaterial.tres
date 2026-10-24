@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dparxkjga24sl"]
+
+[ext_resource type="Shader" uid="uid://11ltsry6ytbm" path="res://Levels/ForestBrain.gdshader" id="1_rutqe"]
+[ext_resource type="Texture2D" uid="uid://cq1h2n6ad3i7q" path="res://Art/Custom Scenery/swirl.png" id="2_wt7bi"]
+
+[resource]
+shader = ExtResource("1_rutqe")
+shader_parameter/sphere_texture = ExtResource("2_wt7bi")
+shader_parameter/sphere_scale = 1.04200004623512
+shader_parameter/sphere_position = Vector2(-0.085, 0.005)
+shader_parameter/rotation_speed = 0.41600025726000034
+shader_parameter/light_direction = Vector3(1.045, 0.34, 1)
+shader_parameter/shader_mix = 1.0

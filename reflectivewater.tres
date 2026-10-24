@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cqqip5v45mmc"]
+
+[ext_resource type="Shader" uid="uid://ck0mpevwx6cwb" path="res://reflectionwater.gdshader" id="1_ylkd8"]
+
+[resource]
+shader = ExtResource("1_ylkd8")
+shader_parameter/ripple_strength = 0.005
+shader_parameter/ripple_speed = 1.5
+shader_parameter/reflection_opacity = 0.5
+shader_parameter/tint_color = Color(3.0548303, 0.6323478, 3.4823272, 1)
+shader_parameter/tint_strength = 1.0
+shader_parameter/overall_opacity = 1.0

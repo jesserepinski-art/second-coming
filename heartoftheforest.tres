@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bcfrltco3f67a"]
+
+[ext_resource type="Shader" uid="uid://dr8lfa520gjud" path="res://Levels/HeartOfTheForest.gdshader" id="1_vxi07"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3e5oy"]
+
+[resource]
+shader = ExtResource("1_vxi07")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_3e5oy")
+shader_parameter/color_choice = 0

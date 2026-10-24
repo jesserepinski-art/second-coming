@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://b1trbnig8h3yw"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_ru56f"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_2nsts"]
+[ext_resource type="Resource" uid="uid://dhcvkg8h6td1g" path="res://Enemies/enemyattack1.tres" id="2_5pxfe"]
+[ext_resource type="SpriteFrames" uid="uid://wksua4blkcn3" path="res://Enemies/thedreamerframes.tres" id="2_shld1"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_shld1"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_42qog"]
+[ext_resource type="AudioStream" uid="uid://dkuky15onanu1" path="res://Art/SecondComingSFX/impact2.ogg" id="4_scmfv"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="5_42qog"]
+
+[resource]
+script = ExtResource("3_shld1")
+attack_quotes = Array[String](["The Dreamer grabs at you"])
+battle_observations = Array[String](["The Dreamer gets lost in thought"])
+death_quotes = Array[String](["The Dreamer dreams"])
+idle_quotes = Array[String](["The Dreamer hopes"])
+hurt_sound = ExtResource("4_scmfv")
+battle_sprite_frames = ExtResource("2_shld1")
+name = "The Dreamer"
+hp_max = 30
+mp_max = 15
+attack = 5
+attacks = Array[ExtResource("1_ru56f")]([ExtResource("2_5pxfe")])
+spells = Array[ExtResource("2_2nsts")]([ExtResource("5_42qog")])
+gold = 5
+xp = 5
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bhcrxfux1qbfm"]
+
+[ext_resource type="Script" uid="uid://etg2yeu0r6xa" path="res://Levels/level_bounds.gd" id="1_dymxj"]
+
+[node name="LevelBounds" type="Node2D" unique_id=2131824702]
+script = ExtResource("1_dymxj")
+limit_left = -1278
+limit_right = 2400
+limit_bottom = 900

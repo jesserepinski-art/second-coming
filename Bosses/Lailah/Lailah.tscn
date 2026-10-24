@@ -1,0 +1,323 @@
+[gd_scene format=3 uid="uid://cahonnabby7wc"]
+
+[ext_resource type="Shader" uid="uid://bftxxm562arhh" path="res://Bosses/Phanuel/invertcolors.gdshader" id="1_ljp15"]
+[ext_resource type="Texture2D" uid="uid://rulcj2o74vvo" path="res://Bosses/Lailah/LailahClamClosed.png" id="3_orxf7"]
+[ext_resource type="Texture2D" uid="uid://cjke3avc1vnn1" path="res://Bosses/Lailah/C7B563FB-CF59-4D98-8E71-A6EFE5197E46.png.PNG" id="4_xrdqk"]
+[ext_resource type="Script" uid="uid://cot3a6srqtpnx" path="res://Bosses/Penemue/shaderpositioning.gd" id="5_j0cfd"]
+[ext_resource type="Shader" uid="uid://dp8fylsftw8ar" path="res://Bosses/Penemue/Penemueskirt.gdshader" id="6_gy2yc"]
+[ext_resource type="Texture2D" uid="uid://cfwtyppv8qyxd" path="res://Bosses/TexturesForAngels/Texturelabs_InkPaint_373S.jpg" id="7_3uk43"]
+[ext_resource type="Texture2D" uid="uid://dy6wsuls2ih1f" path="res://Bosses/Lailah/4BD3B254-3789-47AD-918C-5544084D6833.png.PNG" id="8_x2qtn"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="9_q6xtq"]
+[ext_resource type="Texture2D" uid="uid://budjdro4fexuo" path="res://Bosses/Lailah/Paint Layer 2.PNG" id="10_25nkk"]
+[ext_resource type="Shader" uid="uid://yfgcnrkaf6hy" path="res://Bosses/Penemue/Penemuehead.gdshader" id="11_d0kca"]
+[ext_resource type="Texture2D" uid="uid://cb2gho11clyxk" path="res://Bosses/TexturesForAngels/Texturelabs_Water_131S.jpg" id="12_5tjnc"]
+[ext_resource type="Texture2D" uid="uid://cdd4mo4fmkocd" path="res://Bosses/Lailah/9C402500-008A-4E64-9CF1-46DFF6999BA6.png.PNG" id="13_p5ulj"]
+[ext_resource type="Shader" uid="uid://c3mj3tjmlwb2o" path="res://Bosses/Penemue/Penemuelur.gdshader" id="14_e5615"]
+[ext_resource type="Texture2D" uid="uid://odt63vhlxk64" path="res://Bosses/TexturesForAngels/Texturelabs_Paper_286S.jpg" id="15_8eyby"]
+[ext_resource type="Texture2D" uid="uid://bsbn2ue1ks5fp" path="res://Bosses/Lailah/7544DD62-D5BE-4DD2-8191-02F066A05DD9.png.PNG" id="16_xn1qu"]
+[ext_resource type="Shader" uid="uid://bfkmx4qhejtgn" path="res://Bosses/Penemue/Penemuehandr.gdshader" id="17_pjp85"]
+[ext_resource type="Texture2D" uid="uid://cm2gfdddpj31o" path="res://Bosses/TexturesForAngels/Texturelabs_InkPaint_392S.jpg" id="18_dafrn"]
+[ext_resource type="Texture2D" uid="uid://1ra4g1h6smye" path="res://Bosses/Lailah/DDE60ED1-D2D2-4BE9-BA0B-0CE28EBB516F.png.PNG" id="19_o3hkb"]
+[ext_resource type="Shader" uid="uid://cn7rl00jyovpr" path="res://Bosses/Penemue/Penemuehandl.gdshader" id="20_0dxh1"]
+[ext_resource type="Texture2D" uid="uid://cshu7nyyoycva" path="res://Bosses/Lailah/png-transparent-zombie-zombie-purple-image-file-formats-human_no_bg.png" id="21_wxew4"]
+[ext_resource type="Texture2D" uid="uid://cyy6vi8xkpctx" path="res://Bosses/Lailah/blood1.png" id="22_fj46p"]
+[ext_resource type="Texture2D" uid="uid://dgwjn7m4ohcfc" path="res://Bosses/Lailah/blood2.png" id="23_6ovub"]
+[ext_resource type="Texture2D" uid="uid://b4a71pqyr06d" path="res://Bosses/Lailah/blood3.png" id="24_e5q80"]
+
+[sub_resource type="Animation" id="Animation_tk7q5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clam:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Clam/Pearl:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clam/WomanFace:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_orxf7"]
+resource_name = "attack"
+length = 4.733333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clam:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1, 2.1666667, 3.2666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0715585, 0.0, -0.06981317007977318]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Clam/Pearl:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1, 3.2333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.49916416, 0.0, -0.3490658503988659]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clam/WomanFace:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.13, 3.26),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.23911010752322295, 0.0715584993317679]
+}
+
+[sub_resource type="Animation" id="Animation_xrdqk"]
+resource_name = "cast_spell"
+length = 4.733333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clam:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1, 2.1666667, 3.2666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0715585, 0.0, -0.06981317007977318]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Clam/Pearl:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1, 3.2333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.49916416, 0.0, -0.3490658503988659]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clam/WomanFace:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.13, 3.26),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.23911010752322295, 0.0715584993317679]
+}
+
+[sub_resource type="Animation" id="Animation_aqpjt"]
+resource_name = "idle"
+length = 4.733333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Clam:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1, 2.1666667, 3.2666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0715585, 0.0, -0.06981317007977318]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Clam/Pearl:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1, 3.2333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.49916416, 0.0, -0.3490658503988659]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Clam/WomanFace:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.13, 3.26),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.23911010752322295, 0.0715584993317679]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k6cxc"]
+_data = {
+&"RESET": SubResource("Animation_tk7q5"),
+&"attack": SubResource("Animation_orxf7"),
+&"cast_spell": SubResource("Animation_xrdqk"),
+&"idle": SubResource("Animation_aqpjt")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uaawx"]
+shader = ExtResource("1_ljp15")
+shader_parameter/invert_amount = 1.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ts0e2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_orxf7")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xrdqk")
+}],
+"loop": 1,
+"name": &"opened",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oo5qn"]
+shader = ExtResource("6_gy2yc")
+shader_parameter/fixed_pattern = ExtResource("7_3uk43")
+shader_parameter/pattern_scale = Vector2(0.001, 0.001)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uyc4f"]
+shader = ExtResource("11_d0kca")
+shader_parameter/fixed_pattern = ExtResource("12_5tjnc")
+shader_parameter/pattern_scale = Vector2(0.001, 0.001)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r344f"]
+shader = ExtResource("14_e5615")
+shader_parameter/fixed_pattern = ExtResource("15_8eyby")
+shader_parameter/pattern_scale = Vector2(0.005, 0.005)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1nwyu"]
+shader = ExtResource("17_pjp85")
+shader_parameter/fixed_pattern = ExtResource("18_dafrn")
+shader_parameter/pattern_scale = Vector2(0.001, 0.001)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgpbv"]
+shader = ExtResource("20_0dxh1")
+shader_parameter/fixed_pattern = ExtResource("18_dafrn")
+shader_parameter/pattern_scale = Vector2(0.001, 0.001)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tk023"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_fj46p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6ovub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_e5q80")
+}],
+"loop": 0,
+"name": &"closed",
+"speed": 1.0
+}]
+
+[node name="Lailah" type="Node2D" unique_id=11434249]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1363764522]
+libraries/ = SubResource("AnimationLibrary_k6cxc")
+autoplay = &"idle"
+
+[node name="Clam" type="AnimatedSprite2D" parent="." unique_id=1594503639]
+material = SubResource("ShaderMaterial_uaawx")
+scale = Vector2(0.425, 0.425)
+sprite_frames = SubResource("SpriteFrames_ts0e2")
+animation = &"opened"
+
+[node name="Pillow" type="Sprite2D" parent="Clam" unique_id=1935533893]
+material = SubResource("ShaderMaterial_oo5qn")
+texture = ExtResource("8_x2qtn")
+script = ExtResource("5_j0cfd")
+
+[node name="WomanFace" type="Sprite2D" parent="Clam" unique_id=1789212416]
+material = ExtResource("9_q6xtq")
+position = Vector2(-51.764706, -138.82352)
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("10_25nkk")
+offset = Vector2(51.764698, 138.8235)
+script = ExtResource("5_j0cfd")
+
+[node name="WomanHair" type="Sprite2D" parent="Clam/WomanFace" unique_id=1706454676]
+z_index = 1
+material = SubResource("ShaderMaterial_uyc4f")
+position = Vector2(-3.8146973e-06, 4.7058716)
+scale = Vector2(0.9999999, 0.9999999)
+texture = ExtResource("13_p5ulj")
+offset = Vector2(49.411774, 138.82355)
+script = ExtResource("5_j0cfd")
+
+[node name="WomanBody" type="Sprite2D" parent="Clam" unique_id=1765309239]
+material = SubResource("ShaderMaterial_r344f")
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("16_xn1qu")
+script = ExtResource("5_j0cfd")
+
+[node name="Pearl" type="Sprite2D" parent="Clam" unique_id=838817912]
+material = SubResource("ShaderMaterial_1nwyu")
+position = Vector2(-196.59006, 173.66148)
+texture = ExtResource("19_o3hkb")
+offset = Vector2(196.59006, -173.66148)
+script = ExtResource("5_j0cfd")
+
+[node name="Fetus" type="Sprite2D" parent="Clam" unique_id=722081283]
+visible = false
+modulate = Color(0.012617188, 0.012617188, 0.012617188, 1)
+material = SubResource("ShaderMaterial_cgpbv")
+scale = Vector2(0.715, 0.715)
+texture = ExtResource("21_wxew4")
+script = ExtResource("5_j0cfd")
+
+[node name="Blood" type="AnimatedSprite2D" parent="Clam" unique_id=2097064298]
+visible = false
+sprite_frames = SubResource("SpriteFrames_tk023")
+animation = &"closed"

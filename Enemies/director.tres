@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://b1frbs6tbdhvl"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_73yvs"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_2ncwt"]
+[ext_resource type="SpriteFrames" uid="uid://7yuobfxyanek" path="res://directorbattleframes.tres" id="2_dobft"]
+[ext_resource type="AudioStream" uid="uid://ftrx8373xrnl" path="res://Art/SecondComingSFX/Camerasound.ogg" id="2_m3pwv"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_3jukb"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_dobft"]
+[ext_resource type="AudioStream" uid="uid://dkuky15onanu1" path="res://Art/SecondComingSFX/impact2.ogg" id="4_qea17"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="5_ibj5f"]
+[ext_resource type="Resource" uid="uid://1g1e8adm1fno" path="res://Magic/SlowDown.tres" id="8_m3pwv"]
+
+[sub_resource type="Resource" id="Resource_ibj5f"]
+script = ExtResource("1_73yvs")
+attack_name = "Cut Scene"
+cast_sound = ExtResource("2_m3pwv")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_3jukb")
+attack_quotes = Array[String](["The Director snaps a shot
+"])
+hurt_sound = ExtResource("4_qea17")
+battle_sprite_frames = ExtResource("2_dobft")
+description = "The remnants of someone who used to love directing movies. Always preferred to stay in the shadows..."
+name = "The Director"
+overworld_sprite_frames = ExtResource("2_dobft")
+hp_max = 30
+attack = 5
+speed = 25
+attacks = Array[ExtResource("1_73yvs")]([SubResource("Resource_ibj5f")])
+spells = Array[ExtResource("2_2ncwt")]([ExtResource("5_ibj5f"), ExtResource("8_m3pwv")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

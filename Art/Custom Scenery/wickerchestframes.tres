@@ -1,0 +1,51 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cox1sbp16faw6"]
+
+[ext_resource type="Texture2D" uid="uid://b50p1hu53xfhj" path="res://Art/Custom Scenery/chestsheet.png" id="1_ekgob"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iy1km"]
+atlas = ExtResource("1_ekgob")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hfw4"]
+atlas = ExtResource("1_ekgob")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm713"]
+atlas = ExtResource("1_ekgob")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2kdfh"]
+atlas = ExtResource("1_ekgob")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsiub"]
+atlas = ExtResource("1_ekgob")
+region = Rect2(0, 150, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iy1km")
+}],
+"loop": 1,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hfw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm713")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2kdfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsiub")
+}],
+"loop": 0,
+"name": &"opened",
+"speed": 5.0
+}]

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cmwkcsdc6awh6"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_1ka1h"]
+[ext_resource type="PackedScene" uid="uid://cckrn0xq760fv" path="res://Bosses/ForestHeartBossEnemy.tscn" id="2_6kv4j"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_cxevu"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_6kv4j"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_108cw"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="5_108cw"]
+
+[sub_resource type="Resource" id="Resource_1jyku"]
+script = ExtResource("1_1ka1h")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_6kv4j")
+attack_quotes = Array[String](["The Brain intrudes your mind."])
+death_quotes = Array[String](["The Brain feels free."])
+description = "One of the many brains of nature. "
+name = "Corrupted Brain"
+custom_battle_rig = ExtResource("2_6kv4j")
+hp_max = 150
+mp_max = 30
+attack = 10
+magic_attack = 10
+defense = 5
+attacks = Array[ExtResource("1_1ka1h")]([SubResource("Resource_1jyku")])
+spells = Array[ExtResource("2_cxevu")]([ExtResource("5_108cw")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

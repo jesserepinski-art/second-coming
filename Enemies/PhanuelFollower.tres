@@ -1,0 +1,197 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://chrycfpav58le"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_chxux"]
+[ext_resource type="Texture2D" uid="uid://cvpkbp2q074m6" path="res://Enemies/PhanuelFollowerBattle.png" id="2_8lxl8"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_e7017"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_8lxl8"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_cwjp8"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="5_cwjp8"]
+
+[sub_resource type="Resource" id="Resource_tdly2"]
+script = ExtResource("1_chxux")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krjso"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdly2"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agcft"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd5cl"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llolb"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_af8y6"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbv42"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_am62u"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1klr"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxwwn"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cetd"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmwxg"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivu74"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jivog"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fe4i"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x578q"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wir0d"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkjki"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hme2d"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln2gi"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgieu"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s75kk"]
+atlas = ExtResource("2_8lxl8")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_krjso"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krjso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdly2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agcft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fd5cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llolb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_af8y6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbv42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_am62u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1klr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxwwn")
+}],
+"loop": 1,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cetd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmwxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivu74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jivog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fe4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x578q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wir0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkjki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hme2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln2gi")
+}],
+"loop": 1,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgieu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s75kk")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_8lxl8")
+attack_quotes = Array[String](["They pray to Phanuel", "They pray for judgement"])
+death_quotes = Array[String](["They pray for forgiveness"])
+idle_quotes = Array[String](["They pray for Phanuel to help"])
+battle_sprite_frames = SubResource("SpriteFrames_krjso")
+name = "Phanuel's Follower"
+hp_max = 20
+attack = 5
+attacks = Array[ExtResource("1_chxux")]([SubResource("Resource_tdly2")])
+spells = Array[ExtResource("2_e7017")]([ExtResource("5_cwjp8")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

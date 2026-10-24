@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d1jtga27r0ali"]
+
+[ext_resource type="PackedScene" uid="uid://gpftivldd4t1" path="res://Players/dama.glb" id="1_uqwqe"]
+
+[node name="Dama3D" unique_id=903306764 instance=ExtResource("1_uqwqe")]
+
+[node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(1598645190) index="0" unique_id=2034417926]
+bones/0/position = Vector3(-0.0015678406, -0.077423796, -4.180243e-08)
+bones/0/rotation = Quaternion(-0.71020865, 0, 0, 0.70399123)
+bones/1/rotation = Quaternion(0.013982709, -0.043573577, 0.0006099187, 0.99895227)
+bones/2/position = Vector3(0.16086335, 0.3386985, -0.01541378)
+bones/2/rotation = Quaternion(-0.00035810834, 0.105553426, -0.9871807, 0.11971906)
+bones/3/rotation = Quaternion(0.051800743, -0.036429048, -0.10355005, 0.99260616)
+bones/4/rotation = Quaternion(-0.014552851, -0.005680443, 0.07726224, 0.9968885)
+bones/8/position = Vector3(-0.15772767, 0.3556172, -0.015887592)
+bones/8/rotation = Quaternion(0.014455417, -0.050960768, 0.99269056, 0.1084418)
+bones/9/rotation = Quaternion(0.007007366, -0.004743909, 0.08150586, 0.996637)
+bones/10/rotation = Quaternion(-0.01455286, 0.005680247, -0.07726241, 0.99688846)
+bones/15/rotation = Quaternion(0.013837656, 0.0044404482, -0.0037337064, 0.99988747)
+bones/17/rotation = Quaternion(0.8692709, 0.057846695, 0.4880127, 0.05353126)
+bones/18/rotation = Quaternion(0.09460941, 0.008527766, 0.19797492, 0.9755933)
+bones/19/rotation = Quaternion(-0.36091083, -0.001541348, -0.5919123, 0.7206808)
+bones/21/rotation = Quaternion(0.8687858, -0.056333765, -0.489952, 0.044551652)
+bones/22/rotation = Quaternion(0.09571744, -0.004557505, -0.19231907, 0.97664267)
+bones/23/rotation = Quaternion(-0.39306405, 0.0025799293, 0.64358145, 0.65673196)

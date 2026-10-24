@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://t2si8ubvaqel"]
+
+[ext_resource type="Script" uid="uid://pw4jvp5nkg1j" path="res://Cutscenes/providence_intro_cutscene.gd" id="1_ixksn"]
+
+[node name="ProvidenceIntroCutscene" type="Node" unique_id=238413281]
+script = ExtResource("1_ixksn")

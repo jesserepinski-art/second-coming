@@ -1,0 +1,94 @@
+[gd_scene format=4 uid="uid://bkpaihgw0hiq6"]
+
+[ext_resource type="Script" uid="uid://xn5eybojsb37" path="res://Art/Custom Scenery/Bible/spell_lecturn.gd" id="1_ic5qm"]
+[ext_resource type="Texture2D" uid="uid://j275xpbofvq5" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 212301_no_bg.png" id="1_pc46g"]
+[ext_resource type="PackedScene" uid="uid://bnsxrefoogdiw" path="res://Cutscenes/SpellLearned.tscn" id="2_c1oov"]
+[ext_resource type="Texture2D" uid="uid://bqrxabqtm4rgw" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 211209_no_bg.png" id="2_va6on"]
+[ext_resource type="Texture2D" uid="uid://cqq0vlq0ht3b8" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 211215_no_bg.png" id="3_ic5qm"]
+[ext_resource type="Texture2D" uid="uid://buc2f6vdb2d45" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 211221_no_bg.png" id="4_c1oov"]
+[ext_resource type="Texture2D" uid="uid://mvamh33i1vl0" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 211227_no_bg.png" id="5_u34ys"]
+[ext_resource type="Texture2D" uid="uid://c1q05ifdquwiv" path="res://Art/Custom Scenery/Bible/Screenshot 2026-09-20 211234_no_bg.png" id="6_jalxh"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="7_am02j"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="10_c1oov"]
+[ext_resource type="TileSet" uid="uid://qdphpuhhjfy2" path="res://voidtileset.tres" id="11_u34ys"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c8sum"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_va6on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ic5qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c1oov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u34ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jalxh")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_3e5oy"]
+offsets = PackedFloat32Array(0.27877697, 1)
+colors = PackedColorArray(0.98175466, 0.8209339, 1, 1, 1, 0.42000002, 0.8840001, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3e5oy"]
+size = Vector2(46, 94)
+
+[node name="SpellLecturn" type="Node2D" unique_id=276127554]
+script = ExtResource("1_ic5qm")
+cutscene_scene = ExtResource("2_c1oov")
+
+[node name="Lecturn" type="Sprite2D" parent="." unique_id=243502948]
+position = Vector2(-0.54507446, -47.814987)
+scale = Vector2(0.215, 0.215)
+texture = ExtResource("1_pc46g")
+
+[node name="Bible" type="AnimatedSprite2D" parent="." unique_id=961382154]
+z_index = 3
+position = Vector2(-2, -103)
+scale = Vector2(0.135, 0.135)
+sprite_frames = SubResource("SpriteFrames_c8sum")
+autoplay = "default"
+frame_progress = 0.772645
+
+[node name="GPUParticles2D" type="CPUParticles2D" parent="Bible" unique_id=890049343]
+z_as_relative = false
+amount = 76
+texture = ExtResource("7_am02j")
+lifetime = 1.4
+speed_scale = 0.41
+randomness = 1.0
+spread = 112.5
+gravity = Vector2(0, -50)
+initial_velocity_min = 140.25
+initial_velocity_max = 207.32
+angular_velocity_min = -298.54
+angular_velocity_max = 122.93
+linear_accel_min = -21.34
+tangential_accel_min = 100.0
+tangential_accel_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.1
+color = Color(1, 0.48947757, 0.9721348, 1)
+color_ramp = SubResource("Gradient_3e5oy")
+
+[node name="Interactable" type="Area2D" parent="." unique_id=847966295]
+script = ExtResource("10_c1oov")
+metadata/_custom_type_script = "uid://c3i6a5xmjpci0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1622417341]
+position = Vector2(0, -79)
+shape = SubResource("RectangleShape2D_3e5oy")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=457466107]
+scale = Vector2(0.29, 0.29)
+tile_map_data = PackedByteArray("AAD///r/AAABAAEAAAAAAPr/AAABAAEAAAAAAPn/AAABAAEAAAD///n/AAABAAEAAAAAAPv/AAABAAEAAAD///v/AAABAAEAAAA=")
+tile_set = ExtResource("11_u34ys")

@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://crlxyjj1mvdr5"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_egjly"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_6qlf6"]
+
+[sub_resource type="Resource" id="Resource_gx2hj"]
+script = ExtResource("2_6qlf6")
+description = "We need to find the person in the southern fishing village"
+objective_type = 2
+target_name = "aceso_joined"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_6ru8i"]
+script = ExtResource("2_6qlf6")
+description = "Go to Lailah's Descent"
+objective_type = 1
+target_name = "LailahsDescent"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_or352"]
+script = ExtResource("2_6qlf6")
+description = "Look for the tome Aceso mentioned"
+objective_type = 2
+target_name = "false_mimic"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_ej6um"]
+script = ExtResource("2_6qlf6")
+description = "Aceso was weird... maybe they just need some rest. We need to go back to the village"
+objective_type = 1
+target_name = "AcesoVillage"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[resource]
+script = ExtResource("1_egjly")
+quest_id = "descent_into_chaos"
+title = "Descent Into Chaos"
+description = "We need to go to the southern fishing village"
+steps = Array[ExtResource("2_6qlf6")]([SubResource("Resource_gx2hj"), SubResource("Resource_6ru8i"), SubResource("Resource_or352"), SubResource("Resource_ej6um")])
+reward_gold = 500
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bhjg3aw7148no"]
+
+[ext_resource type="Script" uid="uid://chbv6bqgxm8on" path="res://Managers/transition_manager.gd" id="1_bqpvd"]
+[ext_resource type="Texture2D" uid="uid://rs8orct83xh" path="res://Art/Custom Scenery/cloudscreentransition.png" id="2_abq47"]
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="2_jfr6e"]
+
+[node name="TransitionManager" type="CanvasLayer" unique_id=1026628930]
+script = ExtResource("1_bqpvd")
+
+[node name="TopLid" type="ColorRect" parent="." unique_id=78531101]
+offset_top = -180.0
+offset_right = 640.0
+color = Color(0, 0, 0, 1)
+
+[node name="BottomLid" type="ColorRect" parent="." unique_id=189369771]
+offset_top = 360.0
+offset_right = 640.0
+offset_bottom = 540.0
+color = Color(0, 0, 0, 1)
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=17222132]
+modulate = Color(1, 1, 1, 0)
+z_index = 59
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="LeftClouds" type="TextureRect" parent="." unique_id=1232036544]
+material = ExtResource("2_jfr6e")
+offset_left = -1589.0
+offset_top = -103.0
+offset_right = -329.0
+offset_bottom = 617.0
+scale = Vector2(1.2550012, 1.015)
+texture = ExtResource("2_abq47")
+
+[node name="RightClouds" type="TextureRect" parent="." unique_id=925530822]
+material = ExtResource("2_jfr6e")
+offset_left = 607.0
+offset_top = -92.99999
+offset_right = 1867.0
+offset_bottom = 627.0
+scale = Vector2(1.43, 1.03)
+texture = ExtResource("2_abq47")
+flip_h = true

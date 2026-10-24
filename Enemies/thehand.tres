@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://bp4f2i70rihk"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_wpj35"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_0u8m4"]
+[ext_resource type="Resource" uid="uid://dhcvkg8h6td1g" path="res://Enemies/enemyattack1.tres" id="2_ce4dr"]
+[ext_resource type="SpriteFrames" uid="uid://f838e5xhxc28" path="res://Enemies/thehandframes.tres" id="2_ye5xl"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_ye5xl"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_21ioc"]
+[ext_resource type="AudioStream" uid="uid://dkuky15onanu1" path="res://Art/SecondComingSFX/impact2.ogg" id="4_cga06"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="5_21ioc"]
+
+[resource]
+script = ExtResource("3_ye5xl")
+attack_quotes = Array[String](["The Hand closes on you"])
+battle_observations = Array[String](["The Hand fidgets"])
+idle_quotes = Array[String](["The Hand feels around"])
+hurt_sound = ExtResource("4_cga06")
+battle_sprite_frames = ExtResource("2_ye5xl")
+name = "The Hand"
+hp_max = 5
+attack = 10
+attacks = Array[ExtResource("1_wpj35")]([ExtResource("2_ce4dr")])
+spells = Array[ExtResource("2_0u8m4")]([ExtResource("5_21ioc")])
+gold = 5
+xp = 5
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

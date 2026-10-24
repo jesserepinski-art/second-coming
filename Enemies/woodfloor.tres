@@ -1,0 +1,15 @@
+[gd_resource type="TileSet" format=3 uid="uid://byslnf74v2ryx"]
+
+[ext_resource type="Texture2D" uid="uid://ddjbsc0nb0slg" path="res://Art/Custom Scenery/oatmeal-loop-pile-carpet-cubic-4091-in-architextures.jpg" id="1_fxogv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y2388"]
+texture = ExtResource("1_fxogv")
+texture_region_size = Vector2i(768, 768)
+0:0/0 = 0
+0:0/0/custom_data_0 = "grass"
+
+[resource]
+tile_size = Vector2i(768, 768)
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/1 = SubResource("TileSetAtlasSource_y2388")

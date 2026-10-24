@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TipData" format=3 uid="uid://0bw73uqcvf8w"]
+
+[ext_resource type="Script" uid="uid://bwscckcku0q4d" path="res://Managers/TipPage.gd" id="1_etv3a"]
+[ext_resource type="Script" uid="uid://bf2f30d8koovj" path="res://Managers/TipData.gd" id="2_op7fi"]
+[ext_resource type="Resource" uid="uid://cranxd66lo47h" path="res://Tips/BattleIntro.tres" id="2_q617o"]
+
+[resource]
+script = ExtResource("2_op7fi")
+tip_id = "battle_intro"
+pages = Array[ExtResource("1_etv3a")]([ExtResource("2_q617o")])
+metadata/_custom_type_script = "uid://bf2f30d8koovj"

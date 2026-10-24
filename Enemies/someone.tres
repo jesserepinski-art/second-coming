@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://b4mdyvjw3v0p8"]
+
+[ext_resource type="Texture2D" uid="uid://b6qv2p7it32bg" path="res://Art/TayEnemyAttack150.png" id="1_euonj"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="2_jm7q2"]
+[ext_resource type="Resource" uid="uid://bqghc67wcof32" path="res://Art/teeth_attack_animation.tres" id="3_5asdf"]
+[ext_resource type="SpriteFrames" uid="uid://s0vrea7jvdat" path="res://Enemies/someoneframes.tres" id="4_jm7q2"]
+[ext_resource type="AudioStream" uid="uid://cf066v53iixa0" path="res://Art/SecondComingSFX/tinyenemyhurt.ogg" id="4_q35tq"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="5_ccfn8"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="6_q4ge7"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="7_jqxa5"]
+[ext_resource type="Texture2D" uid="uid://b3ampngj3ik5b" path="res://Art/TayEnemyPassive150.png" id="8_mvqq2"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="9_gjig4"]
+
+[resource]
+script = ExtResource("6_q4ge7")
+attack_quotes = Array[String](["someone takes a bite"])
+battle_observations = Array[String](["someone looks at you", "someones teeth wriggle", "someone wants to taste you"])
+death_quotes = Array[String](["someone goes to do better things"])
+hurt_sound = ExtResource("4_q35tq")
+sprite = ExtResource("8_mvqq2")
+battle_sprite_frames = ExtResource("4_jm7q2")
+attack_sprite = ExtResource("1_euonj")
+name = "someone"
+overworld_sprite_frames = ExtResource("4_jm7q2")
+hp_max = 5
+attack = 4
+speed = 8
+attacks = Array[ExtResource("2_jm7q2")]([ExtResource("3_5asdf")])
+spells = Array[ExtResource("5_ccfn8")]([ExtResource("7_jqxa5")])
+gold = 4
+xp = 5
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

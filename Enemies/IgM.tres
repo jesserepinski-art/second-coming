@@ -1,0 +1,149 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://dqjsr0jky1xlh"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_e28th"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_637r2"]
+[ext_resource type="Texture2D" uid="uid://bqgp0doxkhmc" path="res://Enemies/AntibodiesSpriteFrames.png" id="2_qm08r"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_qm08r"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_hbspy"]
+
+[sub_resource type="Resource" id="Resource_qhtnq"]
+script = ExtResource("1_e28th")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbspy"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u78sp"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(600, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lpg4c"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixltv"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2m87"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wq820"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vhcm"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(600, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4u07t"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5vu1"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojlxx"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8i7d"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abbsc"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcko4"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lxfk"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(450, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbb4f"]
+atlas = ExtResource("2_qm08r")
+region = Rect2(600, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u78sp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbspy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u78sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lpg4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixltv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2m87")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wq820")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vhcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4u07t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5vu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojlxx")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8i7d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abbsc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcko4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lxfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbb4f")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_qm08r")
+attack_quotes = Array[String](["IgM defends what it knows"])
+battle_sprite_frames = SubResource("SpriteFrames_u78sp")
+description = "The IgM antibody of an otherworldly organism..."
+name = "IgM"
+hp_max = 25
+mp_max = 10
+attack = 5
+defense = 10
+attacks = Array[ExtResource("1_e28th")]([SubResource("Resource_qhtnq")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://ct4fb018hdaye"]
+
+[ext_resource type="Script" uid="uid://dthtu5r3i476g" path="res://Enemies/world_enemy.gd" id="1_mmiiy"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="2_q7f78"]
+[ext_resource type="Resource" uid="uid://chrycfpav58le" path="res://Enemies/PhanuelFollower.tres" id="3_hs7ld"]
+[ext_resource type="AudioStream" uid="uid://cddc23r80c2by" path="res://Art/Music/jazzsolodrums.ogg" id="6_n2h50"]
+[ext_resource type="Material" uid="uid://bsh7nvwcevaj3" path="res://RadialEnemyOrb.tres" id="7_h61a1"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="8_u7v67"]
+[ext_resource type="Texture2D" uid="uid://bm7i4w0n1erjr" path="res://Enemies/PhanuelFollowerWorld.png" id="8_xkg0d"]
+[ext_resource type="Material" uid="uid://ppdiux3gg7e3" path="res://Levels/Silhouette.tres" id="9_dgpb5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmiiy"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7f78"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi8pu"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agq6s"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5lp5"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2h50"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h61a1"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7v67"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgpb5"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6ina"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(150, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjkn6"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q27d8"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(300, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dotuo"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l1ho"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyt73"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvhyt"]
+atlas = ExtResource("8_xkg0d")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wjkn6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmiiy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7f78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pi8pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agq6s")
+}],
+"loop": 1,
+"name": &"WalkBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5lp5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2h50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h61a1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7v67")
+}],
+"loop": 1,
+"name": &"WalkForward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgpb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6ina")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjkn6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q27d8")
+}],
+"loop": 1,
+"name": &"WalkLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dotuo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l1ho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyt73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvhyt")
+}],
+"loop": 1,
+"name": &"WalkRight",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_78ylj"]
+radius = 15.0
+height = 32.0
+
+[sub_resource type="Gradient" id="Gradient_4p106"]
+offsets = PackedFloat32Array(0.08657244, 0.6766784)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3e5oy"]
+gradient = SubResource("Gradient_4p106")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="WorldEnemy" type="Area2D" unique_id=2077327881]
+z_index = 4
+scale = Vector2(1.405, 1.405)
+script = ExtResource("1_mmiiy")
+battle_actors = Array[ExtResource("2_q7f78")]([ExtResource("3_hs7ld")])
+battle_music = ExtResource("6_n2h50")
+battle_music_volume_db = -16.0
+
+[node name="Orb" type="Sprite2D" parent="." unique_id=644634840]
+material = ExtResource("7_h61a1")
+position = Vector2(-0.06250191, -51.125023)
+scale = Vector2(0.859375, 0.8125)
+texture = ExtResource("8_u7v67")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944149932]
+material = ExtResource("9_dgpb5")
+position = Vector2(4.9375, -48.125023)
+scale = Vector2(0.6791667, 0.8249997)
+sprite_frames = SubResource("SpriteFrames_wjkn6")
+animation = &"WalkRight"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399376098]
+position = Vector2(-0.0625, -51.125023)
+scale = Vector2(1, 1.64)
+shape = SubResource("CapsuleShape2D_78ylj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=439543885]
+modulate = Color(1, 1, 1, 0.6431373)
+position = Vector2(7.1174393, -13.971532)
+scale = Vector2(3.2861435, 0.6977314)
+texture = SubResource("GradientTexture2D_3e5oy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

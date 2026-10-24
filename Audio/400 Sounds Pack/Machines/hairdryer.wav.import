@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://byoa3w7gxjyam"
+path="res://.godot/imported/hairdryer.wav-0fbb85b2e6bb439a0cefb21bec84b566.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Machines/hairdryer.wav"
+dest_files=["res://.godot/imported/hairdryer.wav-0fbb85b2e6bb439a0cefb21bec84b566.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

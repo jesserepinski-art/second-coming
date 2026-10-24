@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cy4f4yj7vcg2p"]
+
+[ext_resource type="Script" uid="uid://dthtu5r3i476g" path="res://Enemies/world_enemy.gd" id="1_m8n85"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="2_yraoe"]
+[ext_resource type="Resource" uid="uid://cax25crb5iofd" path="res://Enemies/seer.tres" id="3_ynq5h"]
+[ext_resource type="Resource" uid="uid://db80nars58yb3" path="res://Enemies/starvingartist.tres" id="4_ip1ao"]
+[ext_resource type="Resource" uid="uid://b4mdyvjw3v0p8" path="res://Enemies/someone.tres" id="5_x5yl2"]
+[ext_resource type="AudioStream" uid="uid://bu5umwewuuo4p" path="res://Art/GUTS.ogg" id="6_k1fom"]
+[ext_resource type="Material" uid="uid://bsh7nvwcevaj3" path="res://RadialEnemyOrb.tres" id="7_ip1ao"]
+[ext_resource type="Texture2D" uid="uid://u1gabry7y8qf" path="res://Bosses/Phanuel/Screenshot 2026-08-19 174254.png" id="7_m8n85"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="8_x5yl2"]
+[ext_resource type="Material" uid="uid://ppdiux3gg7e3" path="res://Levels/Silhouette.tres" id="9_k1fom"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_weyt7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_m8n85")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_78ylj"]
+radius = 21.0
+height = 134.0
+
+[node name="WorldEnemy" type="Area2D" unique_id=2077327881]
+script = ExtResource("1_m8n85")
+battle_actors = Array[ExtResource("2_yraoe")]([ExtResource("3_ynq5h"), ExtResource("4_ip1ao"), ExtResource("5_x5yl2")])
+battle_music = ExtResource("6_k1fom")
+battle_music_volume_db = -15.0
+
+[node name="Orb" type="Sprite2D" parent="." unique_id=1316202824]
+material = ExtResource("7_ip1ao")
+position = Vector2(42, 33)
+texture = ExtResource("8_x5yl2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=221661696]
+material = ExtResource("9_k1fom")
+position = Vector2(40, 26)
+scale = Vector2(0.4416667, 0.40833333)
+sprite_frames = SubResource("SpriteFrames_weyt7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399376098]
+position = Vector2(42, 35)
+shape = SubResource("CapsuleShape2D_78ylj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

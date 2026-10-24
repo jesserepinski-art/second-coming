@@ -1,0 +1,855 @@
+[gd_scene format=3 uid="uid://cvbs2fqrusoxx"]
+
+[ext_resource type="Shader" uid="uid://si14gccp4t4p" path="res://Bosses/Penemue/Penemuecalfl.gdshader" id="1_m28ly"]
+[ext_resource type="Texture2D" uid="uid://odt63vhlxk64" path="res://Bosses/TexturesForAngels/Texturelabs_Paper_286S.jpg" id="2_iayfw"]
+[ext_resource type="Texture2D" uid="uid://bteiwk6iei63u" path="res://Bosses/Pahaliah/Copy of dlqak3-dee1c78d-edc2-4153-87d5-840bcee030a8-removebg-preview.png.PNG" id="3_uk4mv"]
+[ext_resource type="Script" uid="uid://cot3a6srqtpnx" path="res://Bosses/Penemue/shaderpositioning.gd" id="4_bofg5"]
+[ext_resource type="Shader" uid="uid://ccrbrhuauh0nm" path="res://Bosses/Penemue/Penemuecalfr.gdshader" id="5_h4fw5"]
+[ext_resource type="Texture2D" uid="uid://dssh1wvmbv205" path="res://Bosses/Pahaliah/neck.png" id="6_miicn"]
+[ext_resource type="Shader" uid="uid://dxkfsuyrsyika" path="res://Bosses/Penemue/Penemuefootl.gdshader" id="7_fioth"]
+[ext_resource type="Texture2D" uid="uid://cb2gho11clyxk" path="res://Bosses/TexturesForAngels/Texturelabs_Water_131S.jpg" id="8_557yg"]
+[ext_resource type="Texture2D" uid="uid://bsp08pu5qlsdv" path="res://Bosses/Pahaliah/grate0_full.png.PNG" id="9_mp01e"]
+[ext_resource type="Shader" uid="uid://dbvabeqefhw08" path="res://Bosses/Penemue/Penemuefootr.gdshader" id="10_7ala0"]
+[ext_resource type="Texture2D" uid="uid://cfwtyppv8qyxd" path="res://Bosses/TexturesForAngels/Texturelabs_InkPaint_373S.jpg" id="11_cme6x"]
+[ext_resource type="Texture2D" uid="uid://osg2ag0af3vp" path="res://Bosses/Pahaliah/confessionalbooth.png.PNG" id="12_4oji2"]
+[ext_resource type="Shader" uid="uid://cn7rl00jyovpr" path="res://Bosses/Penemue/Penemuehandl.gdshader" id="13_tm6y0"]
+[ext_resource type="Texture2D" uid="uid://d706m71tkext" path="res://Bosses/TexturesForAngels/Texturelabs_Brick_124S.jpg" id="14_b7yeu"]
+[ext_resource type="Texture2D" uid="uid://bgnt442tu7rma" path="res://Bosses/Pahaliah/BoothEye1.png" id="15_ypuv7"]
+[ext_resource type="Shader" uid="uid://bfkmx4qhejtgn" path="res://Bosses/Penemue/Penemuehandr.gdshader" id="16_qrpsn"]
+[ext_resource type="Texture2D" uid="uid://b2y7e7vi14580" path="res://Bosses/TexturesForAngels/Texturelabs_Grunge_335S.jpg" id="17_57yev"]
+[ext_resource type="Texture2D" uid="uid://cxo5l4mfackyn" path="res://Bosses/Pahaliah/BoothEye2.png" id="18_swq3t"]
+[ext_resource type="Shader" uid="uid://yfgcnrkaf6hy" path="res://Bosses/Penemue/Penemuehead.gdshader" id="19_lhom7"]
+[ext_resource type="Texture2D" uid="uid://vkpuspinn5ti" path="res://Bosses/TexturesForAngels/Texturelabs_InkPaint_394S.jpg" id="20_p875p"]
+[ext_resource type="Texture2D" uid="uid://of8r4prdtmy4" path="res://Bosses/Pahaliah/frontfrontleg.png" id="21_2g0v1"]
+[ext_resource type="Shader" uid="uid://ds2o88xbwbr0s" path="res://Bosses/Penemue/Penemuelul.gdshader" id="22_e45pr"]
+[ext_resource type="Texture2D" uid="uid://dl14dimf4bb1s" path="res://Bosses/TexturesForAngels/Texturelabs_InkPaint_320S.jpg" id="23_etb4t"]
+[ext_resource type="Texture2D" uid="uid://deujm8k1g3q82" path="res://Bosses/Pahaliah/frontbehindleg.png" id="24_dnbmy"]
+[ext_resource type="Shader" uid="uid://c3mj3tjmlwb2o" path="res://Bosses/Penemue/Penemuelur.gdshader" id="25_sgxbs"]
+[ext_resource type="Texture2D" uid="uid://bgn7vxwvkg5d0" path="res://Bosses/TexturesForAngels/Texturelabs_Brick_158S.jpg" id="26_0llfb"]
+[ext_resource type="Texture2D" uid="uid://xji5uldnos1k" path="res://Bosses/Pahaliah/hindlegbehind.png" id="27_3m08c"]
+[ext_resource type="Shader" uid="uid://dp8fylsftw8ar" path="res://Bosses/Penemue/Penemueskirt.gdshader" id="28_50d01"]
+[ext_resource type="Texture2D" uid="uid://bxld3p2ley7wt" path="res://Bosses/Pahaliah/hindleg1.png" id="29_3j0dh"]
+[ext_resource type="Shader" uid="uid://duachlw2d3dyf" path="res://Bosses/Penemue/Penemuetorso.gdshader" id="30_u4w5p"]
+[ext_resource type="Texture2D" uid="uid://dsh1lnugb4jp3" path="res://Bosses/Pahaliah/whiptail.png" id="31_r1qpl"]
+[ext_resource type="Texture2D" uid="uid://gq714jqyga8w" path="res://Bosses/Pahaliah/Screenshot 2026-08-20 135147_no_bg.png.PNG" id="32_0yw61"]
+[ext_resource type="Texture2D" uid="uid://clbtdlgx16jmd" path="res://Bosses/Pahaliah/Screenshot 2026-08-20 135152_no_bg.png.PNG" id="33_bux6j"]
+[ext_resource type="Texture2D" uid="uid://bkeih3g1g14tc" path="res://Bosses/Pahaliah/Screenshot 2026-08-20 135156_no_bg.png.PNG" id="34_piku0"]
+[ext_resource type="Texture2D" uid="uid://3kkk45cibrg1" path="res://Bosses/Pahaliah/Screenshot 2026-08-20 135200_no_bg.png.PNG" id="35_g04rc"]
+[ext_resource type="Texture2D" uid="uid://4bp21anjkfum" path="res://Bosses/Pahaliah/Screenshot 2026-08-20 135204_no_bg.png.PNG" id="36_mecsf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ru8i"]
+shader = ExtResource("1_m28ly")
+shader_parameter/fixed_pattern = ExtResource("2_iayfw")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ji1mx"]
+shader = ExtResource("5_h4fw5")
+shader_parameter/fixed_pattern = ExtResource("2_iayfw")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgpbv"]
+shader = ExtResource("7_fioth")
+shader_parameter/fixed_pattern = ExtResource("8_557yg")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1nwyu"]
+shader = ExtResource("10_7ala0")
+shader_parameter/fixed_pattern = ExtResource("11_cme6x")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uyc4f"]
+shader = ExtResource("13_tm6y0")
+shader_parameter/fixed_pattern = ExtResource("14_b7yeu")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dd0ff"]
+shader = ExtResource("16_qrpsn")
+shader_parameter/fixed_pattern = ExtResource("17_57yev")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r344f"]
+shader = ExtResource("19_lhom7")
+shader_parameter/fixed_pattern = ExtResource("20_p875p")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oo5qn"]
+shader = ExtResource("22_e45pr")
+shader_parameter/fixed_pattern = ExtResource("23_etb4t")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uaawx"]
+shader = ExtResource("25_sgxbs")
+shader_parameter/fixed_pattern = ExtResource("26_0llfb")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c8sum"]
+shader = ExtResource("28_50d01")
+shader_parameter/fixed_pattern = ExtResource("8_557yg")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3e5oy"]
+shader = ExtResource("30_u4w5p")
+shader_parameter/fixed_pattern = ExtResource("11_cme6x")
+shader_parameter/pattern_scale = Vector2(0.01, 0.01)
+shader_parameter/node_global_position = Vector2(0, 0)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e5oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_0yw61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_bux6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_piku0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_g04rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_mecsf")
+}],
+"loop": 2,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_qx5d3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Neck:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Neck/Grate:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Neck/Head:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Neck/Head/BoothEye1:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/Neck/Head/BoothEye2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/FrontLeg1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/FrontLeg2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/BackLeg2:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/BackLeg1:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/WhipTail:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/Wings:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Neck/Head:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_q2eug"]
+resource_name = "attack"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1666666, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(22.15, 0), Vector2(22.15, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Neck:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.8333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.42236967898262756]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Neck/Grate:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Neck/Head:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.9666667, 2.1333334, 2.3333333, 2.5, 2.7, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.6649704450098399, 0.2373647782712292, -0.7906341511534315, 0.23580828, -0.6702064327658221, 0.23580828, -0.7888888219014367]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Neck/Head/BoothEye1:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/Neck/Head/BoothEye2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/FrontLeg1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.70000005, 1.3666667, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.1815142422074099, -0.08377580409572802, -0.08377580409572802]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/FrontLeg2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.73333335, 1.3666667, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.061086523819801536, 0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/BackLeg2:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.5, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.0, 0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/BackLeg1:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6333333, 1.4333333, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.08726646259971647, 0.08726646259971647]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/WhipTail:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.6649704450098399]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/Wings:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Neck/Head:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.9333333, 2.2, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.455, 1.455), Vector2(1.455, 1.455)]
+}
+
+[sub_resource type="Animation" id="Animation_5fjn2"]
+resource_name = "cast_spell"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1666666, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(22.15, 0), Vector2(22.15, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Neck:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.8333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.42236967898262756]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Neck/Grate:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Neck/Head:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.9666667, 2.1333334, 2.3333333, 2.5, 2.7, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.6649704450098399, 0.2373647782712292, -0.7906341511534315, 0.23580828, -0.6702064327658221, 0.23580828, -0.7888888219014367]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Neck/Head/BoothEye1:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/Neck/Head/BoothEye2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/FrontLeg1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.70000005, 1.3666667, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.1815142422074099, -0.08377580409572802, -0.08377580409572802]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/FrontLeg2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.73333335, 1.3666667, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.061086523819801536, 0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/BackLeg2:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.5, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.0, 0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/BackLeg1:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6333333, 1.4333333, 2.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.08726646259971647, 0.08726646259971647]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/WhipTail:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.6649704450098399]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/Wings:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Neck/Head:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.9333333, 2.2, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.455, 1.455), Vector2(1.455, 1.455)]
+}
+
+[sub_resource type="Animation" id="Animation_o0f6e"]
+resource_name = "idle"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1666666, 2.1333334, 3.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(22.15, 0), Vector2(0, 0), Vector2(-17, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Neck:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.8333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.42236967898262756]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Neck/Grate:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Neck/Head:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.9, 2.4333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.6649704450098399, 0.2373647782712292]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Neck/Head/BoothEye1:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/Neck/Head/BoothEye2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/FrontLeg1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.70000005, 1.3666667, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.1815142422074099, -0.08377580409572802, -0.1815142422074099]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/FrontLeg2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.73333335, 1.3666667, 2.1333334, 2.7333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.061086523819801536, 0.0, -0.05934119456780681, -0.1815142422074099]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/BackLeg2:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.5, 2.2666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.0, -0.08726646259971647]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/BackLeg1:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6333333, 1.4333333, 2.1666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1815142422074099, 0.08726646259971647, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/WhipTail:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.6649704450098399]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/Wings:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yroed"]
+_data = {
+&"RESET": SubResource("Animation_qx5d3"),
+&"attack": SubResource("Animation_q2eug"),
+&"cast_spell": SubResource("Animation_5fjn2"),
+&"idle": SubResource("Animation_o0f6e")
+}
+
+[node name="Pahaliah" type="Node2D" unique_id=1367349903]
+
+[node name="Torso" type="Sprite2D" parent="." unique_id=762618336]
+z_index = 2
+material = SubResource("ShaderMaterial_6ru8i")
+texture = ExtResource("3_uk4mv")
+script = ExtResource("4_bofg5")
+
+[node name="Neck" type="Sprite2D" parent="Torso" unique_id=1967441751]
+material = SubResource("ShaderMaterial_ji1mx")
+position = Vector2(101, -70)
+texture = ExtResource("6_miicn")
+offset = Vector2(-101, 70)
+script = ExtResource("4_bofg5")
+
+[node name="Grate" type="Sprite2D" parent="Torso/Neck" unique_id=1987804313]
+material = SubResource("ShaderMaterial_cgpbv")
+position = Vector2(127, -28)
+texture = ExtResource("9_mp01e")
+offset = Vector2(-212, 88)
+script = ExtResource("4_bofg5")
+
+[node name="Head" type="Sprite2D" parent="Torso/Neck" unique_id=1760143692]
+material = SubResource("ShaderMaterial_1nwyu")
+position = Vector2(226, -36)
+texture = ExtResource("12_4oji2")
+offset = Vector2(-332, 79)
+script = ExtResource("4_bofg5")
+
+[node name="BoothEye1" type="Sprite2D" parent="Torso/Neck/Head" unique_id=1341334740]
+material = SubResource("ShaderMaterial_uyc4f")
+position = Vector2(21, 40)
+scale = Vector2(0.665, 0.665)
+texture = ExtResource("15_ypuv7")
+script = ExtResource("4_bofg5")
+
+[node name="BoothEye2" type="Sprite2D" parent="Torso/Neck/Head" unique_id=144389505]
+material = SubResource("ShaderMaterial_dd0ff")
+position = Vector2(20, 35)
+scale = Vector2(0.665, 0.665)
+texture = ExtResource("18_swq3t")
+script = ExtResource("4_bofg5")
+
+[node name="FrontLeg1" type="Sprite2D" parent="Torso" unique_id=1593465872]
+material = SubResource("ShaderMaterial_r344f")
+position = Vector2(22, 40)
+texture = ExtResource("21_2g0v1")
+offset = Vector2(-22, -40)
+script = ExtResource("4_bofg5")
+
+[node name="FrontLeg2" type="Sprite2D" parent="Torso" unique_id=1925891694]
+z_index = -1
+material = SubResource("ShaderMaterial_oo5qn")
+position = Vector2(68, 28)
+texture = ExtResource("24_dnbmy")
+offset = Vector2(-68, -28)
+script = ExtResource("4_bofg5")
+
+[node name="BackLeg2" type="Sprite2D" parent="Torso" unique_id=1377556540]
+z_index = -1
+material = SubResource("ShaderMaterial_uaawx")
+position = Vector2(-315, 2)
+texture = ExtResource("27_3m08c")
+offset = Vector2(315, -2)
+script = ExtResource("4_bofg5")
+
+[node name="BackLeg1" type="Sprite2D" parent="Torso" unique_id=1576688449]
+material = SubResource("ShaderMaterial_c8sum")
+position = Vector2(-274, 4)
+texture = ExtResource("29_3j0dh")
+offset = Vector2(274, -4)
+script = ExtResource("4_bofg5")
+
+[node name="WhipTail" type="Sprite2D" parent="Torso" unique_id=1763404136]
+z_index = -1
+material = SubResource("ShaderMaterial_3e5oy")
+position = Vector2(-370, -59)
+texture = ExtResource("31_r1qpl")
+offset = Vector2(370, 59)
+script = ExtResource("4_bofg5")
+
+[node name="Wings" type="AnimatedSprite2D" parent="Torso" unique_id=854763820]
+position = Vector2(-53, -81)
+sprite_frames = SubResource("SpriteFrames_3e5oy")
+autoplay = "default"
+frame_progress = 0.9366872
+offset = Vector2(53, 81)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=710430963]
+libraries/ = SubResource("AnimationLibrary_yroed")
+autoplay = &"idle"

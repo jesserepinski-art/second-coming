@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b7wit6j3q6s33"]
+
+[ext_resource type="Shader" uid="uid://cv00jgur0rh04" path="res://Levels/HeartOfTheForestRoots.gdshader" id="1_skenq"]
+[ext_resource type="Texture2D" uid="uid://c08brataiasj8" path="res://Art/Custom Scenery/trippy.jpg" id="2_783gm"]
+
+[resource]
+shader = ExtResource("1_skenq")
+shader_parameter/noise_texture = ExtResource("2_783gm")
+shader_parameter/color_1 = Color(0.44729543, 0, 0.89459085, 1)
+shader_parameter/color_2 = Color(0, 0.03515147, 0.62100786, 1)
+shader_parameter/color_3 = Color(0.97877026, 0.06712468, 0.89252234, 1)
+shader_parameter/swirl_speed = 0.5600000266
+shader_parameter/wave_intensity = 9.54100044993762
+shader_parameter/scale = 1.13000005041512
+shader_parameter/wobble_speed = 1.5
+shader_parameter/wobble_strength = 2.0

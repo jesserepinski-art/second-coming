@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d1dgo1rubnqg2"]
+
+[ext_resource type="Script" uid="uid://cmacsb4nuf4at" path="res://amanirenas_itartzya_actor.gd" id="1_sohrc"]
+[ext_resource type="SpriteFrames" uid="uid://8wf4gyaeyypm" path="res://Players/AmanirenasSpritesheet.tres" id="2_s4gni"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_tdbov"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8sum"]
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaawx"]
+radius = 49.0
+height = 148.0
+
+[node name="AmanirenasItartzyaActor" type="CharacterBody2D" unique_id=925011615]
+script = ExtResource("1_sohrc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=565527208]
+scale = Vector2(0.815, 0.815)
+sprite_frames = ExtResource("2_s4gni")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1992366310]
+position = Vector2(0, 12)
+shape = SubResource("CapsuleShape2D_c8sum")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=637699416]
+script = ExtResource("3_tdbov")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1482069927]
+position = Vector2(-2, 8)
+shape = SubResource("CapsuleShape2D_uaawx")

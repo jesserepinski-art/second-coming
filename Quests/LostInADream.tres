@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://cxfdmpr6rts5k"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_2mon3"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_2xqi0"]
+
+[sub_resource type="Resource" id="Resource_pg7pd"]
+script = ExtResource("2_2xqi0")
+description = "Find the missing girl"
+target_name = "Dream Child"
+step_flag = "0"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_yuame"]
+script = ExtResource("2_2xqi0")
+description = "Return back to the mother"
+objective_type = 2
+target_name = "potmother_reached"
+step_flag = "1"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[resource]
+script = ExtResource("1_2mon3")
+quest_id = "lost_in_a_dream"
+title = "Lost In A Dream"
+description = "A woman's child mysteriously disappeared from their bed. The only hint given was that their child mentioned a forest. I've gotta go to the forest up north"
+steps = Array[ExtResource("2_2xqi0")]([SubResource("Resource_pg7pd"), SubResource("Resource_yuame")])
+completion_flag = "lost_in_a_dream_completed"
+reward_gold = 500
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

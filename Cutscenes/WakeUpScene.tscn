@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://ekmll577ckkw"]
+
+[ext_resource type="Script" uid="uid://bqtktv124iwui" path="res://Cutscenes/dama_wake_up.gd" id="1_7j8er"]
+[ext_resource type="PackedScene" uid="uid://gpftivldd4t1" path="res://Players/dama.glb" id="2_w65p2"]
+[ext_resource type="Texture2D" uid="uid://ddjbsc0nb0slg" path="res://Art/Custom Scenery/oatmeal-loop-pile-carpet-cubic-4091-in-architextures.jpg" id="3_amj5q"]
+[ext_resource type="PackedScene" uid="uid://kpw426564fhd" path="res://Art/Custom Scenery/bed.glb" id="4_hto6r"]
+
+[node name="WakeUpScene" type="Node3D" unique_id=1257310487]
+top_level = true
+script = ExtResource("1_7j8er")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1186638766]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+modulate = Color(0.89521194, 0.5, 1, 1)
+texture = ExtResource("3_amj5q")
+
+[node name="Dama3D" parent="." unique_id=537355819 instance=ExtResource("2_w65p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1339235, -0.29286498, -2.762491)
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=25645577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03259158, 0, -4.374313)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_amj5q")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1109223109]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.8087354, 0, -0.63947344)
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("3_amj5q")
+
+[node name="bed" parent="." unique_id=1028812334 instance=ExtResource("4_hto6r")]
+transform = Transform3D(0.565, 0, 0, 0, 0.565, 0, 0, 0, 0.565, -2.7020526, 0, -2.6593845)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=857145497]
+transform = Transform3D(0.7841467, 0, 0.6205755, 0, 1, 0, -0.6205755, 0, 0.7841467, 0, 1.0905759, 0)
+current = true
+fov = 52.9
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=349423856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7087804, 2.925335, -0.33650494)
+light_energy = 3.097
+light_specular = 0.595
+shadow_enabled = true
+omni_range = 4.875
+omni_attenuation = 0.207

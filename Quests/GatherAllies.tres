@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://bucyw7hghoaer"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_uvehq"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_gm288"]
+
+[sub_resource type="Resource" id="Resource_l7rxc"]
+script = ExtResource("2_gm288")
+choice_quest_ids = Array[String](["descent_into_chaos", "into_the_heart", "belly_of_the_beast"])
+required_count = 2
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[resource]
+script = ExtResource("1_uvehq")
+quest_id = "gather_allies"
+title = "Gathering Allies"
+description = "We need to gather allies"
+steps = Array[ExtResource("2_gm288")]([SubResource("Resource_l7rxc")])
+completion_flag = "allies_gathered"
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

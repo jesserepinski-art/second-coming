@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cb75gj675m713"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_6fkd7"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_82wx6"]
+[ext_resource type="Texture2D" uid="uid://dl6t1f3nfxnui" path="res://Art/Custom Scenery/clowneggportrait.png" id="3_82wx6"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_buq8e"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_b24wn"]
+
+[resource]
+script = ExtResource("3_buq8e")
+portrait = ExtResource("3_82wx6")
+name = "The Clown"
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

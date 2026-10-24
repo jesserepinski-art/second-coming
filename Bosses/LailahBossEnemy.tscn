@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b7cnqsjc1fbor"]
+
+[ext_resource type="Script" uid="uid://bmb3lyhdroaos" path="res://Bosses/Lailah/lailah.gd" id="1_ubh6y"]
+[ext_resource type="PackedScene" uid="uid://cahonnabby7wc" path="res://Bosses/Lailah/Lailah.tscn" id="2_b8f5c"]
+
+[node name="BossEnemy" type="TextureButton" unique_id=2421903]
+custom_minimum_size = Vector2(200, 300)
+offset_right = 200.0
+offset_bottom = 300.0
+script = ExtResource("1_ubh6y")
+
+[node name="Lailah" parent="." unique_id=11434249 instance=ExtResource("2_b8f5c")]
+position = Vector2(93, 102)
+
+[node name="HitFlash" type="Timer" parent="." unique_id=443976458]
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=494593419]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

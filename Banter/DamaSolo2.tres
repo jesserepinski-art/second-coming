@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PartyBanter" format=3 uid="uid://dycl8706vhlv2"]
+
+[ext_resource type="Script" uid="uid://batbfd1uue6nc" path="res://Banter/BanterLine.gd" id="1_fci3t"]
+[ext_resource type="Script" uid="uid://bcmwpt010mwl4" path="res://banter.gd" id="2_jwpyw"]
+
+[sub_resource type="Resource" id="Resource_f0pqq"]
+script = ExtResource("1_fci3t")
+speaker = "Dama"
+text = "Another reason to hate mondays."
+metadata/_custom_type_script = "uid://batbfd1uue6nc"
+
+[resource]
+script = ExtResource("2_jwpyw")
+banter_id = "DamaSolo2"
+required_party = Array[String](["Dama"])
+lines = Array[ExtResource("1_fci3t")]([SubResource("Resource_f0pqq")])
+metadata/_custom_type_script = "uid://bcmwpt010mwl4"

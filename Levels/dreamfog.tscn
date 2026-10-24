@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://b1x28glol26hl"]
+
+[ext_resource type="Texture2D" uid="uid://nqfcgbf0d18f" path="res://Art/Custom Scenery/cloudscreen.png" id="1_bp758"]
+
+[sub_resource type="Shader" id="Shader_ctug4"]
+code = "shader_type canvas_item;
+
+// Uniforms for customization
+uniform sampler2D noise_texture : repeat_enable;
+uniform vec3 smoke_color : source_color = vec3(0.8);
+uniform float distortion_speed : hint_range(0.0, 5.0) = 0.2;
+uniform float density : hint_range(0.0, 1.0) = 1.0;
+
+void fragment() {
+    // Pre-calculate time-based offsets
+    float time_offset_1 = TIME * distortion_speed * 0.1;
+    float time_offset_2 = TIME * distortion_speed * 0.2;
+    
+    // Sample noise with distortion
+    vec4 noise = texture(noise_texture, UV + time_offset_1);
+    
+    // Create distorted UV and sample final noise
+    vec2 distorted_uv = UV + noise.rg * 0.1 - 0.05 + time_offset_2;
+    float final_noise = texture(noise_texture, distorted_uv).r;
+    
+    float smoke_alpha = final_noise * density;
+    
+    // Output color
+    COLOR = vec4(smoke_color, smoke_alpha);
+}"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_oo5qn"]
+noise_type = 0
+offset = Vector3(11.5, 0, 0)
+fractal_lacunarity = 8.835
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_uaawx"]
+width = 160
+height = 90
+noise = SubResource("FastNoiseLite_oo5qn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvcdg"]
+shader = SubResource("Shader_ctug4")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_uaawx")
+shader_parameter/smoke_color = Color(0.72097087, 1, 0.742123, 1)
+shader_parameter/distortion_speed = 0.498000023655
+shader_parameter/density = 0.374000017765
+
+[node name="TextureRect2" type="TextureRect" unique_id=1726221667]
+z_index = 2
+material = SubResource("ShaderMaterial_kvcdg")
+offset_left = -3874.0
+offset_top = -6191.0
+offset_right = 4318.0
+offset_bottom = 2001.0
+texture = ExtResource("1_bp758")

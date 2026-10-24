@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://verp4hgk67fg"]
+
+[ext_resource type="Script" uid="uid://c2easis1guu8g" path="res://Levels/cloud_layer.gd" id="1_de86t"]
+[ext_resource type="Texture2D" uid="uid://1s2uld3k48pu" path="res://Art/Tilesets/rain-clouds-png-27.png" id="2_dfqqu"]
+
+[node name="CloudLayer" type="Node2D" unique_id=145218338]
+script = ExtResource("1_de86t")
+cloud_textures = Array[Texture2D]([ExtResource("2_dfqqu")])
+cloud_count = 30
+speed_range = Vector2(17.565, 32.345)
+sky_rect = Rect2(212, 84, 5300, 300)
+
+[node name="Cloud" type="Sprite2D" parent="." unique_id=335383528]
+
+[node name="Cloud2" type="Sprite2D" parent="." unique_id=1452715671]
+
+[node name="Cloud3" type="Sprite2D" parent="." unique_id=273127760]

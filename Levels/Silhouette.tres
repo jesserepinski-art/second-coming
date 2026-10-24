@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ppdiux3gg7e3"]
+
+[ext_resource type="Shader" uid="uid://cvjwj22osdi4j" path="res://Enemies/glitched.gdshader" id="1_ouet8"]
+
+[resource]
+shader = ExtResource("1_ouet8")
+shader_parameter/glitch_intensity = 0.0
+shader_parameter/glitch_speed = 8.0
+shader_parameter/slice_count = 12.0
+shader_parameter/rgb_shift_amount = 0.0
+shader_parameter/sway_speed = 1.0
+shader_parameter/sway_angle_degrees = 1.742000082745

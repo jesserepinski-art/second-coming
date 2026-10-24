@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cv021pwbd2juc"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_tbsrq"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_3ncvw"]
+[ext_resource type="SpriteFrames" uid="uid://g7agvl875yw7" path="res://Enemies/Phanuelsummonbattleframes.tres" id="2_5vkif"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_5vkif"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_wchca"]
+
+[resource]
+script = ExtResource("3_5vkif")
+attack_quotes = Array[String](["It makes you feel horrible"])
+death_quotes = Array[String](["It recedes"])
+battle_sprite_frames = ExtResource("2_5vkif")
+description = "Something from the depths of an otherworldly organism..."
+name = "It"
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

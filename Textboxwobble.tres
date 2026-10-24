@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://63ee5uuwbrht"]
+
+[ext_resource type="Shader" uid="uid://m114rsn2geik" path="res://textboxwobble.gdshader" id="1_yln24"]
+
+[resource]
+shader = ExtResource("1_yln24")
+shader_parameter/wobble_speed = 2.715
+shader_parameter/wobble_strength = 2.38

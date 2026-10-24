@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://uxir0xrnt6hm"
+path="res://.godot/imported/finger_click.wav-563646ef808090f80df1c8a6795f9298.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Other/finger_click.wav"
+dest_files=["res://.godot/imported/finger_click.wav-563646ef808090f80df1c8a6795f9298.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

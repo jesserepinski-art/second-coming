@@ -1,0 +1,31 @@
+[gd_scene format=4 uid="uid://k1vbjoce8av8"]
+
+[ext_resource type="Texture2D" uid="uid://kjajdqq17mk6" path="res://Art/Custom Scenery/hills.png" id="1_6mj3e"]
+[ext_resource type="TileSet" uid="uid://dfhinq4juw1cw" path="res://backtreesmiddlepatria.tres" id="2_giexm"]
+
+[node name="Parallax2D2" type="Parallax2D" unique_id=648198563]
+modulate = Color(0.5121694, 0.5121694, 0.5121694, 1)
+scroll_scale = Vector2(0.002, 0)
+scroll_offset = Vector2(-1270, -28)
+repeat_size = Vector2(2000, 0)
+repeat_times = 3
+limit_begin = Vector2(-10000000, 0)
+limit_end = Vector2(10000000, 0)
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=296210181]
+position = Vector2(-694, 37.75)
+scale = Vector2(1.0975, 0.407)
+texture = ExtResource("1_6mj3e")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=914355379]
+modulate = Color(0, 0.4406507, 0.42534873, 1)
+scale = Vector2(0.4, 0.4)
+tile_map_data = PackedByteArray("AAC4//j/AQAAAAAAAADK//v/AQAAAAAAAADl//n/AQAAAAAAAAABAPz/AQAAAAAAAAAZAPv/AQAAAAAAAAAsAPn/AQAAAAAAAAA7APj/AQAAAAAAAABJAPj/AQAAAAAAAABkAPb/AQAAAAAAAAB8APX/AQAAAAAAAACVAPb/AQAAAAAAAACoAPb/AQAAAAAAAAC+APn/AQAAAAAAAADkAPn/AQAAAAAAAADPAPv/AQAAAAAAAAA=")
+tile_set = ExtResource("2_giexm")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1339533826]
+modulate = Color(0, 0.6875584, 0.66409683, 1)
+scale = Vector2(0.595, 0.595)
+tile_map_data = PackedByteArray("AADk//7/AQAAAAAAAAD2//3/AQAAAAAAAAAIAP3/AQAAAAAAAAAUAP3/AQAAAAAAAAAjAPv/AQAAAAAAAAAtAPr/AQAAAAAAAAA6APn/AQAAAAAAAABLAPn/AQAAAAAAAABdAPn/AQAAAAAAAABrAPr/AQAAAAAAAAB3APv/AQAAAAAAAACFAPz/AQAAAAAAAACTAPz/AQAAAAAAAAA=")
+tile_set = ExtResource("2_giexm")

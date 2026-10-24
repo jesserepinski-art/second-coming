@@ -1,0 +1,12 @@
+[gd_resource type="TileSet" format=3 uid="uid://cbqfv5r5tyd3n"]
+
+[ext_resource type="Texture2D" uid="uid://by11bw6fk30ca" path="res://Art/Custom Scenery/AmakenGround.png" id="1_a5ltg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8mxck"]
+texture = ExtResource("1_a5ltg")
+texture_region_size = Vector2i(500, 500)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(500, 500)
+sources/0 = SubResource("TileSetAtlasSource_8mxck")

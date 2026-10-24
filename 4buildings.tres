@@ -1,0 +1,39 @@
+[gd_resource type="TileSet" format=3 uid="uid://bowv8tj6mckrk"]
+
+[ext_resource type="Texture2D" uid="uid://blc48rlpq8lyu" path="res://Art/Buildings/multibuildingsheet.png" id="1_ykg7c"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_d2jku"]
+polygon = PackedVector2Array(-83.33333, -250, 83.33334, -250, 83.33334, 250, -166.66666, 250)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_y65q1"]
+polygon = PackedVector2Array(-83.33333, -250, 83.33334, -250, 0, 250, -83.33333, 250)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mdqat"]
+polygon = PackedVector2Array(-83.33333, -250, 83.33334, -250, 83.33334, 250, -166.66666, 250)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ekyuq"]
+polygon = PackedVector2Array(-83.33333, -166.66666, 83.33334, -166.66666, 83.33334, 0, 250, 0, 250, 250, -250, 250, -250, 0, -83.33333, 0)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gye14"]
+texture = ExtResource("1_ykg7c")
+texture_region_size = Vector2i(500, 500)
+0:1/0 = 0
+0:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_y65q1")
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(26.666668, 122.66667, 32, 224, -117.333336, 213.33334, -112, 122.66667)
+1:1/0 = 0
+1:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_ekyuq")
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(218.66667, 197.33334, 224, 240, -208, 256, -208, 192)
+1:0/0 = 0
+1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_mdqat")
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-160, 128, 138.66667, 154.66667, 144, 218.66667, -160, 224, -165.33334, 208)
+0:0/0 = 0
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_d2jku")
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.66667, 128, 101.333336, 138.66667, 112, 234.66667, -176, 234.66667)
+
+[resource]
+tile_size = Vector2i(32, 32)
+occlusion_layer_0/light_mask = 1
+occlusion_layer_1/light_mask = 1
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_gye14")

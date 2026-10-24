@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://1agtewg6tn25"]
+
+[ext_resource type="Script" uid="uid://bnp5bkbehhquy" path="res://Bosses/penemue_boss_enemy.gd" id="1_1ux5r"]
+[ext_resource type="PackedScene" uid="uid://jr0jtisfmu6l" path="res://Bosses/Penemue/Penemue.tscn" id="2_cxlrb"]
+
+[node name="BossEnemy" type="TextureButton" unique_id=2421903]
+custom_minimum_size = Vector2(200, 300)
+offset_right = 200.0
+offset_bottom = 300.0
+script = ExtResource("1_1ux5r")
+
+[node name="PenemueRig" parent="." unique_id=617648731 instance=ExtResource("2_cxlrb")]
+position = Vector2(97.00001, 100.000015)
+scale = Vector2(0.465, 0.465)
+
+[node name="HitFlash" type="Timer" parent="." unique_id=443976458]
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=494593419]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

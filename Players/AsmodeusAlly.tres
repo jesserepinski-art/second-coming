@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://dpp7kptlqimrn"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_j1dvw"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_t764r"]
+[ext_resource type="SpriteFrames" uid="uid://c6nbmlgjk4ym1" path="res://Players/AsmodeusAllySpritesheet.tres" id="3_2q3d1"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_pbpcu"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_2q3d1"]
+[ext_resource type="Texture2D" uid="uid://c3t0farha6b8o" path="res://Players/AsmodeusPortrait.png" id="4_rgx0n"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="5_rgx0n"]
+
+[sub_resource type="Resource" id="Resource_epsbi"]
+script = ExtResource("1_j1dvw")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_pbpcu")
+portrait = ExtResource("4_rgx0n")
+name = "Asmodeus"
+overworld_sprite_frames = ExtResource("3_2q3d1")
+hp_max = 50
+attack = 20
+magic_attack = 20
+attacks = Array[ExtResource("1_j1dvw")]([SubResource("Resource_epsbi")])
+spells = Array[ExtResource("2_t764r")]([ExtResource("5_rgx0n")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

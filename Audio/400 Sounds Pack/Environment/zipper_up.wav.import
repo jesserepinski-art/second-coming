@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ckhqpe4p7du01"
+path="res://.godot/imported/zipper_up.wav-903e6f7f7efb13d37c916c1ee837bdb8.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Environment/zipper_up.wav"
+dest_files=["res://.godot/imported/zipper_up.wav-903e6f7f7efb13d37c916c1ee837bdb8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

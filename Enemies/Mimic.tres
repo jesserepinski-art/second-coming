@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://benpyllt1r1j3"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_762vs"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_m57xg"]
+[ext_resource type="SpriteFrames" uid="uid://hmm65yep1ubl" path="res://Enemies/MimicSpriteFrames.tres" id="2_o6787"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_urleo"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_o6787"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="4_urleo"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="5_o6787"]
+
+[sub_resource type="Resource" id="Resource_0ocys"]
+script = ExtResource("1_762vs")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_urleo")
+attack_quotes = Array[String](["Someone from your past calls out to you"])
+death_quotes = Array[String](["The Mimic is out of tricks"])
+battle_sprite_frames = ExtResource("2_o6787")
+description = "The remnants of... something. It's gone through too many forms to tell. Hopefully it finds itself."
+name = "Mimic"
+hp_max = 70
+mp_max = 30
+attack = 10
+magic_attack = 10
+attacks = Array[ExtResource("1_762vs")]([SubResource("Resource_0ocys")])
+spells = Array[ExtResource("2_m57xg")]([ExtResource("4_urleo"), ExtResource("5_o6787")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

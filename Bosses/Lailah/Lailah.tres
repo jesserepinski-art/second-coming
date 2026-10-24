@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cjuxkx31je7vi"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_hq5nr"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_6kq7p"]
+[ext_resource type="PackedScene" uid="uid://b7cnqsjc1fbor" path="res://Bosses/LailahBossEnemy.tscn" id="2_pq12b"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_pq12b"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_xy4bc"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="5_xy4bc"]
+
+[sub_resource type="Resource" id="Resource_8qpoi"]
+script = ExtResource("1_hq5nr")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_pq12b")
+attack_quotes = Array[String](["Lailah breathes"])
+death_quotes = Array[String](["Lailah closes forever"])
+name = "Lailah"
+custom_battle_rig = ExtResource("2_pq12b")
+hp_max = 100
+attack = 30
+attacks = Array[ExtResource("1_hq5nr")]([SubResource("Resource_8qpoi")])
+spells = Array[ExtResource("2_6kq7p")]([ExtResource("5_xy4bc")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

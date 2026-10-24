@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c02twf25jhl72"]
+
+[ext_resource type="Material" uid="uid://bcfrltco3f67a" path="res://heartoftheforest.tres" id="1_t4j3r"]
+[ext_resource type="Texture2D" uid="uid://mgl8n5skw2dv" path="res://Art/Tilesets/Sky.png" id="1_wxq5b"]
+[ext_resource type="Script" uid="uid://b1tfb8rf4rafp" path="res://pilgrim_manager.gd" id="4_6v3xw"]
+[ext_resource type="PackedScene" uid="uid://b3ybj8shqtphv" path="res://pilgrim.tscn" id="5_3iww1"]
+[ext_resource type="Script" uid="uid://18vsv58hlqhv" path="res://mote_manager.gd" id="6_2ho76"]
+[ext_resource type="PackedScene" uid="uid://ctsots56tk8tf" path="res://mote.tscn" id="7_d0j0q"]
+
+[node name="Background" type="ColorRect" unique_id=1812092849]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="CloudBackground" type="TextureRect" parent="." unique_id=705897776]
+modulate = Color(0.33339515, 2.1599023, 0.2704122, 1)
+texture_repeat = 2
+material = ExtResource("1_t4j3r")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -167.0
+offset_top = -221.0
+offset_right = 1570.0
+offset_bottom = 859.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_wxq5b")
+
+[node name="PilgrimManager" type="Node2D" parent="." unique_id=308016245]
+script = ExtResource("4_6v3xw")
+pilgrim_scene = ExtResource("5_3iww1")
+
+[node name="Near" type="Node2D" parent="PilgrimManager" unique_id=1523064204]
+
+[node name="Mid" type="Node2D" parent="PilgrimManager" unique_id=995287410]
+
+[node name="Far" type="Node2D" parent="PilgrimManager" unique_id=1837426294]
+
+[node name="MoteManager" type="Node2D" parent="." unique_id=572972828]
+position = Vector2(106, 0)
+script = ExtResource("6_2ho76")
+mote_scene = ExtResource("7_d0j0q")
+
+[node name="Near" type="Node2D" parent="MoteManager" unique_id=1984295593]
+
+[node name="Mid" type="Node2D" parent="MoteManager" unique_id=1870900254]
+
+[node name="Far" type="Node2D" parent="MoteManager" unique_id=448101227]

@@ -1,0 +1,26 @@
+[gd_resource type="TileSet" format=3 uid="uid://dfhinq4juw1cw"]
+
+[ext_resource type="Texture2D" uid="uid://d007rj5dyvoox" path="res://Art/Tilesets/TreeFrame1.png" id="1_den8r"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_den8r"]
+polygon = PackedVector2Array(-2.6666665, 90.66667, 2.666667, 90.66667, 2.666667, 96, -2.6666665, 96)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qsyuq"]
+texture = ExtResource("1_den8r")
+texture_region_size = Vector2i(128, 192)
+0:0/animation_mode = 1
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/0 = 0
+0:0/0/y_sort_origin = 85
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_den8r")
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.6666665, 77.333336, 5.333334, 77.333336, 5.333334, 96, -2.6666665, 96)
+
+[resource]
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/1 = SubResource("TileSetAtlasSource_qsyuq")

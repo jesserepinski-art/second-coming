@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cbh83kibr7mi4"]
+
+[ext_resource type="Script" uid="uid://bwohlqp85qqes" path="res://sign.gd" id="1_u07du"]
+[ext_resource type="Texture2D" uid="uid://bqo43j35nvgl7" path="res://Art/Eyeclipping4.png" id="2_kffo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r344f"]
+size = Vector2(28, 29)
+
+[node name="Sign" type="Area2D" unique_id=156266479]
+script = ExtResource("1_u07du")
+lines = Array[String](["What's up my G", "I'm a sign!"])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1308078413]
+position = Vector2(13, 1)
+shape = SubResource("RectangleShape2D_r344f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1680080963]
+position = Vector2(13, 1)
+scale = Vector2(0.089000925, 0.071200736)
+texture = ExtResource("2_kffo2")

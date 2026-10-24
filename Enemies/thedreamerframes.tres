@@ -1,0 +1,63 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://wksua4blkcn3"]
+
+[ext_resource type="Texture2D" uid="uid://5loayhefps3q" path="res://Enemies/thedreamersheet.png" id="1_kh1wp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os865"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6xfk"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx4fk"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwgns"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okxxw"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dhro"]
+atlas = ExtResource("1_kh1wp")
+region = Rect2(450, 0, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_os865")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6xfk")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nx4fk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwgns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okxxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dhro")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

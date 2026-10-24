@@ -1,0 +1,18 @@
+[gd_resource type="TileSet" format=3 uid="uid://crtcusoowogkc"]
+
+[ext_resource type="Texture2D" uid="uid://tbm22kiuxh3x" path="res://Art/chirico.jpg" id="1_wb4r1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s3nbh"]
+texture = ExtResource("1_wb4r1")
+margins = Vector2i(0, 26)
+texture_region_size = Vector2i(64, 64)
+18:28/0 = 0
+9:13/0 = 0
+12:13/0 = 0
+12:13/0/custom_data_0 = "grass"
+
+[resource]
+tile_size = Vector2i(64, 64)
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/4 = SubResource("TileSetAtlasSource_s3nbh")

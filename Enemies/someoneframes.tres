@@ -1,0 +1,49 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://s0vrea7jvdat"]
+
+[ext_resource type="Texture2D" uid="uid://b3ampngj3ik5b" path="res://Art/TayEnemyPassive150.png" id="1_t0eu8"]
+[ext_resource type="Texture2D" uid="uid://b6qv2p7it32bg" path="res://Art/TayEnemyAttack150.png" id="2_f4tjw"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t0eu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f4tjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f4tjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_t0eu8")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t0eu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f4tjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f4tjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_t0eu8")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t0eu8")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

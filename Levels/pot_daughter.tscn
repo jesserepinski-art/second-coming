@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dqjgrucub1pd8"]
+
+[ext_resource type="Script" uid="uid://8ret1kwbpvtu" path="res://npc.gd" id="1_uvvmx"]
+[ext_resource type="Texture2D" uid="uid://mtviham77bcs" path="res://NPCs/childsheet.png" id="2_vlgji"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_ckdip"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqei0"]
+atlas = ExtResource("2_vlgji")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipwb2"]
+atlas = ExtResource("2_vlgji")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lnfrq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqei0")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipwb2")
+}],
+"loop": 1,
+"name": &"idleback",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8sum"]
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaawx"]
+radius = 49.0
+height = 148.0
+
+[node name="PotDaughter" type="CharacterBody2D" unique_id=1981691297]
+scale = Vector2(0.58, 0.58)
+script = ExtResource("1_uvvmx")
+walk_speed = null
+patrol_wait_time = null
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1107301798]
+scale = Vector2(0.815, 0.815)
+sprite_frames = SubResource("SpriteFrames_lnfrq")
+animation = &"idleback"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=629051482]
+position = Vector2(0, 12)
+shape = SubResource("CapsuleShape2D_c8sum")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=353991700]
+script = ExtResource("3_ckdip")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=434447447]
+position = Vector2(-2, 8)
+shape = SubResource("CapsuleShape2D_uaawx")

@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://b2ncq3p0c602t"]
+
+[ext_resource type="Script" uid="uid://dyh6g1lditqd7" path="res://Dialogue/DialogueLine.gd" id="1_iit7l"]
+[ext_resource type="Resource" uid="uid://by4xjcaaew8nb" path="res://Players/Providence.tres" id="2_ad2cd"]
+[ext_resource type="Script" uid="uid://h5312gpyqv4w" path="res://Dialogue/DialogueSequence.gd" id="2_x8wde"]
+[ext_resource type="Resource" uid="uid://buot2gbr5ydj0" path="res://Players/Dama.tres" id="3_kuwpe"]
+
+[sub_resource type="Resource" id="Resource_ad2cd"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "Good day, mine name is Providence, I saw thou 'i mine vision."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_kuwpe"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("3_kuwpe")
+text = "..."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_k1t4t"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "I saw thou stand against our heavenly father."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_w3q33"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("3_kuwpe")
+text = "alright do we gotta kill him"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_mp0wf"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "What"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_mn8us"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("3_kuwpe")
+text = "'need him dead, made a promise"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_ycuew"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "I ne'r considered the vision to be the massacre of our heavenly father..."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_6w5bg"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "What is thy name?"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_esfci"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("3_kuwpe")
+text = "dama"
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[sub_resource type="Resource" id="Resource_30swy"]
+script = ExtResource("1_iit7l")
+speaker = ExtResource("2_ad2cd")
+text = "Dama... meet me at Eden, I have some matters to finish."
+metadata/_custom_type_script = "uid://dyh6g1lditqd7"
+
+[resource]
+script = ExtResource("2_x8wde")
+lines = Array[ExtResource("1_iit7l")]([SubResource("Resource_ad2cd"), SubResource("Resource_kuwpe"), SubResource("Resource_k1t4t"), SubResource("Resource_w3q33"), SubResource("Resource_mp0wf"), SubResource("Resource_mn8us"), SubResource("Resource_ycuew"), SubResource("Resource_6w5bg"), SubResource("Resource_esfci"), SubResource("Resource_30swy")])
+metadata/_custom_type_script = "uid://h5312gpyqv4w"

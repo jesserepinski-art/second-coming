@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ctsots56tk8tf"]
+
+[ext_resource type="Script" uid="uid://bok15oa1i3hwf" path="res://mote.gd" id="1_sovl8"]
+[ext_resource type="Texture2D" uid="uid://byl0a7eljdx0d" path="res://mote.png" id="2_sbacd"]
+
+[node name="Mote" type="Node2D" unique_id=1018281735]
+script = ExtResource("1_sovl8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=668403347]
+texture = ExtResource("2_sbacd")

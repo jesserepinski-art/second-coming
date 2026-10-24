@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://biophv6ksmcoy"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_b0vu0"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_yjojt"]
+[ext_resource type="SpriteFrames" uid="uid://cmf2wtd4s4wwq" path="res://Players/KamariSpriteFrames.tres" id="3_48pk0"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_j4ndg"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_48pk0"]
+[ext_resource type="Texture2D" uid="uid://d3p3bj8afcf2l" path="res://Players/KamariPortrait.png" id="4_p6wac"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="6_h3mv6"]
+
+[resource]
+script = ExtResource("3_j4ndg")
+portrait = ExtResource("4_p6wac")
+name = "Kamari"
+overworld_sprite_frames = ExtResource("3_48pk0")
+hp_max = 40
+mp_max = 20
+attack = 6
+magic_attack = 10
+defense = 5
+spells = Array[ExtResource("2_yjojt")]([ExtResource("6_h3mv6")])
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dl60wxe6y8uqo"]
+
+[ext_resource type="Shader" uid="uid://cnwcs1fr2ci18" path="res://Overworld/reflectionsway.gdshader" id="1_wn3v7"]
+
+[resource]
+shader = ExtResource("1_wn3v7")
+shader_parameter/sway_speed = 0.6
+shader_parameter/sway_strength = 3.0
+shader_parameter/opacity = 0.44800002128
+shader_parameter/ripple_speed = 1.2
+shader_parameter/ripple_strength = 0.01

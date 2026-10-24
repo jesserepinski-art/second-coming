@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c4t50vdbjsdov"]
+
+[ext_resource type="Script" uid="uid://cdeun23ssur1a" path="res://status_icon.gd" id="1_4t6xm"]
+
+[node name="StatusIcon" type="TextureRect" unique_id=1356479861]
+custom_minimum_size = Vector2(16, 16)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+stretch_mode = 2
+script = ExtResource("1_4t6xm")

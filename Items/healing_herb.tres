@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dx1ep15o7qrwk"]
+
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_cnsdi"]
+
+[resource]
+script = ExtResource("1_cnsdi")
+name = "Healing Herb"
+display_name = "Healing Herb"
+description = "a healing herb"
+stackable = false
+value = 25
+target = 2
+heal = 50
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://db7meamaoxd8o"]
+
+[ext_resource type="Script" uid="uid://bpn3a0173isy3" path="res://Items/chest.gd" id="1_cbcuj"]
+[ext_resource type="AudioStream" uid="uid://db01473ekfjkn" path="res://Audio/400 Sounds Pack/Environment/lock_quick.wav" id="2_cm653"]
+[ext_resource type="SpriteFrames" uid="uid://q3l445jloggm" path="res://Art/Custom Scenery/rarechestframes.tres" id="3_cbcuj"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="3_cm653"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mrwma"]
+size = Vector2(73, 52)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_j0s0x"]
+closed = false
+polygon = PackedVector2Array(-31, 3, -30, 26, 37, 26, 38, 4)
+
+[node name="Chest" type="Area2D" unique_id=1915996880]
+script = ExtResource("1_cbcuj")
+open_sound = ExtResource("2_cm653")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2076549758]
+position = Vector2(0.5, 7)
+shape = SubResource("RectangleShape2D_mrwma")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=245031462]
+material = ExtResource("3_cm653")
+position = Vector2(0, -12.999999)
+scale = Vector2(0.735, 0.735)
+sprite_frames = ExtResource("3_cbcuj")
+animation = &"opened"
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=810071643]
+position = Vector2(-3.0000002, -12.999999)
+scale = Vector2(0.96, 0.96)
+occluder = SubResource("OccluderPolygon2D_j0s0x")

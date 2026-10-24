@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://cax25crb5iofd"]
+
+[ext_resource type="Texture2D" uid="uid://bum5j4l57sspc" path="res://Art/SeerAttack150.png" id="1_ioj12"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="1_jkitr"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="2_tyfgc"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="3_a3sq5"]
+[ext_resource type="Resource" uid="uid://dnk32vddeaj0v" path="res://Art/eye_attack_animation.tres" id="3_r3bqv"]
+[ext_resource type="SpriteFrames" uid="uid://bb2csecmn862u" path="res://Enemies/SeerFrames.tres" id="4_m7t41"]
+[ext_resource type="AudioStream" uid="uid://cf066v53iixa0" path="res://Art/SecondComingSFX/tinyenemyhurt.ogg" id="4_r3bqv"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="7_ioj12"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="8_c5a1h"]
+[ext_resource type="Texture2D" uid="uid://cuth8offn68dm" path="res://Art/SeerPassive150.png" id="8_m7t41"]
+
+[resource]
+script = ExtResource("1_jkitr")
+attack_quotes = Array[String](["The Seer materializes its eye", "The Seer looks into your soul"])
+battle_observations = Array[String](["The Seer looks you up and down", "The Seer doesn't blink", "The Seer looks through you"])
+death_quotes = Array[String](["The Seer has better things to do"])
+hurt_sound = ExtResource("4_r3bqv")
+sprite = ExtResource("8_m7t41")
+battle_sprite_frames = ExtResource("4_m7t41")
+attack_sprite = ExtResource("1_ioj12")
+name = "Seer"
+overworld_sprite_frames = ExtResource("4_m7t41")
+hp_max = 20
+attack = 5
+speed = 15
+attacks = Array[ExtResource("2_tyfgc")]([ExtResource("3_r3bqv")])
+spells = Array[ExtResource("3_a3sq5")]([ExtResource("7_ioj12")])
+gold = 5
+xp = 10
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

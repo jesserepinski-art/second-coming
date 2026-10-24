@@ -1,0 +1,84 @@
+[gd_scene format=4 uid="uid://crto3u02qtpla"]
+
+[ext_resource type="Script" uid="uid://dtnu5e6mwsd4y" path="res://Levels/test_level.gd" id="1_xbham"]
+[ext_resource type="AudioStream" uid="uid://cbwqjnrijm48f" path="res://Art/Music/parents.ogg" id="2_2f7bp"]
+[ext_resource type="AudioStream" uid="uid://rwjvmo4l8wm1" path="res://Art/SecondComingSFX/windambience.ogg" id="3_m4xe4"]
+[ext_resource type="TileSet" uid="uid://3mw77es8woee" path="res://PatriaWater.tres" id="4_2tq3y"]
+[ext_resource type="TileSet" uid="uid://u0xpfkubs1us" path="res://PatriaWaterDeep.tres" id="5_t1jc1"]
+[ext_resource type="TileSet" uid="uid://bcnedpgt1rsya" path="res://AcesoVillageTileset.tres" id="6_a14ai"]
+[ext_resource type="Texture2D" uid="uid://bp4set8jelnaj" path="res://Art/Custom Scenery/png-clipart-chain-shackle-iron-iron-shackle-chain-electronics-3d-computer-graphics-thumbnail_no_bg.png" id="7_fvwq4"]
+[ext_resource type="PackedScene" uid="uid://pgfrtba4pfb1" path="res://Enemies/WorldEnemy.tscn" id="8_d46by"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="9_7tb51"]
+[ext_resource type="Resource" uid="uid://b4mdyvjw3v0p8" path="res://Enemies/someone.tres" id="10_cm8w0"]
+[ext_resource type="PackedScene" uid="uid://dufdwb108l3l8" path="res://SpaceDoor.tscn" id="11_uslo8"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="12_mj8x6"]
+[ext_resource type="Script" uid="uid://d3lax8s42hy2o" path="res://Levels/entrance.gd" id="13_454xi"]
+
+[node name="UnderAcesosHouse" type="Node2D" unique_id=858188473]
+script = ExtResource("1_xbham")
+level_music = ExtResource("2_2f7bp")
+ambient_sound = ExtResource("3_m4xe4")
+level_music_volume_db = -4.88
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=919228122]
+modulate = Color(0.40478465, 0.075559914, 0.4283007, 1)
+tile_map_data = PackedByteArray("AAAAAAAABgAAAAAAAAABAAAABgAAAAAAAAACAAAABgAAAAAAAAADAAAABgAAAAAAAAAEAAAABgAAAAAAAAAEAAEABgAAAAAAAAADAAEABgAAAAAAAAACAAEABgAAAAAAAAABAAEABgAAAAAAAAAAAAEABgAAAAAAAAAAAAIABgAAAAAAAAABAAIABgAAAAAAAAACAAIABgAAAAAAAAADAAIABgAAAAAAAAAEAAIABgAAAAAAAAA=")
+tile_set = ExtResource("4_2tq3y")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=826415472]
+modulate = Color(0.2454538, 0.031670667, 0.26075774, 1)
+tile_map_data = PackedByteArray("AAAFAAIABgAAAAAAAAAFAAEABgAAAAAAAAAFAAAABgAAAAAAAAAFAP//BgAAAAAAAAAFAAMABgAAAAAAAAAEAAMABgAAAAAAAAADAAMABgAAAAAAAAACAAMABgAAAAAAAAABAAMABgAAAAAAAAAAAAMABgAAAAAAAAD//wMABgAAAAAAAAD//wIABgAAAAAAAAD//wEABgAAAAAAAAD//wAABgAAAAAAAAD/////BgAAAAAAAAD///7/BgAAAAAAAAAFAP7/BgAAAAAAAAAEAP//BgAAAAAAAAADAP//BgAAAAAAAAACAP//BgAAAAAAAAABAP//BgAAAAAAAAAAAP//BgAAAAAAAAABAP7/BgAAAAAAAAACAP7/BgAAAAAAAAADAP7/BgAAAAAAAAAEAP7/BgAAAAAAAAAAAP7/BgAAAAAAAAA=")
+tile_set = ExtResource("5_t1jc1")
+
+[node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=1300576488]
+modulate = Color(0.37495068, 0.37495068, 0.37495068, 1)
+scale = Vector2(0.53, 0.53)
+tile_map_data = PackedByteArray("AAAFAP3/AAAFAAMAAAAFAP7/AAAFAAQAAAAFAP//AAAFAAUAAAAFAAAAAAAFAAYAAAAFAAEAAAAFAAcAAAAFAAIAAAAFAAgAAAANAP3/AAAFAAMAAAANAP7/AAAFAAQAAAANAP//AAAFAAUAAAANAAAAAAAFAAYAAAANAAEAAAAFAAcAAAANAAIAAAAFAAgAAAA=")
+tile_set = ExtResource("6_a14ai")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=314642838]
+modulate = Color(0.4676473, 0.4676473, 0.4676473, 1)
+position = Vector2(187, 65)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("7_fvwq4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=517284520]
+modulate = Color(0.4676473, 0.4676473, 0.4676473, 1)
+position = Vector2(457, 68)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("7_fvwq4")
+
+[node name="WorldEnemy" parent="." unique_id=2077327881 instance=ExtResource("8_d46by")]
+position = Vector2(189, 139)
+battle_actors = Array[ExtResource("9_7tb51")]([ExtResource("10_cm8w0")])
+walk_speed = 0.0
+chase_speed = 0.0
+detection_range = 0.0
+enemy_level = 70
+
+[node name="WorldEnemy2" parent="." unique_id=2041960214 instance=ExtResource("8_d46by")]
+position = Vector2(461, 136.99998)
+battle_actors = Array[ExtResource("9_7tb51")]([ExtResource("10_cm8w0")])
+walk_speed = 0.0
+chase_speed = 0.0
+detection_range = 0.0
+enemy_level = 70
+
+[node name="Door" parent="." unique_id=355163590 instance=ExtResource("11_uslo8")]
+position = Vector2(315.00003, 346)
+scale = Vector2(1.65, 1.65)
+destination_path = "res://Levels/AcesosHouse.tscn"
+spawn_point = "UnderAcesoHouseEntrance"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=941661823]
+position = Vector2(315, 361)
+energy = 0.75
+shadow_enabled = true
+shadow_filter = 1
+texture = ExtResource("12_mj8x6")
+texture_scale = 5.95
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=440572235 groups=["spawn"]]
+position = Vector2(312, 233)
+script = ExtResource("13_454xi")
+spawn_name = "UnderAcesoHouseEntrance"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TipPage" format=3 uid="uid://cranxd66lo47h"]
+
+[ext_resource type="Texture2D" uid="uid://csrgemyjyunv4" path="res://Tips/Screenshot 2026-10-16 114059.png" id="1_kha6i"]
+[ext_resource type="Script" uid="uid://bwscckcku0q4d" path="res://Managers/TipPage.gd" id="1_slutn"]
+[ext_resource type="VideoStream" uid="uid://bwj0031ngpymy" path="res://Tips/timingringintro.ogv" id="3_dcfjw"]
+
+[resource]
+script = ExtResource("1_slutn")
+title = "FIGHTING AND TIMING RINGS"
+text = "On your turn, time the ring perfectly to attack for higher damage!"
+video = ExtResource("3_dcfjw")
+image = ExtResource("1_kha6i")
+metadata/_custom_type_script = "uid://bwscckcku0q4d"

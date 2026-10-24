@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cjbmhhdodee4y"]
+
+[ext_resource type="Script" uid="uid://dtmhy36m8s7on" path="res://healingstation.gd" id="1_00c1d"]
+[ext_resource type="Texture2D" uid="uid://b0l4isqcvtvle" path="res://Art/Custom Scenery/pngtree-modern-minimalist-bed-with-white-bedding-and-wooden-frame-png-image_15775548.png" id="2_0xmgi"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_0xmgi"]
+[ext_resource type="AudioStream" uid="uid://c8j7usbxjipjl" path="res://Art/SecondComingSFX/yay.ogg" id="4_7enqo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8sum"]
+size = Vector2(19.078213, 23.184359)
+
+[node name="healingstation" type="Node2D" unique_id=2131500510]
+script = ExtResource("1_00c1d")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1484792630]
+modulate = Color(0.947203, 0.30416465, 0.9422136, 1)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("2_0xmgi")
+
+[node name="Interactable" type="Area2D" parent="." unique_id=44422177]
+scale = Vector2(7.16, 7.16)
+script = ExtResource("3_0xmgi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1309420715]
+position = Vector2(0.4608937, 0.1396647)
+shape = SubResource("RectangleShape2D_c8sum")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1214327540]
+stream = ExtResource("4_7enqo")
+volume_db = -12.468

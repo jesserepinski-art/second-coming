@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbm0wolkwalpj"
+path="res://.godot/imported/sword_sharpen.wav-1034c294a94b63364a82f27d21105f07.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Weapons/sword_sharpen.wav"
+dest_files=["res://.godot/imported/sword_sharpen.wav-1034c294a94b63364a82f27d21105f07.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

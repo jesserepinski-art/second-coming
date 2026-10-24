@@ -1,0 +1,105 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://q4u6e3amqub2"]
+
+[ext_resource type="Texture2D" uid="uid://blpdu5s83ave7" path="res://Players/AsmodeusBattleSprite.png" id="1_let0g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_honrf"]
+atlas = ExtResource("1_let0g")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qekl0"]
+atlas = ExtResource("1_let0g")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mukf5"]
+atlas = ExtResource("1_let0g")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ge6b"]
+atlas = ExtResource("1_let0g")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ii8lv"]
+atlas = ExtResource("1_let0g")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6jx60"]
+atlas = ExtResource("1_let0g")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l13w7"]
+atlas = ExtResource("1_let0g")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pocbr"]
+atlas = ExtResource("1_let0g")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbo04"]
+atlas = ExtResource("1_let0g")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hopkf"]
+atlas = ExtResource("1_let0g")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aell2"]
+atlas = ExtResource("1_let0g")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwanb"]
+atlas = ExtResource("1_let0g")
+region = Rect2(450, 0, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_honrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qekl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mukf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ge6b")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ii8lv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6jx60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l13w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pocbr")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbo04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hopkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aell2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwanb")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

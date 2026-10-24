@@ -1,0 +1,67 @@
+[gd_resource type="TileSet" format=3 uid="uid://nbggtvk2uvj2"]
+
+[ext_resource type="Texture2D" uid="uid://bu316gfldb5ij" path="res://Art/Custom Scenery/techcavetileset.png" id="1_uvslx"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_uvslx"]
+polygon = PackedVector2Array(-21.333332, -21.333332, 32, -21.333332, 32, 21.333336, -21.333332, 10.666668)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_8h1a2"]
+polygon = PackedVector2Array(-32, -10.666666, 32, -21.333332, 32, 0, -32, 10.666668)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tkxcb"]
+polygon = PackedVector2Array(-32, -32, 10.666668, -21.333332, 10.666668, 0, -32, -10.666666)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7gsbg"]
+polygon = PackedVector2Array(0, -21.333332, 10.666668, -21.333332, 10.666668, 21.333336, -10.666666, 21.333336)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_a1x3w"]
+polygon = PackedVector2Array(0, -21.333332, 10.666668, -21.333332, 10.666668, 21.333336, -10.666666, 21.333336)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_14vdk"]
+polygon = PackedVector2Array(0, -21.333332, 10.666668, -21.333332, 10.666668, 21.333336, -10.666666, 21.333336)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8h1a2"]
+texture = ExtResource("1_uvslx")
+texture_region_size = Vector2i(64, 64)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+8:2/0 = 0
+8:2/0/custom_data_0 = "stone"
+4:3/0 = 0
+4:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_14vdk")
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.666666, -21.333332, 0, -21.333332, 21.333336, 21.333336, -21.333332, 21.333336)
+4:2/0 = 0
+3:3/0 = 0
+3:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_a1x3w")
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.666666, -21.333332, 10.666668, -21.333332, 10.666668, 21.333336, -10.666666, 21.333336)
+3:2/0 = 0
+2:3/0 = 0
+2:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_7gsbg")
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -21.333332, 10.666668, -21.333332, 10.666668, 21.333336, 0, 21.333336)
+2:2/0 = 0
+10:1/0 = 0
+10:2/0 = 0
+10:3/0 = 0
+10:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_uvslx")
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-21.333332, -21.333332, 32, -21.333332, 32, 21.333336, -21.333332, 10.666668)
+11:3/0 = 0
+11:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_8h1a2")
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -21.333332, 32, -21.333332, 32, 0, -32, 10.666668)
+12:3/0 = 0
+12:3/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_tkxcb")
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -21.333332, 21.333336, -21.333332, 21.333336, 0, -32, 0)
+12:2/0 = 0
+11:2/0 = 0
+11:1/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+13:5/0 = 0
+12:5/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_8h1a2")

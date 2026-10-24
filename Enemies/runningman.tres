@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://usvtyj7jba8v"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_tut0n"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_7funw"]
+[ext_resource type="SpriteFrames" uid="uid://b42nj8aaigj41" path="res://runningmanframes.tres" id="2_tii0w"]
+[ext_resource type="AudioStream" uid="uid://cx0aujglviqrx" path="res://Art/SecondComingSFX/swampgrunt.ogg" id="3_t2wnl"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_tii0w"]
+[ext_resource type="Resource" uid="uid://dda0pdnwuxnn3" path="res://Magic/JawsOfLife.tres" id="4_7funw"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_t2wnl"]
+
+[sub_resource type="Resource" id="Resource_a3fva"]
+script = ExtResource("1_tut0n")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_tii0w")
+attack_quotes = Array[String](["The Running Man runs through you"])
+battle_observations = Array[String](["The Running Man keeps going"])
+death_quotes = Array[String](["The Running Man bolts away"])
+hurt_sound = ExtResource("3_t2wnl")
+battle_sprite_frames = ExtResource("2_tii0w")
+description = "The remnants of someone who ran till they couldn't stop. Where will they go?"
+name = "The Running Man"
+hp_max = 10
+attack = 5
+speed = 26
+attacks = Array[ExtResource("1_tut0n")]([SubResource("Resource_a3fva")])
+spells = Array[ExtResource("2_7funw")]([ExtResource("4_7funw")])
+gold = 5
+xp = 5
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

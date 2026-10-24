@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbolhesvdr03a"
+path="res://.godot/imported/digital_footstep_snow_3.wav-374de200825293e7933c4c67dcef6c7d.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Footsteps/digital/digital_footstep_snow_3.wav"
+dest_files=["res://.godot/imported/digital_footstep_snow_3.wav-374de200825293e7933c4c67dcef6c7d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

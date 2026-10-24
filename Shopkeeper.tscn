@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://u8alyetw1arj"]
+
+[ext_resource type="Script" uid="uid://d3h88dcjl1n3n" path="res://shopkeeper.gd" id="1_mshls"]
+[ext_resource type="Script" uid="uid://dsnmov31ajy80" path="res://equipment.gd" id="2_hp7wc"]
+[ext_resource type="Resource" uid="uid://prhft0mryodn" path="res://Items/Equipment/RosaryNecklace.tres" id="3_eai7c"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_gndk4"]
+[ext_resource type="Resource" uid="uid://bbecu2djhujku" path="res://Items/Equipment/armorofgod.tres" id="4_mto47"]
+[ext_resource type="Resource" uid="uid://cyj565t8s8wps" path="res://Items/Equipment/Sword.tres" id="5_vo54q"]
+[ext_resource type="Texture2D" uid="uid://b8ntbcjbbv67o" path="res://NPCs/bagheadcharactersheet.png" id="6_hp7wc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eai7c"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(0, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mto47"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(150, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo54q"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(300, 450, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7w7jo"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtc0o"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7bt4"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(300, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mxgy"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqk7v"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64ih5"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hjjy"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfnrv"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kx7sr"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6leup"]
+atlas = ExtResource("6_hp7wc")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vi7d5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eai7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mto47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo54q")
+}],
+"loop": 1,
+"name": &"WalkBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7w7jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtc0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7bt4")
+}],
+"loop": 1,
+"name": &"WalkForward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mxgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqk7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64ih5")
+}],
+"loop": 1,
+"name": &"WalkLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hjjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfnrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kx7sr")
+}],
+"loop": 1,
+"name": &"WalkRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6leup")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8sum"]
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaawx"]
+radius = 86.0
+height = 176.0
+
+[node name="Shopkeeper" type="CharacterBody2D" unique_id=925011615]
+script = ExtResource("1_mshls")
+shop_equipment = Array[ExtResource("2_hp7wc")]([ExtResource("3_eai7c"), ExtResource("4_mto47"), ExtResource("5_vo54q")])
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=565527208]
+scale = Vector2(0.815, 0.815)
+sprite_frames = SubResource("SpriteFrames_vi7d5")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1992366310]
+position = Vector2(0, 12)
+shape = SubResource("CapsuleShape2D_c8sum")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=637699416]
+script = ExtResource("3_gndk4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1482069927]
+position = Vector2(-2, 8)
+shape = SubResource("CapsuleShape2D_uaawx")

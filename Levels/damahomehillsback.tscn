@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cug0g6msnwa1h"]
+
+[ext_resource type="Texture2D" uid="uid://kjajdqq17mk6" path="res://Art/Custom Scenery/hills.png" id="1_qhmmv"]
+
+[node name="Parallax2D" type="Parallax2D" unique_id=580404377]
+scroll_scale = Vector2(0.01, 0)
+scroll_offset = Vector2(0, 27)
+repeat_size = Vector2(2000, 0)
+repeat_times = 3
+limit_begin = Vector2(-10000000, 0)
+limit_end = Vector2(10000000, 0)
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=800250097]
+position = Vector2(-694, 37.75)
+scale = Vector2(1.0975, 0.407)
+texture = ExtResource("1_qhmmv")

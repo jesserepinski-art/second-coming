@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dd6tvsm26m33t"]
+
+[ext_resource type="Script" uid="uid://bwqbfcbo3p4sp" path="res://player_windows.gd" id="1_5vibn"]
+[ext_resource type="PackedScene" uid="uid://n0oagr3fw6mo" path="res://player_window.tscn" id="1_ggnb4"]
+[ext_resource type="Theme" uid="uid://cgbevv43yok0u" path="res://new_theme.tres" id="1_t8ctq"]
+
+[node name="PlayerWindows" type="HBoxContainer" unique_id=2064990442 node_paths=PackedStringArray("buttons_container")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -350.0
+offset_top = -360.0
+offset_right = 280.0
+offset_bottom = -226.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_filter = 2
+theme = ExtResource("1_t8ctq")
+theme_override_constants/separation = 43
+script = ExtResource("1_5vibn")
+buttons_container = NodePath(".")
+
+[node name="PlayerWindow" parent="." unique_id=1649974137 instance=ExtResource("1_ggnb4")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_t8ctq")
+
+[node name="PlayerWindow2" parent="." unique_id=72751200 instance=ExtResource("1_ggnb4")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_t8ctq")
+
+[node name="PlayerWindow3" parent="." unique_id=1378545494 instance=ExtResource("1_ggnb4")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_t8ctq")
+
+[node name="PlayerWindow4" parent="." unique_id=1849634404 instance=ExtResource("1_ggnb4")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_t8ctq")

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dkjbaqect8lt0"]
+
+[ext_resource type="Script" uid="uid://7liv8og67lt0" path="res://Bosses/pahaliah_boss_enemy.gd" id="1_os2h8"]
+[ext_resource type="PackedScene" uid="uid://cvbs2fqrusoxx" path="res://Bosses/Pahaliah/Pahaliah.tscn" id="2_t6fiy"]
+
+[node name="BossEnemy" type="TextureButton" unique_id=2421903]
+custom_minimum_size = Vector2(200, 300)
+offset_right = 200.0
+offset_bottom = 300.0
+script = ExtResource("1_os2h8")
+
+[node name="Pahaliah" parent="." unique_id=1367349903 instance=ExtResource("2_t6fiy")]
+z_index = 4
+position = Vector2(103.00001, 65)
+scale = Vector2(0.395, 0.395)
+
+[node name="HitFlash" type="Timer" parent="." unique_id=443976458]
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=494593419]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

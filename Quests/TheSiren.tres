@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://1om0bg8s0sxt"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_k8yqe"]
+
+[resource]
+script = ExtResource("1_k8yqe")
+quest_id = "the_siren"
+title = "The Siren"
+description = "The angel Lailah resides in the city Lefatot. I need to kill it for power"
+target_name = "Lailah"
+completion_flag = "angel_lailah_defeated"
+reward_gold = 1000
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bbsuuorclfhqe"]
+
+[ext_resource type="Script" uid="uid://bevvqrfxdjesq" path="res://Utility/screen_shake_2d.gd" id="1_idp25"]
+
+[node name="ScreenShake2D" type="Camera2D" unique_id=1724834520]
+script = ExtResource("1_idp25")
+
+[node name="Timer" type="Timer" parent="." unique_id=160826060]

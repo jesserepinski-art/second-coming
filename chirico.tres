@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dc7cpeiftq0eh"]
+
+[ext_resource type="Shader" uid="uid://boset6dfusb5p" path="res://Levels/chirico.gdshader" id="1_yjd3k"]
+
+[resource]
+shader = ExtResource("1_yjd3k")

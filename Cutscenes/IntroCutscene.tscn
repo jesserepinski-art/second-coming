@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cevea26s1vnbj"]
+
+[ext_resource type="Script" uid="uid://ct8d55ol88y3d" path="res://Cutscenes/intro_cutscene.gd" id="1_edg17"]
+[ext_resource type="AudioStream" uid="uid://7fegmbokcfsw" path="res://Art/SecondComingSFX/doorknock.ogg" id="2_vpjxk"]
+[ext_resource type="VideoStream" uid="uid://nc8cngys3pjp" path="res://Cutscenes/damadreamanother.ogv" id="3_vpjxk"]
+[ext_resource type="AudioStream" uid="uid://5qvkhc2pdxja" path="res://Art/Music/Hell.ogg" id="4_vpjxk"]
+[ext_resource type="AudioStream" uid="uid://rwjvmo4l8wm1" path="res://Art/SecondComingSFX/windambience.ogg" id="5_cjd4k"]
+
+[node name="IntroCutscene" type="CanvasLayer" unique_id=379142841]
+process_mode = 3
+layer = 6
+script = ExtResource("1_edg17")
+
+[node name="KnockSound" type="AudioStreamPlayer" parent="." unique_id=1402245179]
+stream = ExtResource("2_vpjxk")
+volume_db = -11.86
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=312423281]
+z_index = 10
+custom_minimum_size = Vector2(640, 360)
+custom_maximum_size = Vector2(640, 360)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("3_vpjxk")
+volume_db = -80.0
+expand = true
+metadata/_edit_use_anchors_ = true
+
+[node name="CutsceneMusic" type="AudioStreamPlayer" parent="." unique_id=1167587706]
+stream = ExtResource("4_vpjxk")
+volume_db = -2.167
+
+[node name="CutsceneAmbience" type="AudioStreamPlayer" parent="." unique_id=998143309]
+stream = ExtResource("5_cjd4k")

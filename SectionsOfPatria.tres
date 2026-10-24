@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://c4ry6kqa7dthl"]
+
+[ext_resource type="Texture2D" uid="uid://ceelmyv6220xq" path="res://Art/Custom Scenery/OverworldFloorTilesets.png" id="1_2drxm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bm5x1"]
+texture = ExtResource("1_2drxm")
+texture_region_size = Vector2i(500, 500)
+0:0/0 = 0
+0:0/0/custom_data_0 = "grass"
+1:0/0 = 0
+1:0/0/custom_data_0 = "grass"
+2:0/0 = 0
+2:0/0/custom_data_0 = "grass"
+2:1/0 = 0
+2:1/0/custom_data_0 = "grass"
+1:1/0 = 0
+1:1/0/custom_data_0 = "grass"
+0:1/0 = 0
+0:1/0/custom_data_0 = "grass"
+
+[resource]
+tile_size = Vector2i(500, 500)
+custom_data_layer_0/name = "terrain_type"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_bm5x1")

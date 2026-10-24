@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://dn7nb86edfnfl"]
+
+[ext_resource type="Texture2D" uid="uid://4l63y4naldvu" path="res://textboxnew.png" id="1_e0c0v"]
+
+[resource]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+texture = ExtResource("1_e0c0v")
+modulate_color = Color(1, 1, 1, 0.85882354)

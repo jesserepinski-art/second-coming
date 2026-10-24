@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://fviuy8lpq03u"]
+
+[ext_resource type="Script" uid="uid://dly2g2fq5jfnt" path="res://banter_box.gd" id="1_swx1f"]
+
+[node name="BanterBox" type="PanelContainer" unique_id=1944653090]
+custom_minimum_size = Vector2(300, 0)
+custom_maximum_size = Vector2(-1, 50)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -58.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_swx1f")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1783234654]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=485683697]
+layout_mode = 2
+
+[node name="Speaker" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1516556011]
+layout_mode = 2
+
+[node name="Dialogue" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1768096625]
+layout_mode = 2
+
+[node name="PortraitRect" type="TextureRect" parent="MarginContainer" unique_id=1384886210]
+layout_mode = 2
+size_flags_horizontal = 0
+offset_transform_enabled = true
+
+[node name="Typewriter" type="Timer" parent="." unique_id=973755608]

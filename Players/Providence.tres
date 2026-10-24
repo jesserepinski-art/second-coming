@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://by4xjcaaew8nb"]
+
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="1_eag1h"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_qmody"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_vkj8e"]
+[ext_resource type="Resource" uid="uid://bt8r71bm7jaxl" path="res://Players/DoubleHandBasicAttack.tres" id="2_4emax"]
+[ext_resource type="Resource" uid="uid://dx1ep15o7qrwk" path="res://Items/healing_herb.tres" id="2_24a7c"]
+[ext_resource type="Resource" uid="uid://prhft0mryodn" path="res://Items/Equipment/RosaryNecklace.tres" id="3_c38is"]
+[ext_resource type="AudioStream" uid="uid://ninp78e6kl54" path="res://Art/SecondComingSFX/impact1.ogg" id="3_u1kcy"]
+[ext_resource type="Resource" uid="uid://cyj565t8s8wps" path="res://Items/Equipment/Sword.tres" id="4_eshfv"]
+[ext_resource type="Resource" uid="uid://chrbormxre3s7" path="res://Magic/Smite.tres" id="6_4emax"]
+[ext_resource type="SpriteFrames" uid="uid://bmi1r3jcq633i" path="res://ProvidenceSpriteFrames.tres" id="7_rbrm4"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="8_s4b6m"]
+[ext_resource type="Texture2D" uid="uid://s84yv016smgn" path="res://Players/ProvidencePortrait.png" id="8_t1pah"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="8_tdl28"]
+[ext_resource type="AudioStream" uid="uid://yy0k7vugd3fw" path="res://Art/ogg/bleep025.ogg" id="13_wumur"]
+
+[resource]
+script = ExtResource("1_eag1h")
+attack_quotes = Array[String](["Providence prays to something"])
+hurt_sound = ExtResource("3_u1kcy")
+talk_sound = ExtResource("13_wumur")
+portrait = ExtResource("8_t1pah")
+name = "Providence"
+overworld_sprite_frames = ExtResource("7_rbrm4")
+hp_max = 28
+mp_max = 16
+attack = 15
+defense = 50
+speed = 15
+items = Array[ExtResource("1_vkj8e")]([ExtResource("2_24a7c")])
+attacks = Array[ExtResource("1_qmody")]([ExtResource("2_4emax")])
+spells = Array[ExtResource("1_vkj8e")]([ExtResource("6_4emax"), ExtResource("8_s4b6m")])
+equipped_weapon = ExtResource("4_eshfv")
+equipped_trinket = ExtResource("3_c38is")
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvoo1861l07b3"
+path="res://.godot/imported/top-down-fantasy-1.ogg-05fcf2e674101743e92dab7f962f0e46.oggvorbisstr"
+
+[deps]
+
+source_file="res://Art/Tilesets/top-down-collection-pack/Topview Fantasy Patreon Collection/Music/Top Down Fantasy 1/top-down-fantasy-1.ogg"
+dest_files=["res://.godot/imported/top-down-fantasy-1.ogg-05fcf2e674101743e92dab7f962f0e46.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://bt8r71bm7jaxl"]
+
+[ext_resource type="VideoStream" uid="uid://cuc0qjtkv3r0d" path="res://Art/DOUBLEMAGICHANDANIMATION.ogv" id="1_aoipa"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_bc47u"]
+[ext_resource type="AudioStream" uid="uid://cfuea30if536x" path="res://Art/SecondComingSFX/deepwavegrumble.ogg" id="2_qq1l5"]
+
+[resource]
+script = ExtResource("1_bc47u")
+attack_name = "BasicAttack2"
+attack_video = ExtResource("1_aoipa")
+cast_sound = ExtResource("2_qq1l5")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"

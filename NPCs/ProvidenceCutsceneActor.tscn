@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dqo715meq0mus"]
+
+[ext_resource type="Script" uid="uid://b3vtyuyq7wre" path="res://NPCs/providence_cutscene_actor.gd" id="1_wwk0g"]
+[ext_resource type="SpriteFrames" uid="uid://bmi1r3jcq633i" path="res://ProvidenceSpriteFrames.tres" id="2_j71qu"]
+
+[node name="ProvidenceCutsceneActor" type="CharacterBody2D" unique_id=864101846]
+script = ExtResource("1_wwk0g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1665086875]
+z_index = 5
+position = Vector2(-2, 1.999999)
+scale = Vector2(0.8194444, 0.86170214)
+sprite_frames = ExtResource("2_j71qu")
+animation = &"WalkLeft"

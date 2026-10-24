@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://c3b7742gu1o8c"]
+
+[node name="RipAnimation" type="Node2D" unique_id=1137813617]
+scale = Vector2(5.675, 5.675)

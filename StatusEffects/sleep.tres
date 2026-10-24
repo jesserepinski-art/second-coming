@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://doa6ekyf6wiu7"]
+
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="1_5mp0u"]
+[ext_resource type="Texture2D" uid="uid://b481tuyexdk7v" path="res://Art/StatusIcons/blindsymbol.png" id="1_exqhn"]
+
+[resource]
+script = ExtResource("1_5mp0u")
+display_name = "Sleep"
+type = 12
+turns = 1
+potency = 100.0
+icon = ExtResource("1_exqhn")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

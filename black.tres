@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" format=3 uid="uid://dhpasq6dqujhg"]
+
+[ext_resource type="Texture2D" uid="uid://b36ce4j4bmn3l" path="res://Screenshot 2026-07-27 173159.png" id="1_kjsvf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qngxw"]
+texture = ExtResource("1_kjsvf")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_qngxw")

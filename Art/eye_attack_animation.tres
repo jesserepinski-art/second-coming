@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://dnk32vddeaj0v"]
+
+[ext_resource type="VideoStream" uid="uid://c4wp5cocq1mvi" path="res://Art/EYEANIMATION (1).ogv" id="1_f4llx"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_ufpac"]
+[ext_resource type="VideoStream" uid="uid://dgpiuejxo4gsl" path="res://Art/Flock-of-7-White-Doves-Flying-Over-Green-Screen-Transition-4K.ogv" id="2_jtusc"]
+[ext_resource type="AudioStream" uid="uid://cb0u813ceheh8" path="res://Art/SecondComingSFX/hypnotism.ogg" id="2_nogtj"]
+
+[resource]
+script = ExtResource("1_ufpac")
+attack_name = "EyeAttack"
+attack_video = ExtResource("1_f4llx")
+effect_video = ExtResource("2_jtusc")
+cast_sound = ExtResource("2_nogtj")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"

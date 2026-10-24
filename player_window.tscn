@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://n0oagr3fw6mo"]
+
+[ext_resource type="Script" uid="uid://clv4gjtdxbwi7" path="res://player_window.gd" id="1_m07x8"]
+[ext_resource type="Theme" uid="uid://cgbevv43yok0u" path="res://new_theme.tres" id="1_or4yj"]
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="2_eee1k"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="4_1n0p1"]
+
+[node name="PlayerWindow" type="Button" unique_id=110747501]
+custom_minimum_size = Vector2(115, 106)
+offset_right = 115.0
+offset_bottom = 106.0
+scale = Vector2(0.86, 0.86)
+script = ExtResource("1_m07x8")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1649974137]
+material = ExtResource("2_eee1k")
+layout_mode = 0
+offset_right = 129.0
+offset_bottom = 104.0
+theme = ExtResource("1_or4yj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1138858371]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PName" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1616869]
+material = ExtResource("4_1n0p1")
+layout_mode = 2
+text = "Players"
+
+[node name="HP" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1041698213]
+layout_mode = 2
+
+[node name="Left" type="Label" parent="PanelContainer/VBoxContainer/HP" unique_id=1373441754]
+material = ExtResource("4_1n0p1")
+layout_mode = 2
+text = "HP: "
+
+[node name="HP" type="Label" parent="PanelContainer/VBoxContainer/HP" unique_id=1013510818]
+material = ExtResource("4_1n0p1")
+layout_mode = 2
+size_flags_horizontal = 3
+text = "???"
+horizontal_alignment = 2
+
+[node name="MP" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1390878931]
+layout_mode = 2
+
+[node name="Left" type="Label" parent="PanelContainer/VBoxContainer/MP" unique_id=1365169093]
+material = ExtResource("4_1n0p1")
+layout_mode = 2
+text = "FAITH: "
+
+[node name="MP" type="Label" parent="PanelContainer/VBoxContainer/MP" unique_id=167393745]
+material = ExtResource("4_1n0p1")
+layout_mode = 2
+size_flags_horizontal = 3
+text = "???"
+horizontal_alignment = 2
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=1130007956]
+material = ExtResource("4_1n0p1")
+custom_minimum_size = Vector2(16, 0)
+custom_maximum_size = Vector2(16, -1)
+layout_mode = 0
+offset_left = 129.0
+offset_top = 2.0
+offset_right = 145.0
+offset_bottom = 100.0
+size_flags_horizontal = 8

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://db80nars58yb3"]
+
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="1_8nehx"]
+[ext_resource type="Texture2D" uid="uid://bngj2w52xwjt0" path="res://Art/StarvingArtistAttack150.png" id="1_hc47h"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="2_btgye"]
+[ext_resource type="Resource" uid="uid://dnk32vddeaj0v" path="res://Art/eye_attack_animation.tres" id="3_3uqjo"]
+[ext_resource type="SpriteFrames" uid="uid://duddiompvmpmk" path="res://Enemies/starvingartistframes.tres" id="4_0g66b"]
+[ext_resource type="AudioStream" uid="uid://cf066v53iixa0" path="res://Art/SecondComingSFX/tinyenemyhurt.ogg" id="4_3uqjo"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="4_a05qs"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="7_hc47h"]
+[ext_resource type="Texture2D" uid="uid://c7mdw1nc1a2s5" path="res://Art/StarvingArtistPassive150.png" id="8_0g66b"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="8_a05qs"]
+
+[resource]
+script = ExtResource("1_8nehx")
+attack_quotes = Array[String](["The Starving Artists frame begins to shift", "The Starving Artist feels you looking at it"])
+battle_observations = Array[String](["The Starving Artist taps inpatiently", "The Starving Artist wants you to see", "The Starving Artist waits for your attention"])
+death_quotes = Array[String](["The Starving Artist is gonna go to another gallery"])
+hurt_sound = ExtResource("4_3uqjo")
+sprite = ExtResource("8_0g66b")
+battle_sprite_frames = ExtResource("4_0g66b")
+description = "The remnants of someone who loved their art so much they became it. Very bashful..."
+attack_sprite = ExtResource("1_hc47h")
+name = "Starving Artist"
+overworld_sprite_frames = ExtResource("4_0g66b")
+hp_max = 5
+attack = 5
+magic_attack = 5
+defense = 5
+speed = 5
+attacks = Array[ExtResource("2_btgye")]([ExtResource("3_3uqjo")])
+spells = Array[ExtResource("4_a05qs")]([ExtResource("7_hc47h")])
+gold = 6
+xp = 3
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://7ldqht5gh7oi"
+path="res://.godot/imported/slide_and_click.wav-ddcb27b52b814e3bd84efa2d5d4e7edb.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Other/slide_and_click.wav"
+dest_files=["res://.godot/imported/slide_and_click.wav-ddcb27b52b814e3bd84efa2d5d4e7edb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

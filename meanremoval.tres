@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ct3cb6jixgv0c"]
+
+[ext_resource type="Shader" uid="uid://bjt1vad2sbje7" path="res://mean.gdshader" id="1_gs8ne"]
+
+[resource]
+shader = ExtResource("1_gs8ne")
+shader_parameter/strength = 1.570000074575
+shader_parameter/sample_radius = 2.19600008056

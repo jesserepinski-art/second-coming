@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3 uid="uid://bmvgm8wr2t0oa"]
+
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="1_8mc2f"]
+[ext_resource type="Texture2D" uid="uid://cgt06i8bold7k" path="res://Art/StatusIcons/speedsymbol.png" id="1_pmupj"]
+
+[resource]
+script = ExtResource("1_8mc2f")
+display_name = "Haste"
+type = 5
+turns = 2
+potency = 1.0
+icon = ExtResource("1_pmupj")
+metadata/_custom_type_script = "uid://ct5bwgo8y1irm"

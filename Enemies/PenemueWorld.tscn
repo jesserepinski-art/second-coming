@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bw6guesynvdtq"]
+
+[ext_resource type="Script" uid="uid://dthtu5r3i476g" path="res://Enemies/world_enemy.gd" id="1_4k3d0"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="2_rcq61"]
+[ext_resource type="Resource" uid="uid://cax25crb5iofd" path="res://Enemies/seer.tres" id="3_wudbt"]
+[ext_resource type="Resource" uid="uid://db80nars58yb3" path="res://Enemies/starvingartist.tres" id="4_3hibb"]
+[ext_resource type="Resource" uid="uid://b4mdyvjw3v0p8" path="res://Enemies/someone.tres" id="5_w4i4s"]
+[ext_resource type="AudioStream" uid="uid://bu5umwewuuo4p" path="res://Art/GUTS.ogg" id="6_ynvl2"]
+[ext_resource type="Texture2D" uid="uid://dx1mnj24cduie" path="res://Bosses/Penemue/Screenshot_2026-08-13_025939-removebg-preview.png" id="7_3tcmq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3e5oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_3tcmq")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_78ylj"]
+radius = 15.0
+height = 32.0
+
+[node name="WorldEnemy" type="Area2D" unique_id=2077327881]
+script = ExtResource("1_4k3d0")
+battle_actors = Array[ExtResource("2_rcq61")]([ExtResource("3_wudbt"), ExtResource("4_3hibb"), ExtResource("5_w4i4s")])
+battle_music = ExtResource("6_ynvl2")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1944149932]
+position = Vector2(40, 26)
+scale = Vector2(0.4416667, 0.40833333)
+sprite_frames = SubResource("SpriteFrames_3e5oy")
+animation = &"Idle"
+frame_progress = 0.8699083
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399376098]
+position = Vector2(22, 18)
+shape = SubResource("CapsuleShape2D_78ylj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

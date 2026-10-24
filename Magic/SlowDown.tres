@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://1g1e8adm1fno"]
+
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="1_a6oo4"]
+[ext_resource type="VideoStream" uid="uid://cpjwcjmmwnaob" path="res://Art/CLOCKTICKINGANIMATION.ogv" id="1_u3cwi"]
+[ext_resource type="VideoStream" uid="uid://xkoiryg836ta" path="res://Art/CLOCKEFFECT.ogv" id="2_0kchj"]
+[ext_resource type="Resource" uid="uid://cauiu1wbjhyyo" path="res://StatusEffects/slow.tres" id="4_0w0pn"]
+
+[resource]
+script = ExtResource("1_a6oo4")
+name = "Slow Down"
+display_name = "Slow Down"
+description = "Deal a little damage and inflict slow "
+power_scaling = 0.5
+mp_cost = 11
+power = 5
+attack_video = ExtResource("1_u3cwi")
+effect_video = ExtResource("2_0kchj")
+status_effect = ExtResource("4_0w0pn")
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"

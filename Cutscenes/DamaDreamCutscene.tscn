@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://hsffx2shdhsx"]
+
+[ext_resource type="Texture2D" uid="uid://dq458k2pybwol" path="res://Cutscenes/Paint Layer 1.PNG" id="1_smuor"]
+[ext_resource type="Texture2D" uid="uid://wjp4pyl6s1yl" path="res://Cutscenes/Paint Layer 2.PNG" id="2_qmxfn"]
+[ext_resource type="Texture2D" uid="uid://bcvcijcleybvo" path="res://Cutscenes/asteroid_PNG36.png" id="3_g30eu"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="4_5fh76"]
+
+[sub_resource type="Gradient" id="Gradient_e0rkx"]
+colors = PackedColorArray(1, 1, 1, 1, 0.83581364, 0.08962548, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3e5oy"]
+gradient = SubResource("Gradient_e0rkx")
+
+[sub_resource type="Gradient" id="Gradient_ag0xk"]
+colors = PackedColorArray(1, 1, 1, 1, 0.90292156, 0.4579103, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c8sum"]
+gradient = SubResource("Gradient_ag0xk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3e5oy"]
+particle_flag_disable_z = true
+gravity = Vector3(316.99, 0, 0)
+scale_max = 1.9
+color = Color(0.6937283, 0.11764705, 1, 1)
+color_ramp = SubResource("GradientTexture1D_c8sum")
+color_initial_ramp = SubResource("GradientTexture1D_3e5oy")
+hue_variation_min = -0.030000022
+hue_variation_max = 0.009999977
+
+[sub_resource type="Gradient" id="Gradient_4p106"]
+offsets = PackedFloat32Array(0.3621908, 0.8427562)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lbt2n"]
+gradient = SubResource("Gradient_4p106")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Animation" id="Animation_ihw6i"]
+resource_name = "DamaDream"
+length = 7.733333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 7.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -6.2831855]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/GPUParticles2D2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.16666667, 6.5333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.023529412), Color(1, 1, 1, 0.105882354)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/GPUParticles2D:process_material:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 1.6666666, 6.766667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1.9), Vector2(1, 1.9), Vector2(1, 7.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Parallax2D/Sprite2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 7.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(322, 178), Vector2(3000, 120)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 7.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6jck5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/GPUParticles2D2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.019607844)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/GPUParticles2D:process_material:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1.9)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Parallax2D/Sprite2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(322, 178)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4lxri"]
+_data = {
+&"DamaDream": SubResource("Animation_ihw6i"),
+&"RESET": SubResource("Animation_6jck5")
+}
+
+[node name="DamaDreamCutscene" type="Node2D" unique_id=841706346]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=234672812]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("1_smuor")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=82074644]
+repeat_size = Vector2(640, 360)
+repeat_times = 12
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=917736361]
+position = Vector2(322, 178)
+texture = ExtResource("2_qmxfn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=621909755]
+z_index = 2
+position = Vector2(311, 172)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("3_g30eu")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Sprite2D" unique_id=1288715843]
+z_as_relative = false
+position = Vector2(0, -31.578857)
+amount = 54
+texture = ExtResource("4_5fh76")
+lifetime = 1.29
+process_material = SubResource("ParticleProcessMaterial_3e5oy")
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="Sprite2D" unique_id=1974865004]
+modulate = Color(1, 1, 1, 0.019607844)
+z_index = 2
+z_as_relative = false
+position = Vector2(0, -63.15747)
+amount = 54
+texture = SubResource("GradientTexture2D_lbt2n")
+lifetime = 1.29
+process_material = SubResource("ParticleProcessMaterial_3e5oy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1362553117]
+libraries/ = SubResource("AnimationLibrary_4lxri")
+autoplay = &"DamaDream"

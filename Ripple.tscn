@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://kaq2x5oyutfq"]
+
+[ext_resource type="Shader" uid="uid://ca3hbte5ovs2s" path="res://Ripple.gdshader" id="1_1jrt0"]
+[ext_resource type="Script" uid="uid://dy0hxp1w10qko" path="res://ripple.gd" id="2_dhmli"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mtdit"]
+shader = ExtResource("1_1jrt0")
+shader_parameter/progress = 0.0
+shader_parameter/ring_thickness = 0.15
+shader_parameter/ring_color = Color(1, 1, 1, 0.6)
+
+[sub_resource type="Gradient" id="Gradient_j4717"]
+offsets = PackedFloat32Array(0.36298078, 0.70913464)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vtq7o"]
+gradient = SubResource("Gradient_j4717")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Ripple" type="Sprite2D" unique_id=1229724952]
+material = SubResource("ShaderMaterial_mtdit")
+position = Vector2(-23.5, -28)
+scale = Vector2(0.265625, 0.125)
+texture = SubResource("GradientTexture2D_vtq7o")
+script = ExtResource("2_dhmli")

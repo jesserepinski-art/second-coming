@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://bo8p2ywfb2wb0"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_nftn5"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_2rc6q"]
+[ext_resource type="PackedScene" uid="uid://bd6y15rsoge8t" path="res://Bosses/PhanuelBossEnemy.tscn" id="2_r0uqh"]
+[ext_resource type="AudioStream" uid="uid://k6ccohcfj2q1" path="res://Art/SecondComingSFX/thincry.ogg" id="3_3uotq"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_r0uqh"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_3uotq"]
+[ext_resource type="Resource" uid="uid://c51bqnliofmcd" path="res://Magic/Eye_of_God.tres" id="5_3uotq"]
+
+[sub_resource type="Resource" id="Resource_c0c4x"]
+script = ExtResource("1_nftn5")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[resource]
+script = ExtResource("3_r0uqh")
+attack_quotes = Array[String](["Phanuel judges you"])
+battle_observations = Array[String](["The scales shift"])
+hurt_sound = ExtResource("3_3uotq")
+name = "Phanuel"
+custom_battle_rig = ExtResource("2_r0uqh")
+hp_max = 500
+mp_max = 100
+attack = 100
+attacks = Array[ExtResource("1_nftn5")]([SubResource("Resource_c0c4x")])
+spells = Array[ExtResource("2_2rc6q")]([ExtResource("5_3uotq")])
+gold = 100
+xp = 100
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

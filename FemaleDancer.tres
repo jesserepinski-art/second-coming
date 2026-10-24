@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dpvxlurnqxeu8"]
+
+[ext_resource type="Texture2D" uid="uid://cmga068lq3h8y" path="res://Art/Custom Scenery/dancerssheet.png" id="1_55trf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4s60"]
+atlas = ExtResource("1_55trf")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0m04"]
+atlas = ExtResource("1_55trf")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yq7vl"]
+atlas = ExtResource("1_55trf")
+region = Rect2(300, 150, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4s60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0m04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yq7vl")
+}],
+"loop": 1,
+"name": &"dance",
+"speed": 4.4
+}]

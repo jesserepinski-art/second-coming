@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://dbif5ggxgib8c"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_ubigq"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_5yhhx"]
+
+[sub_resource type="Resource" id="Resource_icc0c"]
+script = ExtResource("2_5yhhx")
+description = "Go to Eden"
+objective_type = 1
+target_name = "Eden"
+required_quest_id = "go_to_eden"
+start_quest_id = "go_to_eden"
+step_flag = "1"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_05kmj"]
+script = ExtResource("2_5yhhx")
+description = "Find the missing girl"
+objective_type = 2
+target_name = "lost_in_a_dream_completed"
+required_quest_id = "lost_in_a_dream"
+start_quest_id = "lost_in_a_dream"
+step_flag = "2"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_rx0gj"]
+script = ExtResource("2_5yhhx")
+description = "Go to the Circus"
+objective_type = 1
+target_name = "Circus"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_ydpno"]
+script = ExtResource("2_5yhhx")
+description = "Talk to the Clown"
+objective_type = 2
+target_name = "clown_egg_init"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_t2s2t"]
+script = ExtResource("2_5yhhx")
+description = "Gather Allies"
+objective_type = 2
+target_name = "allies_gathered"
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[sub_resource type="Resource" id="Resource_bh8q4"]
+script = ExtResource("2_5yhhx")
+description = "Kill the angels"
+choice_quest_ids = Array[String](["the_horse", "the_judge", "the_puppet", "the_siren"])
+required_count = 2
+metadata/_custom_type_script = "uid://bu0icj5kog322"
+
+[resource]
+script = ExtResource("1_ubigq")
+quest_id = "knockin_on_heavens_door"
+title = "Knockin On Heavens Door"
+description = "I need to find a way to get into Heaven"
+steps = Array[ExtResource("2_5yhhx")]([SubResource("Resource_icc0c"), SubResource("Resource_05kmj"), SubResource("Resource_rx0gj"), SubResource("Resource_ydpno"), SubResource("Resource_t2s2t"), SubResource("Resource_bh8q4")])
+objective_type = 1
+target_name = "Sium"
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

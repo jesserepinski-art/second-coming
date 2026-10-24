@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dhqlwcyka60r4"]
+
+[ext_resource type="Shader" uid="uid://d3o8pmn3co1yb" path="res://Levels/lavendar.gdshader" id="1_513bt"]
+
+[resource]
+shader = ExtResource("1_513bt")
+shader_parameter/lavender_color = Color(0.71, 0.65, 0.85, 1)
+shader_parameter/tint_strength = 1.0

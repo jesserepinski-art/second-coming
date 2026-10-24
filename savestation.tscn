@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bswv0y1mbu73y"]
+
+[ext_resource type="Script" uid="uid://c28f2ou6djgbi" path="res://savestation.gd" id="1_cginf"]
+[ext_resource type="Texture2D" uid="uid://dg64jfs8vnsmc" path="res://Art/Custom Scenery/Screenshot_2026-10-20_123431-removebg-preview.png" id="2_8f3t4"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="2_bw0cd"]
+[ext_resource type="Script" uid="uid://c3i6a5xmjpci0" path="res://interactable.gd" id="3_bw0cd"]
+[ext_resource type="AudioStream" uid="uid://bq3761givhpew" path="res://Art/SecondComingSFX/upwardssound.ogg" id="4_bw0cd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8sum"]
+size = Vector2(19.078213, 23.184359)
+
+[node name="savestation" type="Node2D" unique_id=2131500510]
+z_index = 4
+script = ExtResource("1_cginf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1484792630]
+material = ExtResource("2_bw0cd")
+position = Vector2(0, -21)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("2_8f3t4")
+
+[node name="Interactable" type="Area2D" parent="." unique_id=44422177]
+position = Vector2(-1, -18)
+scale = Vector2(2.875, 2.875)
+script = ExtResource("3_bw0cd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1309420715]
+position = Vector2(0.4608937, 0.1396647)
+shape = SubResource("RectangleShape2D_c8sum")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1214327540]
+stream = ExtResource("4_bw0cd")
+volume_db = -12.468

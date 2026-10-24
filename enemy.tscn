@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://cdd8rkyuqsw6w"]
+
+[ext_resource type="Material" uid="uid://ppdiux3gg7e3" path="res://Levels/Silhouette.tres" id="2_epg4t"]
+[ext_resource type="Script" uid="uid://b3hni2uqayh7x" path="res://enemy.gd" id="2_qi2p4"]
+[ext_resource type="SpriteFrames" uid="uid://hmm65yep1ubl" path="res://Enemies/MimicSpriteFrames.tres" id="3_iifgy"]
+[ext_resource type="Texture2D" uid="uid://kqjsioot2lel" path="res://Art/DROPSHADOW.png" id="3_qi2p4"]
+
+[sub_resource type="Animation" id="Animation_4gyqm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_iifgy"]
+resource_name = "enemy_attack"
+
+[sub_resource type="Animation" id="Animation_qi2p4"]
+resource_name = "highlight"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.50331646),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.31764707)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iifgy"]
+_data = {
+&"RESET": SubResource("Animation_4gyqm"),
+&"enemy_attack": SubResource("Animation_iifgy"),
+&"highlight": SubResource("Animation_qi2p4")
+}
+
+[node name="Enemy" type="TextureButton" unique_id=1422522652 groups=["enemies"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -180.0
+offset_right = -170.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_top = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+stretch_mode = 0
+script = ExtResource("2_qi2p4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=904273248]
+material = ExtResource("2_epg4t")
+position = Vector2(74.333336, 81)
+scale = Vector2(0.9022222, 0.90222216)
+sprite_frames = ExtResource("3_iifgy")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.82351357
+
+[node name="Shadow" type="TextureRect" parent="." unique_id=220548819]
+modulate = Color(1, 1, 1, 0.5411765)
+show_behind_parent = true
+custom_maximum_size = Vector2(300, 150)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.064
+anchor_top = 0.408
+anchor_right = 0.944
+anchor_bottom = 1.008
+offset_left = -80.26666
+offset_top = -22.533329
+offset_right = 87.73334
+offset_bottom = 37.466675
+texture = ExtResource("3_qi2p4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1365081394]
+libraries/ = SubResource("AnimationLibrary_iifgy")
+
+[node name="HitFlash" type="Timer" parent="." unique_id=1936846367]
+wait_time = 0.5
+one_shot = true
+
+[node name="StatusIcons" type="HBoxContainer" parent="." unique_id=1471247419]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 138.0
+offset_bottom = 17.0
+theme_override_constants/separation = 4
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="timeout" from="HitFlash" to="." method="_on_hit_flash_timeout"]

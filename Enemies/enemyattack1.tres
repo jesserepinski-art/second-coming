@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://dhcvkg8h6td1g"]
+
+[ext_resource type="AudioStream" uid="uid://m0vyee8sct3r" path="res://Art/SecondComingSFX/screamlaugh.ogg" id="1_kantv"]
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="2_ms56x"]
+
+[resource]
+script = ExtResource("2_ms56x")
+cast_sound = ExtResource("1_kantv")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"

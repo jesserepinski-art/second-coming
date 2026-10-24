@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://c2ftbgnunabae"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_ewwte"]
+[ext_resource type="PackedScene" uid="uid://dkjbaqect8lt0" path="res://Bosses/PahaliahBossEnemy.tscn" id="2_cdsu6"]
+[ext_resource type="AudioStream" uid="uid://c16ll42tm2khc" path="res://Art/SecondComingSFX/PahaliahRage.ogg" id="2_o4hoj"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_topp0"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_y2nq4"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_cdsu6"]
+[ext_resource type="AudioStream" uid="uid://cy50j304su5xm" path="res://Art/SecondComingSFX/PahaliahScream.ogg" id="4_o86k3"]
+[ext_resource type="AudioStream" uid="uid://ctr7brb0tgri2" path="res://Art/SecondComingSFX/PahaliahGrowl.ogg" id="5_nb8sb"]
+[ext_resource type="VideoStream" uid="uid://c4wp5cocq1mvi" path="res://Art/EYEANIMATION (1).ogv" id="8_13ujw"]
+[ext_resource type="VideoStream" uid="uid://dgpiuejxo4gsl" path="res://Art/Flock-of-7-White-Doves-Flying-Over-Green-Screen-Transition-4K.ogv" id="9_blhw7"]
+[ext_resource type="Resource" uid="uid://b6d4744k0w3fm" path="res://StatusEffects/blind.tres" id="10_m4tu3"]
+
+[sub_resource type="Resource" id="Resource_rwqwn"]
+script = ExtResource("1_ewwte")
+cast_sound = ExtResource("2_o4hoj")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="Resource" id="Resource_0k15a"]
+script = ExtResource("2_topp0")
+name = "Eye of God"
+display_name = "Eye of God"
+type = 1
+stackable = false
+power_scaling = 0.5
+mp_cost = 5
+power = 5
+attack_video = ExtResource("8_13ujw")
+effect_video = ExtResource("9_blhw7")
+cast_sound = ExtResource("4_o86k3")
+status_effect = ExtResource("10_m4tu3")
+status_chance = 50
+metadata/_custom_type_script = "uid://b6wtm2lvo5lwo"
+
+[resource]
+script = ExtResource("3_y2nq4")
+attack_quotes = Array[String](["It reacts"])
+battle_observations = Array[String](["It keeps going"])
+idle_quotes = Array[String](["It keeps going"])
+hurt_sound = ExtResource("5_nb8sb")
+death_sound = ExtResource("2_o4hoj")
+name = "Pahaliah"
+custom_battle_rig = ExtResource("2_cdsu6")
+hp_max = 100
+attack = 50
+attacks = Array[ExtResource("1_ewwte")]([SubResource("Resource_rwqwn")])
+spells = Array[ExtResource("2_topp0")]([SubResource("Resource_0k15a")])
+gold = 100
+xp = 1111
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://fviuy8lpq03u"]
+
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="1_puleb"]
+[ext_resource type="Script" uid="uid://dly2g2fq5jfnt" path="res://banter_box.gd" id="1_swx1f"]
+[ext_resource type="Material" uid="uid://c6pnqhn3sd6i0" path="res://Textwobble.tres" id="3_8kuuj"]
+
+[node name="BanterBox" type="PanelContainer" unique_id=1944653090]
+material = ExtResource("1_puleb")
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(-1, 50)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.5
+offset_top = -58.0
+offset_right = 20.5
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_swx1f")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=318521162]
+layout_mode = 2
+theme_override_constants/margin_left = -3
+theme_override_constants/margin_top = -5
+theme_override_constants/margin_right = -7
+theme_override_constants/margin_bottom = -6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1169294532]
+layout_mode = 2
+theme_override_constants/separation = -1
+
+[node name="Speaker" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1063497467]
+material = ExtResource("3_8kuuj")
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-3.22, 0)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.1422376, 0.1422376, 0.1422376, 1)
+theme_override_font_sizes/font_size = 10
+text = "Speaker"
+
+[node name="Dialogue" type="Label" parent="MarginContainer/VBoxContainer" unique_id=788916675]
+material = ExtResource("3_8kuuj")
+layout_mode = 2
+theme_override_font_sizes/font_size = 9
+text = "I really dont know what to say here"
+
+[node name="PortraitRect" type="TextureRect" parent="MarginContainer" unique_id=1582703017]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-125.76, -6.08)
+offset_transform_scale = Vector2(0.38, 0.38)
+expand_mode = 1
+stretch_mode = 3

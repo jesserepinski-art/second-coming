@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://b4xose8uetw14"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_5d2o0"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_gkkb0"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_j832m"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_7ej5t"]
+
+[resource]
+script = ExtResource("3_j832m")
+name = "Pothead"
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

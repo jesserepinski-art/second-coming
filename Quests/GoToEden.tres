@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://beej2t15bkdel"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_moytk"]
+[ext_resource type="Script" uid="uid://bu0icj5kog322" path="res://Quests/QuestStep.gd" id="2_vnlwg"]
+
+[resource]
+script = ExtResource("1_moytk")
+quest_id = "go_to_eden"
+title = "Eden"
+description = "Providence asked you to meet them in Eden"
+objective_type = 1
+target_name = "Eden"
+completion_flag = "reached_eden"
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

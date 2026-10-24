@@ -1,0 +1,37 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bb2csecmn862u"]
+
+[ext_resource type="Texture2D" uid="uid://cuth8offn68dm" path="res://Art/SeerPassive150.png" id="1_2r4ah"]
+[ext_resource type="Texture2D" uid="uid://bum5j4l57sspc" path="res://Art/SeerAttack150.png" id="2_6snj5"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2r4ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6snj5")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2r4ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6snj5")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2r4ah")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

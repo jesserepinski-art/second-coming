@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d8k3neox8mn8"
+path="res://.godot/imported/drink_slurp.wav-e01e03129901cf98a8ac5ccd61738dfd.sample"
+
+[deps]
+
+source_file="res://Audio/400 Sounds Pack/Other/drink_slurp.wav"
+dest_files=["res://.godot/imported/drink_slurp.wav-e01e03129901cf98a8ac5ccd61738dfd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

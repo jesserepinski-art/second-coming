@@ -1,0 +1,149 @@
+[gd_resource type="Resource" script_class="BattleActor" format=3 uid="uid://0kx6uw1pytsd"]
+
+[ext_resource type="Script" uid="uid://bku2g8m4bbyrp" path="res://attack_data.gd" id="1_uk7dv"]
+[ext_resource type="Script" uid="uid://b6wtm2lvo5lwo" path="res://item.gd" id="2_6s7k6"]
+[ext_resource type="Texture2D" uid="uid://bqgp0doxkhmc" path="res://Enemies/AntibodiesSpriteFrames.png" id="2_u4n0r"]
+[ext_resource type="Script" uid="uid://uqitkkxs6f38" path="res://battle_actor.gd" id="3_u4n0r"]
+[ext_resource type="Script" uid="uid://ct5bwgo8y1irm" path="res://StatusEffect.gd" id="4_myre1"]
+
+[sub_resource type="Resource" id="Resource_1ax0h"]
+script = ExtResource("1_uk7dv")
+metadata/_custom_type_script = "uid://bku2g8m4bbyrp"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myre1"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajya2"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(600, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avxvs"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(450, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vkvi"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm1af"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yvs8"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1bgo"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(600, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1koa"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(450, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vx8p2"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8bd0"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwmol"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5cso"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vajt1"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(300, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8olg"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(450, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l84hw"]
+atlas = ExtResource("2_u4n0r")
+region = Rect2(600, 300, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ajya2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myre1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajya2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avxvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vkvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bm1af")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yvs8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1bgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1koa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vx8p2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8bd0")
+}],
+"loop": 0,
+"name": &"cast_spell",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwmol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5cso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vajt1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8olg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l84hw")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("3_u4n0r")
+attack_quotes = Array[String](["IgG defends what it knows"])
+battle_sprite_frames = SubResource("SpriteFrames_ajya2")
+description = "The IgG antibody of an otherworldy organsim..."
+name = "IgG"
+hp_max = 15
+attack = 10
+magic_attack = 5
+defense = 4
+attacks = Array[ExtResource("1_uk7dv")]([SubResource("Resource_1ax0h")])
+hp = null
+mp = null
+metadata/_custom_type_script = "uid://uqitkkxs6f38"

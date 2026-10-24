@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://83vulhs2j54b"]
+
+[ext_resource type="Script" uid="uid://c7qmdr8tj6tc8" path="res://Quest.gd" id="1_44vrv"]
+
+[resource]
+script = ExtResource("1_44vrv")
+quest_id = "the_judge"
+title = "The Judge"
+description = "The angel Phanuel resides in it's stone city in the Northwest. I need to kill it for power"
+target_name = "Phanuel"
+completion_flag = "angel_phanuel_defeated"
+reward_gold = 1000
+metadata/_custom_type_script = "uid://c7qmdr8tj6tc8"

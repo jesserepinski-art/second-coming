@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbduvbjg7a72e"]
+
+[ext_resource type="Script" uid="uid://do14cwsokv6o4" path="res://item_button.gd" id="1_0241j"]
+
+[node name="ItemButton" type="Button" unique_id=850543902]
+size_flags_horizontal = 3
+text = "ItemName"
+alignment = 0
+script = ExtResource("1_0241j")

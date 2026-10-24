@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dep1lhr5keffj"]
+
+[ext_resource type="Material" uid="uid://63ee5uuwbrht" path="res://Textboxwobble.tres" id="1_cq3rw"]
+[ext_resource type="Texture2D" uid="uid://e6yl6ckpxgei" path="res://orbsprite.tres" id="2_4uudp"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1474867072]
+modulate = Color(0.99455386, 0.8991023, 0.010649005, 1)
+material = ExtResource("1_cq3rw")
+scale = Vector2(2.046875, 2.171875)
+texture = ExtResource("2_4uudp")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1487221315]
+position = Vector2(-1.4656506, -2.3021564)
+scale = Vector2(0.2709924, 0.2553957)
+energy = 2.79
+texture = ExtResource("2_4uudp")
